@@ -1,0 +1,221 @@
+{
+ "id": "r030",
+ "nom": "Tajine de poulet-pruneaux-légumes d'automne",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Recette du monde",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 50,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "genereux"
+ ],
+ "legumes_amap": [
+  "carotte",
+  "butternut",
+  "navet",
+  "oignon"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "cuisse de poulet",
+   "qte": 5,
+   "unite": "piece",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "semoule",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "pruneau",
+   "qte": 200,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "carotte",
+   "qte": 4,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "butternut",
+   "qte": 800,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "navet",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 2,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "coriandre",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "amande",
+   "qte": 50,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "ras el hanout",
+   "qte": 2,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "cannelle",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "miel",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "bouillon de volaille",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Dorer les cuisses de poulet dans l'huile d'olive sur toutes les faces, puis les réserver.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Faire revenir les oignons émincés et l'ail avec le ras el hanout et la cannelle.",
+   "minuteur": 180
+  },
+  {
+   "texte": "Remettre le poulet, ajouter 40 cl d'eau et le bouillon cube, couvrir et laisser mijoter.",
+   "minuteur": 900
+  },
+  {
+   "texte": "Ajouter les carottes en tronçons, la butternut et les navets en gros cubes, les pruneaux et le miel."
+  },
+  {
+   "texte": "Poursuivre la cuisson à couvert jusqu'à ce que les légumes soient tendres.",
+   "minuteur": 1500
+  },
+  {
+   "texte": "Faire griller les amandes à sec dans une poêle.",
+   "minuteur": 180
+  },
+  {
+   "texte": "Préparer la semoule : la couvrir du même volume d'eau bouillante salée avec un filet d'huile, laisser gonfler puis l'égrainer (quinoa à part pour Marie).",
+   "minuteur": 300
+  },
+  {
+   "texte": "Servir le tajine parsemé d'amandes et de coriandre ciselée, avec la semoule."
+  }
+ ],
+ "marie": {
+  "texte": "Quinoa à la place de la semoule pour sa part.",
+  "ajouter": [
+   {
+    "nom": "quinoa",
+    "qte": 60,
+    "unite": "g",
+    "rayon": "feculents",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "semoule",
+    "qte": 80,
+    "unite": "g"
+   }
+  ],
+  "soir": "Peu de quinoa, plus de légumes du tajine."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "(servi le midi)",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-10-28"
+ },
+ "pieces_jointes": []
+}

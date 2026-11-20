@@ -1,0 +1,183 @@
+{
+ "id": "r020",
+ "nom": "Bo bun poulet",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Base initiale",
+ "categorie": "Recette du monde",
+ "source": {
+  "nom": "Les tips de Cam",
+  "lien": null
+ },
+ "duree_min": 30,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui (vermicelles riz)"
+ },
+ "vegetarien": false,
+ "creneaux": [],
+ "legumes_amap": [
+  "carotte",
+  "salade verte",
+  "concombre"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "herbes fraîches",
+  "salade"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "vermicelles de riz",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "blanc de poulet",
+   "qte": 700,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "salade verte",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "carotte",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "concombre",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "menthe",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "coriandre",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 3,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "citron vert",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "cacahuète",
+   "qte": 80,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "nuoc-mâm",
+   "qte": 6,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "sauce soja sans gluten",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sucre",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile neutre",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Couper le poulet en lamelles et le mariner avec la sauce soja, 1 gousse d'ail hachée et 1 c. à s. de sucre pendant la préparation."
+  },
+  {
+   "texte": "Sauce : mélanger le nuoc-mâm, le jus des citrons verts, 2 c. à s. de sucre, 1 gousse d'ail hachée et 12 cl d'eau. Goûter et ajuster."
+  },
+  {
+   "texte": "Râper les carottes, couper le concombre en bâtonnets, émincer la salade, effeuiller menthe et coriandre."
+  },
+  {
+   "texte": "Cuire les vermicelles de riz selon le paquet, les rincer à l'eau froide et bien égoutter.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Concasser les cacahuètes et les torréfier 2 min à sec dans une poêle."
+  },
+  {
+   "texte": "Émincer l'oignon, le faire dorer dans l'huile, puis ajouter le poulet et le dernier ail. Cuire 5 à 6 min à feu vif.",
+   "minuteur": 360
+  },
+  {
+   "texte": "Dans chaque bol : salade, vermicelles, crudités, poulet chaud, herbes, cacahuètes. Arroser de sauce au moment de manger."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Moitié moins de vermicelles, plus de crudités."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Bo bun tofu mariné soja-sésame",
+  "fois_au_menu": 14,
+  "derniere_fois": "2026-11-04"
+ },
+ "pieces_jointes": []
+}

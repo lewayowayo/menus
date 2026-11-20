@@ -1,0 +1,153 @@
+{
+ "id": "r022",
+ "nom": "Frittata épinards-pommes de terre-feta",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Plat complet rapide",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 25,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "rapide",
+  "leger",
+  "midi_simple"
+ ],
+ "legumes_amap": [
+  "épinards",
+  "pomme de terre",
+  "oignon",
+  "salade verte"
+ ],
+ "legumes_libres": [
+  "feuilles"
+ ],
+ "tres_frais": [
+  "salade"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "œuf",
+   "qte": 10,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "pomme de terre",
+   "qte": 600,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "épinards",
+   "qte": 300,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "feta",
+   "qte": 200,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "salade verte",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Éplucher les pommes de terre, les couper en rondelles fines et les cuire 10 minutes dans l'eau bouillante salée. Égoutter.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Préchauffer le gril du four."
+  },
+  {
+   "texte": "Émincer l'oignon et le faire revenir dans une grande poêle allant au four avec 2 c. à s. d'huile.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Ajouter les épinards et les laisser tomber 2 minutes.",
+   "minuteur": 120
+  },
+  {
+   "texte": "Battre les œufs avec du sel et du poivre. Ajouter les pommes de terre dans la poêle, verser les œufs et émietter la feta par-dessus."
+  },
+  {
+   "texte": "Cuire à feu doux sans remuer jusqu'à ce que les bords prennent.",
+   "minuteur": 480
+  },
+  {
+   "texte": "Passer la poêle sous le gril pour finir de cuire le dessus.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Servir avec la salade assaisonnée."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Une part côté épinards, avec peu de pommes de terre."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Telle quelle, peu de pommes de terre",
+  "fois_au_menu": 2,
+  "derniere_fois": "2026-10-28"
+ },
+ "pieces_jointes": []
+}

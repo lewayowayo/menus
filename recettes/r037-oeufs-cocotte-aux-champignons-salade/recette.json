@@ -1,0 +1,207 @@
+{
+ "id": "r037",
+ "nom": "Œufs cocotte aux champignons + salade d'endives, pommes, noix",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Soupe / léger",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 20,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Oui (pain SG)"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "leger",
+  "rapide"
+ ],
+ "legumes_amap": [
+  "champignon de Paris",
+  "endive",
+  "pomme"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "œuf",
+   "qte": 10,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "champignon de Paris",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "échalote",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "crème liquide",
+   "qte": 20,
+   "unite": "cl",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "emmental râpé",
+   "qte": 80,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "ciboulette",
+   "qte": 0.5,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "beurre",
+   "qte": 20,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "endive",
+   "qte": 5,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "pomme",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "noix",
+   "qte": 60,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "moutarde",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "vinaigre balsamique",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "pain de mie",
+   "qte": 8,
+   "unite": "tranche",
+   "rayon": "boulangerie",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Préchauffer le four à 180 °C. Émincer les champignons et l'échalote, les faire sauter au beurre jusqu'à évaporation de l'eau. Saler, poivrer.",
+   "minuteur": 480
+  },
+  {
+   "texte": "Répartir les champignons dans 10 ramequins beurrés, ajouter une cuillère de crème puis casser un œuf dans chacun."
+  },
+  {
+   "texte": "Parsemer d'emmental et de ciboulette, poser les ramequins dans un plat avec de l'eau chaude (bain-marie)."
+  },
+  {
+   "texte": "Cuire au four : le blanc doit être pris, le jaune coulant.",
+   "minuteur": 720
+  },
+  {
+   "texte": "Pendant ce temps, émincer les endives, couper les pommes en dés, concasser les noix."
+  },
+  {
+   "texte": "Vinaigrette moutarde, vinaigre, huile ; mélanger avec la salade au dernier moment."
+  },
+  {
+   "texte": "Griller le pain pour les mouillettes et servir aussitôt."
+  }
+ ],
+ "marie": {
+  "texte": "Mouillettes de pain sans gluten.",
+  "ajouter": [
+   {
+    "nom": "pain de mie sans gluten",
+    "qte": 2,
+    "unite": "tranche",
+    "rayon": "sans_gluten",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "pain de mie",
+    "qte": 2,
+    "unite": "tranche"
+   }
+  ],
+  "soir": "Une ou deux mouillettes seulement."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Tel quel, mouillettes SG",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-11-18"
+ },
+ "pieces_jointes": []
+}

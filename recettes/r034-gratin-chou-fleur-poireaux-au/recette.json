@@ -1,0 +1,157 @@
+{
+ "id": "r034",
+ "nom": "Gratin chou-fleur-poireaux au comté",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Classique familial",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 45,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui (béchamel maïzena)"
+ },
+ "vegetarien": false,
+ "creneaux": [],
+ "legumes_amap": [
+  "chou-fleur",
+  "poireau"
+ ],
+ "legumes_libres": [
+  "choux"
+ ],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "chou-fleur",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "poireau",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "jambon blanc",
+   "qte": 4,
+   "unite": "tranche",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "lait",
+   "qte": 750,
+   "unite": "ml",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "beurre",
+   "qte": 50,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "maïzena",
+   "qte": 50,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "comté",
+   "qte": 150,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "muscade",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "riz basmati",
+   "qte": 300,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Préchauffer le four à 200 °C. Détailler le chou-fleur en bouquets et le cuire à l'eau salée ou à la vapeur.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Émincer les poireaux et les faire fondre dans une noix de beurre à feu doux.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Béchamel : délayer la maïzena dans un peu de lait froid. Chauffer le reste du lait avec le beurre, ajouter la maïzena et fouetter jusqu'à épaississement. Sel, poivre, muscade, la moitié du comté.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Couper le jambon en lanières."
+  },
+  {
+   "texte": "Dans un plat beurré, mélanger chou-fleur, poireaux et jambon, napper de béchamel et parsemer du reste de comté."
+  },
+  {
+   "texte": "Gratiner au four.",
+   "minuteur": 1500
+  },
+  {
+   "texte": "Pendant ce temps, cuire le riz pour l'accompagnement.",
+   "minuteur": 660
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter (béchamel à la maïzena).",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Sans riz, une belle part de gratin."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Tel quel sans jambon",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-11-11"
+ },
+ "pieces_jointes": []
+}

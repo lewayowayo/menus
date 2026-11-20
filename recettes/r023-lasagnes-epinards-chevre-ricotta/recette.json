@@ -1,0 +1,172 @@
+{
+ "id": "r023",
+ "nom": "Lasagnes épinards-chèvre-ricotta",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Classique familial",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 60,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Plaques SG"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "genereux"
+ ],
+ "legumes_amap": [
+  "épinards"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "plaques de lasagne sans gluten",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "sans_gluten",
+   "placard": false
+  },
+  {
+   "nom": "épinards",
+   "qte": 800,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ricotta",
+   "qte": 500,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "chèvre",
+   "qte": 200,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "emmental râpé",
+   "qte": 100,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "lait",
+   "qte": 750,
+   "unite": "ml",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "beurre",
+   "qte": 50,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "maïzena",
+   "qte": 4,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "ail",
+   "qte": 2,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "muscade",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Préchauffer le four à 180 °C."
+  },
+  {
+   "texte": "Faire tomber les épinards dans l'huile avec l'ail haché, puis bien les égoutter en pressant.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Mélanger les épinards avec la ricotta, du sel, du poivre et une pincée de muscade."
+  },
+  {
+   "texte": "Béchamel : délayer la maïzena dans un peu de lait froid. Chauffer le reste du lait avec le beurre, verser la maïzena et remuer jusqu'à épaississement. Saler, poivrer, muscade.",
+   "minuteur": 420
+  },
+  {
+   "texte": "Dans le plat, alterner une couche de béchamel, des plaques, la farce épinards-ricotta. Répéter trois fois."
+  },
+  {
+   "texte": "Finir par la béchamel, le chèvre en rondelles et l'emmental."
+  },
+  {
+   "texte": "Enfourner jusqu'à ce que le dessus soit gratiné.",
+   "minuteur": 2100
+  },
+  {
+   "texte": "Laisser reposer 5 minutes avant de couper.",
+   "minuteur": 300
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter : les plaques sans gluten sont pour toute la famille.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Petite part avec une salade verte."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Telle quelle (plaques SG)",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-10-07"
+ },
+ "pieces_jointes": []
+}

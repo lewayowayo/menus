@@ -1,0 +1,190 @@
+{
+ "id": "r040",
+ "nom": "Vermicelles de riz, poulet poché, carottes, chou, cacahuètes, coriandre (sauce soja, huile de sésame, vinaigre de riz, citron vert)",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "vidéo Instagram sans quantités : quantités et étapes estimées par Claude, à valider",
+  "lien Instagram à ajouter"
+ ],
+ "choisie_par": "Etienne",
+ "origine": "Nouvelle, apportée par la famille",
+ "categorie": "Recette du monde",
+ "source": {
+  "nom": "Instagram (vidéo sans quantités)",
+  "lien": null
+ },
+ "duree_min": 35,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui (vermicelles de riz, soja SG)"
+ },
+ "vegetarien": false,
+ "creneaux": [],
+ "legumes_amap": [
+  "carotte",
+  "chou chinois"
+ ],
+ "legumes_libres": [
+  "choux"
+ ],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "vermicelles de riz",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "blanc de poulet",
+   "qte": 700,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "carotte",
+   "qte": 4,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "chou chinois",
+   "qte": 0.5,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "cacahuète",
+   "qte": 80,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "coriandre",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "citron vert",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "sauce soja sans gluten",
+   "qte": 6,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true,
+   "estime": true
+  },
+  {
+   "nom": "huile de sésame",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true,
+   "estime": true
+  },
+  {
+   "nom": "vinaigre de riz",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true,
+   "estime": true
+  },
+  {
+   "nom": "gingembre",
+   "qte": 20,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "ail",
+   "qte": 1,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "sucre",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true,
+   "estime": true
+  },
+  {
+   "nom": "bouillon de volaille",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "epicerie",
+   "placard": true,
+   "estime": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Pocher le poulet : le mettre dans une casserole d'eau froide avec le bouillon cube et une tranche de gingembre, porter à frémissement puis cuire doucement.",
+   "minuteur": 900
+  },
+  {
+   "texte": "Laisser le poulet refroidir dans le bouillon 5 min, puis l'effilocher.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Préparer la sauce : sauce soja, huile de sésame, vinaigre de riz, jus des citrons verts, sucre, ail et gingembre râpés."
+  },
+  {
+   "texte": "Râper les carottes, émincer finement le chou chinois, ciseler la coriandre, concasser et torréfier les cacahuètes à sec.",
+   "minuteur": 180
+  },
+  {
+   "texte": "Cuire les vermicelles selon le paquet (souvent 3 à 4 min dans l'eau bouillante), rincer à l'eau froide et égoutter.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Mélanger vermicelles, légumes, poulet et sauce ; servir parsemé de cacahuètes et de coriandre, avec des quartiers de citron vert."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter (vermicelles de riz, sauce soja sans gluten).",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Moitié moins de vermicelles, plus de légumes et de poulet."
+ },
+ "etienne": null,
+ "remarque": "Très bon. Quantités et étapes à écrire",
+ "ancien": {
+  "option_marie": null,
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-11-18"
+ },
+ "pieces_jointes": []
+}

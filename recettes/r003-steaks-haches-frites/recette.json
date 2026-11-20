@@ -1,0 +1,159 @@
+{
+ "id": "r003",
+ "nom": "Steaks hachés + frites",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Comfort food",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 40,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": false,
+ "creneaux": [],
+ "legumes_amap": [
+  "pomme de terre",
+  "salade verte"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "salade"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "steak haché",
+   "qte": 6,
+   "unite": "piece",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "pomme de terre",
+   "qte": 1800,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "huile neutre",
+   "qte": 1,
+   "unite": "l",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "salade verte",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "moutarde",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "vinaigre balsamique",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Éplucher les pommes de terre, les tailler en frites, les rincer et bien les sécher dans un torchon."
+  },
+  {
+   "texte": "Première cuisson des frites dans l'huile à 160 °C, par fournées, sans les colorer.",
+   "minuteur": 360
+  },
+  {
+   "texte": "Égoutter et laisser reposer les frites.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Préparer la vinaigrette (moutarde, vinaigre, huile, sel, poivre) et laver la salade."
+  },
+  {
+   "texte": "Deuxième cuisson des frites à 180 °C jusqu'à ce qu'elles soient dorées et croustillantes, puis saler.",
+   "minuteur": 180
+  },
+  {
+   "texte": "Pendant ce temps, cuire les steaks hachés dans une poêle chaude, 2 à 3 min par face selon la cuisson voulue.",
+   "minuteur": 150
+  },
+  {
+   "texte": "Servir les steaks avec les frites et la salade."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Petite portion de frites, plus de salade."
+ },
+ "etienne": {
+  "texte": "Haricots verts sautés à la place des frites.",
+  "ajouter": [
+   {
+    "nom": "haricots verts",
+    "qte": 250,
+    "unite": "g",
+    "rayon": "fruits_legumes",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "pomme de terre",
+    "qte": 350,
+    "unite": "g"
+   }
+  ]
+ },
+ "remarque": "Etienne ne mange pas de frites (autre accompagnement)",
+ "ancien": {
+  "option_marie": "Steak Heura + frites",
+  "fois_au_menu": 4,
+  "derniere_fois": "2026-11-04"
+ },
+ "pieces_jointes": []
+}

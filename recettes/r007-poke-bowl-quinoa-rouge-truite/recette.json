@@ -1,0 +1,180 @@
+{
+ "id": "r007",
+ "nom": "Poké bowl quinoa rouge + truite fumée",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Plat complet rapide",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 25,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "rapide"
+ ],
+ "legumes_amap": [
+  "carotte",
+  "concombre",
+  "radis"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "avocat",
+  "poisson fumé",
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "quinoa",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false,
+   "note": "rouge"
+  },
+  {
+   "nom": "truite fumée",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "poissonnerie",
+   "placard": false
+  },
+  {
+   "nom": "avocat",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "concombre",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "carotte",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "radis",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "mangue",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "edamame",
+   "qte": 300,
+   "unite": "g",
+   "rayon": "surgeles",
+   "placard": false
+  },
+  {
+   "nom": "coriandre",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "citron vert",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "graines de sésame",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sauce soja sans gluten",
+   "qte": 6,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile de sésame",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "vinaigre de riz",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Rincer le quinoa et le cuire dans 2 fois son volume d'eau salée.",
+   "minuteur": 900
+  },
+  {
+   "texte": "Cuire les edamame quelques minutes dans l'eau bouillante, puis les refroidir.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Préparer la sauce : sauce soja, huile de sésame, vinaigre de riz et jus du citron vert."
+  },
+  {
+   "texte": "Râper les carottes, couper le concombre, l'avocat et la mangue en dés, émincer les radis."
+  },
+  {
+   "texte": "Effilocher la truite fumée, ciseler la coriandre."
+  },
+  {
+   "texte": "Égoutter le quinoa et le laisser tiédir avec un peu de sauce."
+  },
+  {
+   "texte": "Dresser les bols : quinoa, puis chaque garniture en tas, sésame et coriandre. Servir le reste de sauce à part."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Moitié moins de quinoa, plus de crudités et d'edamame."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Même recette sans truite (tofu, edamame)",
+  "fois_au_menu": 12,
+  "derniere_fois": "2026-11-18"
+ },
+ "pieces_jointes": []
+}

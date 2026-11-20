@@ -1,0 +1,129 @@
+{
+ "id": "r012",
+ "nom": "Pâtes carbonara",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Classique familial",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 20,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Pâtes SG"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "rapide"
+ ],
+ "legumes_amap": [],
+ "legumes_libres": [],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "spaghetti",
+   "qte": 600,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "lardons",
+   "qte": 300,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "œuf",
+   "qte": 5,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "parmesan",
+   "qte": 120,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Porter une grande casserole d'eau salée à ébullition."
+  },
+  {
+   "texte": "Dans un saladier, battre 2 œufs entiers et 3 jaunes avec le parmesan râpé et beaucoup de poivre."
+  },
+  {
+   "texte": "Faire revenir les lardons à sec dans une grande poêle jusqu'à ce qu'ils soient dorés. Couper le feu.",
+   "minuteur": 420
+  },
+  {
+   "texte": "Cuire les spaghetti al dente selon le paquet.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Prélever une louche d'eau de cuisson, égoutter les pâtes et les verser dans la poêle des lardons, hors du feu."
+  },
+  {
+   "texte": "Ajouter le mélange œufs-parmesan et un peu d'eau de cuisson, mélanger vivement pour obtenir une sauce crémeuse sans que les œufs cuisent en omelette."
+  },
+  {
+   "texte": "Servir aussitôt avec du parmesan et du poivre."
+  }
+ ],
+ "marie": {
+  "texte": "Pâtes sans gluten pour sa part, cuites dans une petite casserole à part.",
+  "ajouter": [
+   {
+    "nom": "pâtes sans gluten",
+    "qte": 100,
+    "unite": "g",
+    "rayon": "sans_gluten",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "spaghetti",
+    "qte": 120,
+    "unite": "g"
+   }
+  ],
+  "soir": "Petite portion de pâtes avec une salade verte."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Pâtes SG crème-parmesan + courgettes",
+  "fois_au_menu": 4,
+  "derniere_fois": "2026-11-11"
+ },
+ "pieces_jointes": []
+}

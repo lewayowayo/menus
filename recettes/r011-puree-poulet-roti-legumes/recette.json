@@ -1,0 +1,166 @@
+{
+ "id": "r011",
+ "nom": "Purée + poulet rôti + légumes",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Classique familial",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 60,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "genereux"
+ ],
+ "legumes_amap": [
+  "pomme de terre",
+  "carotte"
+ ],
+ "legumes_libres": [
+  "racines"
+ ],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "poulet entier",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "pomme de terre",
+   "qte": 1500,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "carotte",
+   "qte": 800,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 4,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "thym",
+   "qte": 3,
+   "unite": "brin",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "beurre",
+   "qte": 80,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "lait",
+   "qte": 300,
+   "unite": "ml",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "muscade",
+   "qte": 1,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Préchauffer le four à 200 °C. Sortir le poulet du réfrigérateur 20 min avant."
+  },
+  {
+   "texte": "Éplucher les carottes et les oignons, couper les carottes en tronçons et les oignons en quartiers."
+  },
+  {
+   "texte": "Mettre le poulet dans un grand plat, l'entourer des carottes, oignons, gousses d'ail en chemise et du thym. Arroser d'huile d'olive, saler, poivrer, frotter le poulet avec 20 g de beurre."
+  },
+  {
+   "texte": "Enfourner pour 1 h environ, en arrosant le poulet de son jus toutes les 20 min. Il est cuit quand le jus de la cuisse est clair.",
+   "minuteur": 3600
+  },
+  {
+   "texte": "Pendant ce temps, éplucher les pommes de terre, les couper en morceaux égaux et les cuire à l'eau salée.",
+   "minuteur": 1500
+  },
+  {
+   "texte": "Égoutter les pommes de terre, les écraser au presse-purée avec le reste du beurre et le lait chaud. Saler, poivrer, ajouter la muscade."
+  },
+  {
+   "texte": "Laisser reposer le poulet 10 min sous une feuille d'aluminium avant de le découper.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Servir le poulet découpé avec la purée, les légumes rôtis et le jus du plat."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Petite part de purée, plus de carottes rôties."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Purée + légumes + œuf poché",
+  "fois_au_menu": 5,
+  "derniere_fois": "2026-11-18"
+ },
+ "pieces_jointes": []
+}

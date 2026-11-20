@@ -1,0 +1,182 @@
+{
+ "id": "r033",
+ "nom": "Salade tiède lentilles vertes, potimarron rôti, feta, œufs mollets",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider",
+  "œufs mollets à confirmer"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Soupe / léger",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 35,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "leger"
+ ],
+ "legumes_amap": [
+  "potimarron",
+  "mâche"
+ ],
+ "legumes_libres": [
+  "courges",
+  "racines"
+ ],
+ "tres_frais": [
+  "salade"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "lentilles vertes",
+   "qte": 350,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "potimarron",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "feta",
+   "qte": 200,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "œuf",
+   "qte": 5,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "mâche",
+   "qte": 150,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon rouge",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "persil",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 6,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "vinaigre balsamique",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "moutarde",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "cumin",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "laurier",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Préchauffer le four à 200 °C. Couper le potimarron en cubes (sans l'éplucher), mélanger avec 2 c. à s. d'huile, le cumin, sel et poivre."
+  },
+  {
+   "texte": "Rôtir le potimarron en remuant à mi-cuisson.",
+   "minuteur": 1800
+  },
+  {
+   "texte": "Rincer les lentilles, les cuire dans 3 fois leur volume d'eau froide avec le laurier, sans saler.",
+   "minuteur": 1500
+  },
+  {
+   "texte": "Préparer la vinaigrette : moutarde, vinaigre, 4 c. à s. d'huile, sel, poivre. Émincer finement l'oignon rouge."
+  },
+  {
+   "texte": "Cuire les œufs mollets : 6 min dans l'eau bouillante, puis eau froide et écaler.",
+   "minuteur": 360
+  },
+  {
+   "texte": "Égoutter les lentilles, saler et mélanger tièdes avec la vinaigrette et l'oignon."
+  },
+  {
+   "texte": "Dresser : mâche, lentilles, potimarron, feta émiettée, persil ciselé et un œuf mollet coupé en deux par assiette."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Petite portion de lentilles, plus de potimarron et de mâche."
+ },
+ "etienne": null,
+ "remarque": "« Œufs mollets » semble barré sur la feuille, à confirmer",
+ "ancien": {
+  "option_marie": "Telle quelle, peu de lentilles",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-11-11"
+ },
+ "pieces_jointes": []
+}

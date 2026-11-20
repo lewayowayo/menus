@@ -1,0 +1,183 @@
+{
+ "id": "r015",
+ "nom": "Blanquette de poulet express",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Base initiale",
+ "categorie": "Classique familial",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 35,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": false,
+ "creneaux": [],
+ "legumes_amap": [
+  "carotte",
+  "champignon de Paris"
+ ],
+ "legumes_libres": [
+  "racines"
+ ],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "blanc de poulet",
+   "qte": 800,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "carotte",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "champignon de Paris",
+   "qte": 250,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "citron",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "thym",
+   "qte": 2,
+   "unite": "brin",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "laurier",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "bouillon de volaille",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "beurre",
+   "qte": 30,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "crème fraîche épaisse",
+   "qte": 150,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "œuf",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "maïzena",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "riz basmati",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Couper le poulet en gros cubes, les carottes en rondelles, émincer l'oignon et les champignons."
+  },
+  {
+   "texte": "Dans une cocotte, faire fondre le beurre et faire revenir le poulet et l'oignon 5 min sans trop colorer.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Ajouter les carottes, couvrir avec 60 cl d'eau, ajouter le bouillon émietté, le thym et le laurier. Cuire 15 min à frémissement.",
+   "minuteur": 900
+  },
+  {
+   "texte": "Ajouter les champignons et cuire encore 5 min. Pendant ce temps, cuire le riz.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Délayer la maïzena dans un peu d'eau froide, la verser dans la cocotte et laisser épaissir 2 min en remuant."
+  },
+  {
+   "texte": "Hors du feu, mélanger la crème, le jaune d'œuf et le jus d'un demi-citron, puis verser dans la cocotte en remuant. Ne plus faire bouillir."
+  },
+  {
+   "texte": "Rectifier l'assaisonnement et servir avec le riz."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Petite part de riz, plus de carottes et champignons."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Blanquette légumes + pois chiches",
+  "fois_au_menu": 5,
+  "derniere_fois": "2026-11-04"
+ },
+ "pieces_jointes": []
+}

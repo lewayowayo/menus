@@ -1,0 +1,159 @@
+{
+ "id": "r008",
+ "nom": "One-pot pâtes tomates-basilic",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Plat complet rapide",
+ "source": {
+  "nom": "Les tips de Cam",
+  "lien": null
+ },
+ "duree_min": 20,
+ "saisons": [
+  "ete"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Pâtes SG"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "rapide"
+ ],
+ "legumes_amap": [
+  "tomate cerise",
+  "oignon",
+  "basilic"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "spaghetti",
+   "qte": 600,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "tomate cerise",
+   "qte": 500,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 3,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "basilic",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "parmesan",
+   "qte": 80,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "bouillon de légumes",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Émincer l'oignon et l'ail, couper les tomates cerises en deux."
+  },
+  {
+   "texte": "Mettre dans une grande sauteuse les pâtes crues, les tomates, l'oignon, l'ail, la moitié du basilic, l'huile, le bouillon émietté, sel et poivre."
+  },
+  {
+   "texte": "Couvrir d'environ 1,2 l d'eau froide et porter à ébullition."
+  },
+  {
+   "texte": "Cuire à feu moyen en remuant souvent, jusqu'à ce que les pâtes soient cuites et que l'eau soit presque absorbée.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Hors du feu, ajouter le reste du basilic ciselé et le parmesan râpé."
+  },
+  {
+   "texte": "Servir aussitôt."
+  }
+ ],
+ "marie": {
+  "texte": "Sa part cuite à part en premier dans une petite casserole propre, même recette avec des pâtes sans gluten.",
+  "ajouter": [
+   {
+    "nom": "pâtes sans gluten",
+    "qte": 90,
+    "unite": "g",
+    "rayon": "sans_gluten",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "spaghetti",
+    "qte": 100,
+    "unite": "g"
+   }
+  ],
+  "soir": "Petite assiette de pâtes avec une salade de tomates."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Pâtes SG même recette",
+  "fois_au_menu": 7,
+  "derniere_fois": "2026-09-02"
+ },
+ "pieces_jointes": []
+}

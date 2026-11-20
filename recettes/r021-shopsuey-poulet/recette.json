@@ -1,0 +1,175 @@
+{
+ "id": "r021",
+ "nom": "Shopsuey poulet",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Base initiale",
+ "categorie": "Recette du monde",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 30,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui (soja SG)"
+ },
+ "vegetarien": false,
+ "creneaux": [],
+ "legumes_amap": [
+  "carotte",
+  "poivron rouge",
+  "chou chinois",
+  "oignon",
+  "champignon de Paris"
+ ],
+ "legumes_libres": [
+  "choux"
+ ],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "blanc de poulet",
+   "qte": 700,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "riz basmati",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "carotte",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "poivron rouge",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "chou chinois",
+   "qte": 0.5,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "champignon de Paris",
+   "qte": 250,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 2,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "gingembre",
+   "qte": 20,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "sauce soja sans gluten",
+   "qte": 5,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "maïzena",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile neutre",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Rincer le riz et le cuire dans 1,5 fois son volume d'eau salée, à couvert.",
+   "minuteur": 720
+  },
+  {
+   "texte": "Couper le poulet en lamelles. Le mélanger avec 2 c. à s. de sauce soja et la maïzena."
+  },
+  {
+   "texte": "Émincer l'oignon, les carottes en bâtonnets, le poivron en lanières, le chou chinois en tronçons et les champignons en lamelles. Râper l'ail et le gingembre."
+  },
+  {
+   "texte": "Faire sauter le poulet à feu vif dans 1 c. à s. d'huile jusqu'à ce qu'il soit doré, puis le réserver.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Dans le même wok, faire sauter l'oignon, les carottes et le poivron avec le reste d'huile.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Ajouter les champignons, l'ail, le gingembre puis le chou chinois, et cuire en remuant : les légumes doivent rester croquants.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Remettre le poulet, ajouter le reste de sauce soja et 5 cl d'eau, mélanger 1 minute pour napper. Poivrer."
+  },
+  {
+   "texte": "Servir avec le riz."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Petite portion de riz, plus de légumes."
+ },
+ "etienne": null,
+ "remarque": "Billie a barré son B",
+ "ancien": {
+  "option_marie": "Shopsuey tofu",
+  "fois_au_menu": 3,
+  "derniere_fois": "2026-11-18"
+ },
+ "pieces_jointes": []
+}

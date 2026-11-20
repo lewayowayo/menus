@@ -1,0 +1,171 @@
+{
+ "id": "r025",
+ "nom": "Wok poulet, chou chinois, carottes, riz",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Recette du monde",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 25,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui (soja SG)"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "rapide"
+ ],
+ "legumes_amap": [
+  "chou chinois",
+  "carotte",
+  "oignon"
+ ],
+ "legumes_libres": [
+  "choux",
+  "feuilles"
+ ],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "blanc de poulet",
+   "qte": 700,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "riz basmati",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "chou chinois",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "carotte",
+   "qte": 4,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 2,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "gingembre",
+   "qte": 20,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "coriandre",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "sauce soja sans gluten",
+   "qte": 5,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile de sésame",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile neutre",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "maïzena",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Rincer le riz et le cuire dans 1,5 fois son volume d'eau salée, à couvert.",
+   "minuteur": 720
+  },
+  {
+   "texte": "Couper le poulet en lamelles et le mélanger avec 2 c. à s. de sauce soja et la maïzena."
+  },
+  {
+   "texte": "Couper les carottes en fins bâtonnets, le chou chinois en lanières, émincer l'oignon. Râper l'ail et le gingembre."
+  },
+  {
+   "texte": "Saisir le poulet à feu vif dans 1 c. à s. d'huile neutre, puis le réserver.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Faire sauter l'oignon et les carottes dans le reste d'huile.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Ajouter l'ail, le gingembre et le chou chinois, et sauter à feu vif.",
+   "minuteur": 180
+  },
+  {
+   "texte": "Remettre le poulet, ajouter le reste de sauce soja et l'huile de sésame, mélanger 1 minute."
+  },
+  {
+   "texte": "Servir sur le riz avec la coriandre ciselée."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Peu de riz, double portion de légumes."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Tofu fumé, peu de riz",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-10-14"
+ },
+ "pieces_jointes": []
+}

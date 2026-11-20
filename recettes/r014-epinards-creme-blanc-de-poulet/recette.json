@@ -1,0 +1,157 @@
+{
+ "id": "r014",
+ "nom": "Épinards crème + blanc de poulet",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Base initiale",
+ "categorie": "Classique familial",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 30,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": false,
+ "creneaux": [],
+ "legumes_amap": [
+  "épinards"
+ ],
+ "legumes_libres": [
+  "feuilles"
+ ],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "blanc de poulet",
+   "qte": 750,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "épinards",
+   "qte": 1000,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "échalote",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 2,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "crème fraîche épaisse",
+   "qte": 200,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "beurre",
+   "qte": 20,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "riz basmati",
+   "qte": 350,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "muscade",
+   "qte": 1,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Cuire le riz selon le paquet.",
+   "minuteur": 720
+  },
+  {
+   "texte": "Laver et équeuter les épinards. Émincer les échalotes et l'ail."
+  },
+  {
+   "texte": "Couper les blancs de poulet en aiguillettes, saler, poivrer."
+  },
+  {
+   "texte": "Dorer le poulet dans l'huile d'olive 6 à 8 min à feu vif en remuant. Réserver.",
+   "minuteur": 420
+  },
+  {
+   "texte": "Dans la même sauteuse, faire fondre le beurre et suer échalotes et ail 2 min."
+  },
+  {
+   "texte": "Ajouter les épinards par poignées et les laisser tomber 4 à 5 min.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Ajouter la crème, la muscade, saler, poivrer, puis remettre le poulet et réchauffer 2 min."
+  },
+  {
+   "texte": "Servir avec le riz."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Très peu de riz, plus d'épinards."
+ },
+ "etienne": null,
+ "remarque": "Deux « E » sur la feuille : compté pour Emma",
+ "ancien": {
+  "option_marie": "Épinards crème + œuf poché",
+  "fois_au_menu": 4,
+  "derniere_fois": "2026-11-18"
+ },
+ "pieces_jointes": []
+}

@@ -1,0 +1,140 @@
+{
+ "id": "r004",
+ "nom": "Croque-monsieur classique",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Comfort food",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 15,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Pain SG"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "rapide",
+  "midi_simple"
+ ],
+ "legumes_amap": [
+  "salade verte"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "salade"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "pain de mie",
+   "qte": 20,
+   "unite": "tranche",
+   "rayon": "boulangerie",
+   "placard": false
+  },
+  {
+   "nom": "jambon blanc",
+   "qte": 10,
+   "unite": "tranche",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "emmental râpé",
+   "qte": 200,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "crème fraîche épaisse",
+   "qte": 150,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "beurre",
+   "qte": 60,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "salade verte",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Préchauffer le four à 200 °C."
+  },
+  {
+   "texte": "Beurrer légèrement les tranches de pain de mie sur une face."
+  },
+  {
+   "texte": "Sur 10 tranches (face beurrée dessous), étaler un peu de crème, poser une tranche de jambon et un peu d'emmental."
+  },
+  {
+   "texte": "Refermer avec les 10 autres tranches, face beurrée dessus."
+  },
+  {
+   "texte": "Napper le dessus d'un peu de crème, parsemer du reste d'emmental et poivrer."
+  },
+  {
+   "texte": "Enfourner jusqu'à ce que le dessus soit doré.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Servir avec la salade assaisonnée."
+  }
+ ],
+ "marie": {
+  "texte": "Ses croques en pain de mie sans gluten, montés en premier et cuits sur une feuille de papier cuisson à part.",
+  "ajouter": [
+   {
+    "nom": "pain de mie sans gluten",
+    "qte": 4,
+    "unite": "tranche",
+    "rayon": "sans_gluten",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "pain de mie",
+    "qte": 4,
+    "unite": "tranche"
+   }
+  ],
+  "soir": "Un seul croque, avec une grande salade."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Croque SG fromage-épinards",
+  "fois_au_menu": 5,
+  "derniere_fois": "2026-11-04"
+ },
+ "pieces_jointes": []
+}

@@ -1,0 +1,186 @@
+{
+ "id": "r036",
+ "nom": "Chili con carne express, riz",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Recette du monde",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 35,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui (riz)"
+ },
+ "vegetarien": false,
+ "creneaux": [],
+ "legumes_amap": [
+  "poivron rouge",
+  "oignon"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "bœuf haché",
+   "qte": 700,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "haricots rouges (boîte)",
+   "qte": 2,
+   "unite": "boite",
+   "rayon": "epicerie",
+   "placard": false,
+   "note": "boîtes de 400 g"
+  },
+  {
+   "nom": "tomate concassée",
+   "qte": 2,
+   "unite": "boite",
+   "rayon": "epicerie",
+   "placard": false,
+   "note": "boîtes de 400 g"
+  },
+  {
+   "nom": "concentré de tomate",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "oignon",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 3,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "poivron rouge",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "cumin",
+   "qte": 2,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "paprika",
+   "qte": 2,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "piment",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "riz basmati",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "coriandre",
+   "qte": 0.5,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "crème fraîche épaisse",
+   "qte": 150,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Émincer les oignons, l'ail et couper les poivrons en dés."
+  },
+  {
+   "texte": "Faire revenir oignons et poivrons dans l'huile, puis l'ail.",
+   "minuteur": 480
+  },
+  {
+   "texte": "Ajouter le bœuf haché et le faire dorer en l'émiettant.",
+   "minuteur": 480
+  },
+  {
+   "texte": "Ajouter cumin, paprika, piment, concentré et tomates concassées. Saler, couvrir et laisser mijoter.",
+   "minuteur": 900
+  },
+  {
+   "texte": "Pendant ce temps, cuire le riz.",
+   "minuteur": 660
+  },
+  {
+   "texte": "Ajouter les haricots rouges rincés et égouttés, mijoter encore à découvert.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Servir avec le riz, une cuillère de crème et la coriandre ciselée. Piment à part pour les enfants."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Sans riz, chili seul avec un peu de crème."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Chili sin carne, sans riz",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-11-18"
+ },
+ "pieces_jointes": []
+}

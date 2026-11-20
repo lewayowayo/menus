@@ -1,0 +1,174 @@
+{
+ "id": "r041",
+ "nom": "Quiche d'automne butternut, épinards, feta (pâte sans gluten aux amandes)",
+ "statut": "a_tester",
+ "redaction": "source",
+ "a_completer": [
+  "quantités de la source pour UNE quiche : à confirmer pour 5 (doubler, ou servir avec une grosse salade)",
+  "taille du moule non précisée",
+  "lien Instagram à ajouter"
+ ],
+ "choisie_par": "Etienne",
+ "origine": "Capture Instagram du 18/11/2026",
+ "categorie": "Classique familial",
+ "source": {
+  "nom": "Instagram @amandaabagima_nutrition",
+  "lien": null
+ },
+ "duree_min": 70,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Fond de tarte poudre d'amandes, farine de coco, psyllium"
+ },
+ "vegetarien": true,
+ "creneaux": [],
+ "legumes_amap": [
+  "butternut",
+  "épinards"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "amande en poudre",
+   "qte": 100,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "graines de sésame",
+   "qte": 4,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "farine de coco",
+   "qte": 4,
+   "unite": "cas",
+   "rayon": "sans_gluten",
+   "placard": false
+  },
+  {
+   "nom": "psyllium blond",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "levure chimique",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 4,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "œuf",
+   "qte": 5,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "butternut",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "zaatar",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "épinards",
+   "qte": 50,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "feta",
+   "qte": 100,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "noix de pécan",
+   "qte": 30,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "crème de coco",
+   "qte": 200,
+   "unite": "ml",
+   "rayon": "epicerie",
+   "placard": false
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Rôtir 300 à 400 g de butternut en morceaux, 30 minutes à 180 °C.",
+   "minuteur": 1800
+  },
+  {
+   "texte": "Fond de tarte : mélanger 100 g de poudre d'amandes, 4 c. à s. de graines de sésame, 4 c. à s. de farine de coco, 1 c. à s. de psyllium blond, 1 c. à c. de levure chimique, ½ c. à c. de sel, 3 c. à s. d'huile d'olive, 1 œuf et 4 c. à s. d'eau. Étaler dans le moule."
+  },
+  {
+   "texte": "Précuire le fond de tarte 10 minutes à 180 °C.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Garniture : assaisonner la butternut rôtie avec 1 c. à s. d'huile d'olive, 1 c. à c. de zaatar et du sel. Ajouter une bonne poignée d'épinards frais (environ 50 g), 100 g de feta et 30 g de noix de pécan."
+  },
+  {
+   "texte": "Battre 4 œufs avec 200 ml de crème de coco."
+  },
+  {
+   "texte": "Garnir le fond de tarte, verser l'appareil et cuire 20 minutes de plus à 180 °C.",
+   "minuteur": 1200
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter : la pâte est sans gluten.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": null
+ },
+ "etienne": null,
+ "remarque": "Transcrite telle quelle depuis la capture. L'ordre exact du montage (butternut, épinards, feta, noix) n'est pas précisé par la source.",
+ "ancien": null,
+ "pieces_jointes": [
+  {
+   "fichier": "capture-instagram.jpg",
+   "legende": "Capture Instagram, la recette en légende"
+  }
+ ]
+}

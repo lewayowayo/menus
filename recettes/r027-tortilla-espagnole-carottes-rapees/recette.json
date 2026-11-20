@@ -1,0 +1,155 @@
+{
+ "id": "r027",
+ "nom": "Tortilla espagnole + carottes râpées",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Plat complet rapide",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 30,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "leger",
+  "midi_simple"
+ ],
+ "legumes_amap": [
+  "pomme de terre",
+  "oignon",
+  "carotte"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "pomme de terre",
+   "qte": 1000,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "œuf",
+   "qte": 10,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "carotte",
+   "qte": 600,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "citron",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "persil",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 150,
+   "unite": "ml",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "moutarde",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Éplucher les pommes de terre et les couper en fines lamelles. Émincer les oignons."
+  },
+  {
+   "texte": "Cuire pommes de terre et oignons à feu doux dans 10 cl d'huile, à couvert, en remuant de temps en temps : ils doivent être fondants, pas frits.",
+   "minuteur": 1200
+  },
+  {
+   "texte": "Battre les œufs avec du sel et du poivre. Égoutter pommes de terre et oignons, les mélanger aux œufs et laisser reposer 5 minutes.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Chauffer 1 c. à s. d'huile dans la poêle, verser le mélange et cuire à feu doux.",
+   "minuteur": 480
+  },
+  {
+   "texte": "Retourner la tortilla à l'aide d'une assiette et cuire l'autre face.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Râper les carottes. Vinaigrette : jus de citron, moutarde, 3 c. à s. d'huile, sel, poivre."
+  },
+  {
+   "texte": "Mélanger les carottes avec la vinaigrette et le persil ciselé."
+  },
+  {
+   "texte": "Servir la tortilla tiède ou froide avec les carottes râpées."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Petite part de tortilla, grosse part de carottes râpées."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Telle quelle",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-10-14"
+ },
+ "pieces_jointes": []
+}

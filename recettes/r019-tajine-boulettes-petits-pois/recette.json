@@ -1,0 +1,203 @@
+{
+ "id": "r019",
+ "nom": "Tajine boulettes-petits pois",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Base initiale",
+ "categorie": "Recette du monde",
+ "source": {
+  "nom": "Louloukitchen",
+  "lien": null
+ },
+ "duree_min": 40,
+ "saisons": [
+  "printemps"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": false,
+ "creneaux": [],
+ "legumes_amap": [
+  "petits pois"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "bœuf haché",
+   "qte": 600,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "œuf",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 3,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "persil",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "coriandre",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "petits pois",
+   "qte": 600,
+   "unite": "g",
+   "rayon": "surgeles",
+   "placard": false
+  },
+  {
+   "nom": "tomate concassée",
+   "qte": 1,
+   "unite": "boite",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "cumin",
+   "qte": 2,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "paprika",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "ras el hanout",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "cannelle",
+   "qte": 1,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "semoule",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Hacher les herbes, un oignon et l'ail."
+  },
+  {
+   "texte": "Mélanger le bœuf haché avec l'œuf, la moitié des herbes, l'oignon haché, la moitié de l'ail, le cumin, la cannelle, sel et poivre. Former des boulettes de la taille d'une noix."
+  },
+  {
+   "texte": "Dorer les boulettes dans l'huile d'olive au fond d'un tajine ou d'une cocotte. Réserver.",
+   "minuteur": 420
+  },
+  {
+   "texte": "Émincer le second oignon et le faire fondre avec le reste de l'ail, le paprika et le ras el hanout.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Ajouter la tomate concassée et 20 cl d'eau, puis les petits pois et les boulettes. Couvrir et mijoter 20 min.",
+   "minuteur": 1200
+  },
+  {
+   "texte": "Préparer la semoule : la couvrir du même volume d'eau bouillante salée avec un filet d'huile, couvrir 5 min puis égrainer.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Parsemer le tajine du reste des herbes et servir avec la semoule."
+  }
+ ],
+ "marie": {
+  "texte": "Quinoa à la place de la semoule pour sa part.",
+  "ajouter": [
+   {
+    "nom": "quinoa",
+    "qte": 70,
+    "unite": "g",
+    "rayon": "feculents",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "semoule",
+    "qte": 80,
+    "unite": "g"
+   }
+  ],
+  "soir": "Très peu de quinoa, plus de petits pois."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Boulettes végétales pois chiches",
+  "fois_au_menu": 7,
+  "derniere_fois": "2026-06-10"
+ },
+ "pieces_jointes": []
+}

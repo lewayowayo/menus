@@ -1,0 +1,137 @@
+{
+ "id": "r035",
+ "nom": "Riz sauté aux restes + œufs au plat",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Plat complet rapide",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 15,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui (soja SG)"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "midi_simple",
+  "rapide"
+ ],
+ "legumes_amap": [],
+ "legumes_libres": [
+  "racines",
+  "choux",
+  "feuilles"
+ ],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "riz basmati",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false,
+   "note": "ou reste de riz cuit de la veille"
+  },
+  {
+   "nom": "œuf",
+   "qte": 5,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 2,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "petits pois",
+   "qte": 200,
+   "unite": "g",
+   "rayon": "surgeles",
+   "placard": false
+  },
+  {
+   "nom": "sauce soja sans gluten",
+   "qte": 4,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile neutre",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "ciboulette",
+   "qte": 0.5,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Utiliser idéalement du riz cuit la veille (sinon cuire le riz et le laisser refroidir étalé)."
+  },
+  {
+   "texte": "Rassembler les restes du frigo : légumes cuits, poulet, jambon… et les couper en petits morceaux."
+  },
+  {
+   "texte": "Faire revenir l'oignon émincé et l'ail dans l'huile au wok, à feu vif.",
+   "minuteur": 180
+  },
+  {
+   "texte": "Ajouter les restes et les petits pois, faire sauter.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Ajouter le riz, bien séparer les grains et faire sauter jusqu'à ce qu'il soit chaud et légèrement doré, puis arroser de sauce soja.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Pendant ce temps, cuire les œufs au plat dans une poêle.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Servir le riz avec un œuf au plat par personne et la ciboulette ciselée."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter (sauce soja sans gluten).",
+  "ajouter": [],
+  "retirer": [],
+  "soir": null
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "(servi le midi)",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-11-11"
+ },
+ "pieces_jointes": []
+}

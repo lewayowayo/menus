@@ -1,0 +1,163 @@
+{
+ "id": "r006",
+ "nom": "Pizza maison",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Comfort food",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 45,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Pâte SG / petit épeautre"
+ },
+ "vegetarien": false,
+ "creneaux": [],
+ "legumes_amap": [
+  "champignon de Paris",
+  "salade verte"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "salade"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "pâte à pizza",
+   "qte": 4,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "coulis de tomate",
+   "qte": 500,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "mozzarella",
+   "qte": 375,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "jambon blanc",
+   "qte": 4,
+   "unite": "tranche",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "champignon de Paris",
+   "qte": 250,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "olive noire",
+   "qte": 100,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "herbes de Provence",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "salade verte",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Préchauffer le four à 240 °C."
+  },
+  {
+   "texte": "Émincer les champignons, couper le jambon et la mozzarella en morceaux."
+  },
+  {
+   "texte": "Dérouler les pâtes sur des plaques, les étaler de coulis de tomate assaisonné d'herbes de Provence, sel et poivre."
+  },
+  {
+   "texte": "Répartir le jambon, les champignons, la mozzarella et les olives. Arroser d'un filet d'huile."
+  },
+  {
+   "texte": "Enfourner jusqu'à ce que la pâte soit dorée et le fromage gratiné.",
+   "minuteur": 720
+  },
+  {
+   "texte": "Servir avec la salade assaisonnée."
+  }
+ ],
+ "marie": {
+  "texte": "Sa pizza sur une pâte sans gluten, garnie en premier sur une plaque à part.",
+  "ajouter": [
+   {
+    "nom": "pâte à pizza sans gluten",
+    "qte": 1,
+    "unite": "piece",
+    "rayon": "sans_gluten",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "pâte à pizza",
+    "qte": 1,
+    "unite": "piece"
+   }
+  ],
+  "soir": "Une part de pizza bien garnie, avec une grande salade."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Pizza légumes-chèvre pâte épeautre",
+  "fois_au_menu": 5,
+  "derniere_fois": "2026-11-11"
+ },
+ "pieces_jointes": []
+}

@@ -1,0 +1,181 @@
+{
+ "id": "r013",
+ "nom": "Lasagnes truite-épinards",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Classique familial",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 60,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Plaques SG"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "genereux"
+ ],
+ "legumes_amap": [
+  "épinards"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "poisson"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "plaques de lasagne sans gluten",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "sans_gluten",
+   "placard": false
+  },
+  {
+   "nom": "filet de truite",
+   "qte": 600,
+   "unite": "g",
+   "rayon": "poissonnerie",
+   "placard": false
+  },
+  {
+   "nom": "épinards",
+   "qte": 800,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ricotta",
+   "qte": 250,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 2,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "citron",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "beurre",
+   "qte": 50,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "maïzena",
+   "qte": 45,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "lait",
+   "qte": 800,
+   "unite": "ml",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "emmental râpé",
+   "qte": 100,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "muscade",
+   "qte": 1,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Préchauffer le four à 180 °C."
+  },
+  {
+   "texte": "Laver les épinards et les faire tomber 3 à 4 min dans une grande sauteuse avec l'huile et l'ail émincé. Égoutter en pressant bien.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Retirer la peau de la truite et la couper en dés. Arroser d'un filet de jus de citron, saler, poivrer."
+  },
+  {
+   "texte": "Béchamel : délayer la maïzena dans un peu de lait froid. Faire chauffer le reste du lait avec le beurre, ajouter la maïzena et fouetter sur feu moyen jusqu'à épaississement. Saler, poivrer, muscader.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Mélanger les épinards avec la ricotta."
+  },
+  {
+   "texte": "Dans un grand plat beurré : un peu de béchamel, des plaques, épinards-ricotta, truite, béchamel. Recommencer et finir par plaques et béchamel."
+  },
+  {
+   "texte": "Parsemer d'emmental et cuire 35 à 40 min, jusqu'à ce que le dessus soit doré.",
+   "minuteur": 2400
+  },
+  {
+   "texte": "Laisser reposer 5 min avant de servir.",
+   "minuteur": 300
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter : plaques sans gluten et béchamel à la maïzena pour tout le monde.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Une part moyenne avec une salade verte."
+ },
+ "etienne": null,
+ "remarque": "Truite à la place du saumon",
+ "ancien": {
+  "option_marie": "Lasagnes SG épinards-ricotta",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-11-11"
+ },
+ "pieces_jointes": []
+}

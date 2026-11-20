@@ -1,0 +1,171 @@
+{
+ "id": "r005",
+ "nom": "Wraps poulet-avocat",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Comfort food",
+ "source": {
+  "nom": "Les tips de Cam",
+  "lien": null
+ },
+ "duree_min": 20,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Tortillas maïs"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "rapide"
+ ],
+ "legumes_amap": [
+  "tomate",
+  "salade verte"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "avocat",
+  "salade",
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "blanc de poulet",
+   "qte": 700,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "tortilla de maïs",
+   "qte": 15,
+   "unite": "piece",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "avocat",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "tomate",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "salade verte",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "citron vert",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "coriandre",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "yaourt nature",
+   "qte": 200,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "paprika",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "cumin",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Couper les blancs de poulet en lanières, les mélanger avec le paprika, le cumin, 1 c. à s. d'huile, sel et poivre."
+  },
+  {
+   "texte": "Cuire le poulet dans une poêle chaude jusqu'à ce qu'il soit doré et cuit à cœur.",
+   "minuteur": 480
+  },
+  {
+   "texte": "Écraser les avocats avec le jus du citron vert, saler."
+  },
+  {
+   "texte": "Couper les tomates en dés, émincer la salade, ciseler la coriandre."
+  },
+  {
+   "texte": "Mélanger le yaourt avec un peu de sel, de poivre et de coriandre pour la sauce."
+  },
+  {
+   "texte": "Réchauffer les tortillas quelques secondes à la poêle.",
+   "minuteur": 30
+  },
+  {
+   "texte": "Garnir chaque tortilla d'avocat, de poulet, de crudités et de sauce, puis rouler."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter (vérifier que les tortillas de maïs sont bien 100 % maïs).",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Deux wraps, plus de crudités et d'avocat."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Wrap houmous-avocat-crudités",
+  "fois_au_menu": 7,
+  "derniere_fois": "2026-10-28"
+ },
+ "pieces_jointes": []
+}

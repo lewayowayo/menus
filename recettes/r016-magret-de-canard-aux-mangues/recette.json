@@ -1,0 +1,142 @@
+{
+ "id": "r016",
+ "nom": "Magret de canard aux mangues",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Classique familial",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 35,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "genereux"
+ ],
+ "legumes_amap": [],
+ "legumes_libres": [],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "magret de canard",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "mangue",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "gingembre",
+   "qte": 20,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "miel",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "vinaigre balsamique",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sauce soja sans gluten",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "riz basmati",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Sortir les magrets 20 min avant. Quadriller la peau au couteau sans entailler la chair."
+  },
+  {
+   "texte": "Cuire le riz selon le paquet.",
+   "minuteur": 720
+  },
+  {
+   "texte": "Éplucher les mangues et les couper en lamelles. Râper le gingembre."
+  },
+  {
+   "texte": "Cuire les magrets côté peau dans une poêle froide puis à feu moyen 8 à 10 min, en retirant la graisse au fur et à mesure.",
+   "minuteur": 540
+  },
+  {
+   "texte": "Retourner et cuire 3 à 4 min côté chair pour une cuisson rosée.",
+   "minuteur": 210
+  },
+  {
+   "texte": "Laisser reposer les magrets 5 min sous aluminium.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Vider la poêle en gardant 1 c. à s. de graisse, ajouter miel, vinaigre, soja et gingembre, puis les mangues. Faire caraméliser 3 min.",
+   "minuteur": 180
+  },
+  {
+   "texte": "Trancher les magrets, napper de sauce aux mangues et servir avec le riz."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Peu de riz, plus de mangues et une salade verte."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Tofu grillé sauce mangue",
+  "fois_au_menu": 6,
+  "derniere_fois": "2026-10-28"
+ },
+ "pieces_jointes": []
+}

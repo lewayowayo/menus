@@ -1,0 +1,193 @@
+{
+ "id": "r010",
+ "nom": "Fajitas végétariennes",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Base initiale",
+ "categorie": "Plat complet rapide",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 25,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Tortillas maïs"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "rapide"
+ ],
+ "legumes_amap": [
+  "poivron rouge",
+  "poivron vert",
+  "oignon"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "avocat",
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "tortilla de maïs",
+   "qte": 15,
+   "unite": "piece",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "poivron rouge",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "poivron vert",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "haricots rouges (boîte)",
+   "qte": 2,
+   "unite": "boite",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "maïs (boîte)",
+   "qte": 1,
+   "unite": "boite",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "avocat",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "citron vert",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "coriandre",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "crème fraîche épaisse",
+   "qte": 200,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "cheddar",
+   "qte": 150,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "cumin",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "paprika",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "piment",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Émincer les poivrons et les oignons en lanières. Rincer et égoutter les haricots rouges et le maïs."
+  },
+  {
+   "texte": "Faire revenir poivrons et oignons dans l'huile à feu vif.",
+   "minuteur": 480
+  },
+  {
+   "texte": "Ajouter les haricots, le maïs, le cumin, le paprika, le piment et le sel. Cuire encore quelques minutes.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Écraser les avocats avec le jus d'un citron vert et du sel."
+  },
+  {
+   "texte": "Râper le cheddar, ciseler la coriandre, couper l'autre citron en quartiers."
+  },
+  {
+   "texte": "Réchauffer les tortillas quelques secondes à la poêle.",
+   "minuteur": 30
+  },
+  {
+   "texte": "Chacun garnit ses tortillas : légumes, avocat, crème, cheddar, coriandre."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter (vérifier que les tortillas de maïs sont bien 100 % maïs).",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Deux fajitas, plus de légumes et d'avocat."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Parfaites (déjà végétarien)",
+  "fois_au_menu": 7,
+  "derniere_fois": "2026-11-04"
+ },
+ "pieces_jointes": []
+}

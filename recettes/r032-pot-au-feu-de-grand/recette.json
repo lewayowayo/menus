@@ -1,0 +1,205 @@
+{
+ "id": "r032",
+ "nom": "Pot-au-feu de grand-mère",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Hors base, apportée par la famille",
+ "categorie": "Classique familial",
+ "source": {
+  "nom": "La petite cuisine de Nat",
+  "lien": null
+ },
+ "duree_min": 150,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "genereux"
+ ],
+ "legumes_amap": [
+  "carotte",
+  "poireau",
+  "navet",
+  "pomme de terre",
+  "céleri-rave",
+  "chou blanc"
+ ],
+ "legumes_libres": [
+  "racines",
+  "choux"
+ ],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "paleron de bœuf",
+   "qte": 1,
+   "unite": "kg",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "jarret de bœuf",
+   "qte": 600,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "os à moelle",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "carotte",
+   "qte": 8,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "poireau",
+   "qte": 4,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "navet",
+   "qte": 4,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "pomme de terre",
+   "qte": 1,
+   "unite": "kg",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "céleri-rave",
+   "qte": 0.5,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "chou blanc",
+   "qte": 0.5,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "clou de girofle",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "laurier",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "thym",
+   "qte": 4,
+   "unite": "brin",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "moutarde",
+   "qte": null,
+   "unite": "pot",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "cornichon",
+   "qte": null,
+   "unite": "pot",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Mettre les viandes dans une grande cocotte, couvrir d'eau froide, porter à ébullition et écumer.",
+   "minuteur": 900
+  },
+  {
+   "texte": "Ajouter les oignons piqués des clous de girofle, le laurier, le thym, sel et poivre. Laisser frémir à couvert.",
+   "minuteur": 5400
+  },
+  {
+   "texte": "Pendant ce temps, éplucher carottes, navets, céleri, pommes de terre ; nettoyer les poireaux et les ficeler ; couper le chou en quartiers."
+  },
+  {
+   "texte": "Ajouter carottes, poireaux, navets et céleri dans la cocotte.",
+   "minuteur": 1800
+  },
+  {
+   "texte": "Ajouter le chou, les pommes de terre et les os à moelle (bouts salés).",
+   "minuteur": 1800
+  },
+  {
+   "texte": "Vérifier la cuisson des légumes à la pointe du couteau."
+  },
+  {
+   "texte": "Servir la viande tranchée avec les légumes, un bol de bouillon, moutarde, cornichons et gros sel."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Pas de pommes de terre, plus de légumes et de bouillon."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Légumes au bouillon de légumes + œuf mollet",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-11-04"
+ },
+ "pieces_jointes": []
+}

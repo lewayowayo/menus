@@ -1,0 +1,162 @@
+{
+ "id": "r009",
+ "nom": "Tarte tomate-moutarde-stracciatella",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Plat complet rapide",
+ "source": {
+  "nom": "Louloukitchen",
+  "lien": null
+ },
+ "duree_min": 40,
+ "saisons": [
+  "ete"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Pâte SG possible"
+ },
+ "vegetarien": true,
+ "creneaux": [],
+ "legumes_amap": [
+  "tomate",
+  "basilic",
+  "salade verte"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "herbes fraîches",
+  "salade"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "pâte brisée",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "tomate",
+   "qte": 1200,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "moutarde",
+   "qte": 4,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "stracciatella",
+   "qte": 250,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "basilic",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "herbes de Provence",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "salade verte",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Préchauffer le four à 200 °C."
+  },
+  {
+   "texte": "Couper les tomates en rondelles, les saler et les laisser dégorger sur du papier absorbant.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Foncer deux moules avec les pâtes, piquer le fond et étaler la moutarde."
+  },
+  {
+   "texte": "Disposer les tomates en rosace, ajouter les herbes de Provence, poivrer et arroser d'un filet d'huile."
+  },
+  {
+   "texte": "Enfourner jusqu'à ce que la pâte soit dorée.",
+   "minuteur": 1800
+  },
+  {
+   "texte": "À la sortie du four, laisser tiédir puis répartir la stracciatella et le basilic."
+  },
+  {
+   "texte": "Servir avec la salade."
+  }
+ ],
+ "marie": {
+  "texte": "Une des deux tartes faite avec une pâte brisée sans gluten (toute la famille peut en manger), montée en premier.",
+  "ajouter": [
+   {
+    "nom": "pâte brisée sans gluten",
+    "qte": 1,
+    "unite": "piece",
+    "rayon": "sans_gluten",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "pâte brisée",
+    "qte": 1,
+    "unite": "piece"
+   }
+  ],
+  "soir": "Une part de tarte et une grande salade."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Parfaite (végétarienne)",
+  "fois_au_menu": 4,
+  "derniere_fois": "2026-07-01"
+ },
+ "pieces_jointes": []
+}

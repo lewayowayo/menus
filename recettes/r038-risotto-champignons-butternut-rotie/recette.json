@@ -1,0 +1,172 @@
+{
+ "id": "r038",
+ "nom": "Risotto champignons-butternut rôtie",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Plat complet rapide",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 40,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": true,
+ "creneaux": [],
+ "legumes_amap": [
+  "butternut",
+  "champignon de Paris"
+ ],
+ "legumes_libres": [
+  "courges"
+ ],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "riz arborio",
+   "qte": 450,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "butternut",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "champignon de Paris",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 2,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "vin blanc sec",
+   "qte": 10,
+   "unite": "cl",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "bouillon de légumes",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "epicerie",
+   "placard": true,
+   "note": "cubes, pour 1,5 l"
+  },
+  {
+   "nom": "parmesan",
+   "qte": 100,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "beurre",
+   "qte": 40,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 4,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "thym",
+   "qte": 2,
+   "unite": "brin",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Préchauffer le four à 200 °C. Éplucher et couper la butternut en cubes, mélanger avec 2 c. à s. d'huile, thym, sel, poivre, et rôtir.",
+   "minuteur": 1800
+  },
+  {
+   "texte": "Préparer 1,5 l de bouillon chaud et le garder frémissant."
+  },
+  {
+   "texte": "Faire sauter les champignons émincés à la poêle, réserver.",
+   "minuteur": 480
+  },
+  {
+   "texte": "Dans une sauteuse, faire revenir l'oignon et l'ail émincés dans l'huile, ajouter le riz et le nacrer 2 min.",
+   "minuteur": 180
+  },
+  {
+   "texte": "Déglacer au vin blanc, puis ajouter le bouillon louche par louche en remuant, chaque louche absorbée avant la suivante.",
+   "minuteur": 1080
+  },
+  {
+   "texte": "Hors du feu, incorporer le beurre, le parmesan râpé et les champignons. Couvrir 2 min.",
+   "minuteur": 120
+  },
+  {
+   "texte": "Servir garni de butternut rôtie. Garder les restes : ils font les galettes de risotto (r039)."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter (vérifier que le bouillon cube est sans gluten).",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Petite portion de risotto, plus de butternut rôtie."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Petite portion + butternut rôtie",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-11-18"
+ },
+ "pieces_jointes": []
+}

@@ -1,0 +1,136 @@
+{
+ "id": "r039",
+ "nom": "Galettes de risotto poêlées + omelette au fromage",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Plat complet rapide",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 20,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "midi_simple",
+  "rapide"
+ ],
+ "legumes_amap": [],
+ "legumes_libres": [],
+ "tres_frais": [
+  "salade"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "œuf",
+   "qte": 8,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "emmental râpé",
+   "qte": 100,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "parmesan",
+   "qte": 30,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "maïzena",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "beurre",
+   "qte": 20,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "salade verte",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Utiliser les restes de risotto froid (environ 600 g, par exemple ceux du risotto champignons-butternut r038)."
+  },
+  {
+   "texte": "Mélanger le risotto avec 2 œufs, la maïzena et le parmesan ; former des galettes de 2 cm d'épaisseur."
+  },
+  {
+   "texte": "Les dorer dans l'huile chaude à la poêle, 4 min par face sans les bouger.",
+   "minuteur": 480
+  },
+  {
+   "texte": "Battre les 6 œufs restants avec sel et poivre."
+  },
+  {
+   "texte": "Cuire l'omelette au beurre à feu moyen, ajouter l'emmental, plier.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Servir galettes et omelette avec la salade verte."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter (maïzena à la place de la farine).",
+  "ajouter": [],
+  "retirer": [],
+  "soir": null
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "(servi le midi)",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-11-18"
+ },
+ "pieces_jointes": []
+}

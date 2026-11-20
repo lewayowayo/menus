@@ -1,0 +1,163 @@
+{
+ "id": "r017",
+ "nom": "Cari poulet réunionnais",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Recette du monde",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 45,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui (riz)"
+ },
+ "vegetarien": false,
+ "creneaux": [],
+ "legumes_amap": [
+  "tomate"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "cuisse de poulet",
+   "qte": 1600,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 5,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "gingembre",
+   "qte": 30,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "tomate",
+   "qte": 5,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "thym",
+   "qte": 4,
+   "unite": "brin",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "curcuma",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "piment",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile neutre",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "riz basmati",
+   "qte": 450,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Couper le poulet en morceaux (ou demander au boucher). Saler, poivrer."
+  },
+  {
+   "texte": "Piler ou hacher finement l'ail et le gingembre avec une pincée de sel. Émincer les oignons, couper les tomates en dés."
+  },
+  {
+   "texte": "Dans une cocotte en fonte, dorer les morceaux de poulet dans l'huile bien chaude sur toutes les faces.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Ajouter les oignons et les laisser fondre 5 min.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Ajouter le mélange ail-gingembre, le curcuma et le thym, remuer 1 min sans laisser brûler."
+  },
+  {
+   "texte": "Ajouter les tomates, le piment selon le goût, couvrir et laisser mijoter 30 min à feu doux en remuant de temps en temps. Ajouter un fond d'eau si ça attache.",
+   "minuteur": 1800
+  },
+  {
+   "texte": "Cuire le riz.",
+   "minuteur": 720
+  },
+  {
+   "texte": "Découvrir et laisser réduire la sauce 5 min si besoin. Servir avec le riz blanc.",
+   "minuteur": 300
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Peu de riz, sauce et poulet en plus."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Cari légumes + pois chiches",
+  "fois_au_menu": 3,
+  "derniere_fois": "2026-10-28"
+ },
+ "pieces_jointes": []
+}

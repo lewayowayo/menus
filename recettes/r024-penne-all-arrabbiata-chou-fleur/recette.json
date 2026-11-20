@@ -1,0 +1,171 @@
+{
+ "id": "r024",
+ "nom": "Penne all'arrabbiata (+ chou-fleur rôti)",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Plat complet rapide",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 25,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Pâtes SG"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "rapide"
+ ],
+ "legumes_amap": [
+  "chou-fleur"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "penne",
+   "qte": 500,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "chou-fleur",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "tomate concassée",
+   "qte": 800,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 3,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "piment",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "parmesan",
+   "qte": 80,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "persil",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 5,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sucre",
+   "qte": 1,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Préchauffer le four à 220 °C."
+  },
+  {
+   "texte": "Détailler le chou-fleur en petits bouquets, les mélanger avec 3 c. à s. d'huile, du sel et du poivre, et les étaler sur une plaque."
+  },
+  {
+   "texte": "Rôtir le chou-fleur en le retournant à mi-cuisson.",
+   "minuteur": 1200
+  },
+  {
+   "texte": "Pendant ce temps, faire revenir l'ail émincé et le piment dans 2 c. à s. d'huile sans les laisser brûler.",
+   "minuteur": 60
+  },
+  {
+   "texte": "Ajouter la tomate concassée et la pincée de sucre, saler et laisser mijoter.",
+   "minuteur": 900
+  },
+  {
+   "texte": "Cuire les penne dans l'eau bouillante salée selon le paquet (cuire les pâtes sans gluten de Marie dans une casserole à part).",
+   "minuteur": 660
+  },
+  {
+   "texte": "Égoutter les penne et les mélanger à la sauce."
+  },
+  {
+   "texte": "Servir avec le chou-fleur rôti, le parmesan râpé et le persil ciselé."
+  }
+ ],
+ "marie": {
+  "texte": "Pâtes sans gluten pour sa part, cuites à part.",
+  "ajouter": [
+   {
+    "nom": "pâtes sans gluten",
+    "qte": 80,
+    "unite": "g",
+    "rayon": "sans_gluten",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "penne",
+    "qte": 80,
+    "unite": "g"
+   }
+  ],
+  "soir": "Surtout du chou-fleur rôti, avec peu de pâtes."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Chou-fleur rôti mozzarella, peu de penne SG",
+  "fois_au_menu": 2,
+  "derniere_fois": "2026-11-04"
+ },
+ "pieces_jointes": []
+}

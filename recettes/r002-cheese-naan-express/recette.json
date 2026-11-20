@@ -1,0 +1,154 @@
+{
+ "id": "r002",
+ "nom": "Cheese naan express",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Comfort food",
+ "source": {
+  "nom": "Louloukitchen",
+  "lien": null
+ },
+ "duree_min": 20,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Farine SG possible"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "rapide"
+ ],
+ "legumes_amap": [
+  "salade verte"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "salade"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "farine",
+   "qte": 600,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "yaourt nature",
+   "qte": 300,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "levure chimique",
+   "qte": 1,
+   "unite": "sachet",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "fromage fondu en portions",
+   "qte": 20,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "beurre",
+   "qte": 30,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 1,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "salade verte",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Mélanger la farine, la levure et une pincée de sel. Ajouter le yaourt et l'huile, pétrir jusqu'à obtenir une pâte souple (ajouter un peu d'eau si besoin)."
+  },
+  {
+   "texte": "Laisser reposer la pâte sous un torchon.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Diviser la pâte en 10 boules. Étaler chaque boule en disque fin."
+  },
+  {
+   "texte": "Déposer 2 portions de fromage fondu au centre, refermer la pâte par-dessus et ré-étaler doucement."
+  },
+  {
+   "texte": "Cuire chaque naan dans une poêle chaude sans matière grasse, à couvert, 2 à 3 min par face jusqu'à ce qu'il gonfle et dore.",
+   "minuteur": 150
+  },
+  {
+   "texte": "Faire fondre le beurre avec l'ail écrasé et en badigeonner les naans chauds."
+  },
+  {
+   "texte": "Servir avec la salade assaisonnée."
+  }
+ ],
+ "marie": {
+  "texte": "Sa part de pâte à la farine sans gluten, préparée et cuite en premier dans une poêle propre.",
+  "ajouter": [
+   {
+    "nom": "farine sans gluten",
+    "qte": 120,
+    "unite": "g",
+    "rayon": "sans_gluten",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "farine",
+    "qte": 120,
+    "unite": "g"
+   }
+  ],
+  "soir": "Un seul naan, avec une grande salade."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Naan SG fromage + salade",
+  "fois_au_menu": 2,
+  "derniere_fois": "2026-11-18"
+ },
+ "pieces_jointes": []
+}

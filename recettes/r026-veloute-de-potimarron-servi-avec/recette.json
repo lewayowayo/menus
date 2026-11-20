@@ -1,0 +1,182 @@
+{
+ "id": "r026",
+ "nom": "Velouté de potimarron (servi avec cheese naan)",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Emma",
+ "origine": "Hors base, proposée par Claude",
+ "categorie": "Soupe / léger",
+ "source": {
+  "nom": "Proposée par Claude",
+  "lien": null
+ },
+ "duree_min": 30,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "leger"
+ ],
+ "legumes_amap": [
+  "potimarron",
+  "oignon"
+ ],
+ "legumes_libres": [
+  "courges",
+  "racines"
+ ],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "potimarron",
+   "qte": 1500,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "bouillon de légumes",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "crème liquide",
+   "qte": 200,
+   "unite": "ml",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "muscade",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "farine",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "yaourt nature",
+   "qte": 250,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "levure chimique",
+   "qte": 1,
+   "unite": "sachet",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "fromage fondu en portions",
+   "qte": 10,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Laver le potimarron (la peau se mange), l'épépiner et le couper en cubes. Émincer l'oignon."
+  },
+  {
+   "texte": "Faire revenir l'oignon dans l'huile, ajouter le potimarron, couvrir d'eau avec le bouillon cube.",
+   "minuteur": 120
+  },
+  {
+   "texte": "Cuire jusqu'à ce que le potimarron soit tendre.",
+   "minuteur": 1200
+  },
+  {
+   "texte": "Pendant la cuisson, mélanger la farine, le yaourt, la levure et une pincée de sel pour obtenir une pâte souple. Diviser en 5 boules (la part de Marie avec la farine sans gluten, préparée en premier)."
+  },
+  {
+   "texte": "Étaler chaque boule, déposer 2 portions de fromage fondu au centre, refermer et aplatir doucement."
+  },
+  {
+   "texte": "Cuire les naans à sec dans une poêle chaude, à couvert, en les retournant.",
+   "minuteur": 240
+  },
+  {
+   "texte": "Mixer le velouté avec la crème, saler, poivrer, ajouter la muscade."
+  },
+  {
+   "texte": "Servir le velouté bien chaud avec les naans."
+  }
+ ],
+ "marie": {
+  "texte": "Son naan à la farine sans gluten, préparé en premier sur un plan propre.",
+  "ajouter": [
+   {
+    "nom": "farine sans gluten",
+    "qte": 80,
+    "unite": "g",
+    "rayon": "sans_gluten",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "farine",
+    "qte": 80,
+    "unite": "g"
+   }
+  ],
+  "soir": "Velouté et un demi-naan."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Velouté + naan farine SG",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-10-14"
+ },
+ "pieces_jointes": []
+}

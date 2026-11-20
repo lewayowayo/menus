@@ -1,0 +1,181 @@
+{
+ "id": "r001",
+ "nom": "Smash burgers maison",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Base initiale",
+ "categorie": "Comfort food",
+ "source": {
+  "nom": "Famille",
+  "lien": null
+ },
+ "duree_min": 25,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Buns SG dispo"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "rapide"
+ ],
+ "legumes_amap": [
+  "salade verte",
+  "tomate",
+  "oignon"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "salade"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "bœuf haché",
+   "qte": 1000,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "pain burger",
+   "qte": 6,
+   "unite": "piece",
+   "rayon": "boulangerie",
+   "placard": false
+  },
+  {
+   "nom": "cheddar",
+   "qte": 10,
+   "unite": "tranche",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "tomate",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "salade verte",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "cornichon",
+   "qte": 1,
+   "unite": "pot",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "ketchup",
+   "qte": null,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "moutarde",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "beurre",
+   "qte": 20,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Former 10 boules de bœuf haché d'environ 100 g. Les garder au frais jusqu'à la cuisson."
+  },
+  {
+   "texte": "Émincer les oignons très finement, trancher les tomates, laver et essorer la salade, couper les cornichons en rondelles."
+  },
+  {
+   "texte": "Couper les pains en deux et les toaster côté mie dans une poêle avec un peu de beurre, 1 à 2 min.",
+   "minuteur": 90
+  },
+  {
+   "texte": "Faire chauffer une grande poêle en fonte ou une plancha à feu très vif, sans matière grasse."
+  },
+  {
+   "texte": "Poser une boule de viande, l'écraser fort avec une spatule pour obtenir une galette fine, ajouter quelques oignons dessus, saler, poivrer. Cuire sans toucher jusqu'à ce que le dessous soit bien grillé.",
+   "minuteur": 120
+  },
+  {
+   "texte": "Retourner, poser une tranche de cheddar et cuire encore 1 min jusqu'à ce que le fromage fonde.",
+   "minuteur": 60
+  },
+  {
+   "texte": "Monter les burgers : pain, moutarde ou ketchup, salade, une ou deux galettes, tomate, cornichons, pain."
+  },
+  {
+   "texte": "Servir aussitôt, en cuisant les galettes en plusieurs fournées."
+  }
+ ],
+ "marie": {
+  "texte": "Pain burger sans gluten pour sa part, toasté à part dans une poêle propre.",
+  "ajouter": [
+   {
+    "nom": "pain burger sans gluten",
+    "qte": 1,
+    "unite": "piece",
+    "rayon": "sans_gluten",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "pain burger",
+    "qte": 1,
+    "unite": "piece"
+   }
+  ],
+  "soir": "Un seul burger, ou servi dans une feuille de salade, avec plus de crudités."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Smash Heura végétarien sur bun SG",
+  "fois_au_menu": 12,
+  "derniere_fois": "2026-11-11"
+ },
+ "pieces_jointes": []
+}

@@ -1,0 +1,204 @@
+{
+ "id": "r031",
+ "nom": "Rôti de bœuf, pommes de terre et carottes rôties (+ fondant chocolat sans farine)",
+ "statut": "a_valider",
+ "redaction": "claude",
+ "a_completer": [
+  "fiche rédigée par Claude (version standard), à valider"
+ ],
+ "choisie_par": "Billie et Emma",
+ "origine": "Hors base, apportée par la famille",
+ "categorie": "Classique familial",
+ "source": {
+  "nom": "Famille (anniversaire Marie)",
+  "lien": null
+ },
+ "duree_min": 60,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "naturel",
+  "note": "Oui naturellement"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "genereux"
+ ],
+ "legumes_amap": [
+  "pomme de terre",
+  "carotte"
+ ],
+ "legumes_libres": [
+  "racines"
+ ],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "rôti de bœuf",
+   "qte": 1.2,
+   "unite": "kg",
+   "rayon": "boucherie",
+   "placard": false
+  },
+  {
+   "nom": "pomme de terre",
+   "qte": 1.5,
+   "unite": "kg",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "carotte",
+   "qte": 1,
+   "unite": "kg",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "oignon",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "ail",
+   "qte": 6,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "thym",
+   "qte": 4,
+   "unite": "brin",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "romarin",
+   "qte": 2,
+   "unite": "brin",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 4,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "beurre",
+   "qte": 30,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": "pincee",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "chocolat noir pâtissier",
+   "qte": 200,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "beurre",
+   "qte": 150,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "sucre",
+   "qte": 120,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "œuf",
+   "qte": 4,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "maïzena",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Sortir le rôti du réfrigérateur 1 h avant. Préchauffer le four à 200 °C."
+  },
+  {
+   "texte": "Éplucher et couper les pommes de terre en gros quartiers et les carottes en tronçons ; couper les oignons en quartiers."
+  },
+  {
+   "texte": "Mettre les légumes dans un grand plat avec l'ail en chemise, le thym, le romarin, l'huile d'olive, sel et poivre. Enfourner.",
+   "minuteur": 900
+  },
+  {
+   "texte": "Saisir le rôti beurré, salé et poivré dans une poêle chaude sur toutes les faces.",
+   "minuteur": 300
+  },
+  {
+   "texte": "Poser le rôti sur les légumes et cuire (saignant ~15 min par 500 g).",
+   "minuteur": 2100
+  },
+  {
+   "texte": "Laisser reposer le rôti 10 min sous papier alu avant de trancher ; remettre les légumes au four pendant ce temps.",
+   "minuteur": 600
+  },
+  {
+   "texte": "Dessert : préchauffer le four à 180 °C. Faire fondre le chocolat et le beurre au bain-marie."
+  },
+  {
+   "texte": "Dessert : fouetter les œufs avec le sucre jusqu'à ce que le mélange blanchisse, ajouter la maïzena puis le chocolat fondu."
+  },
+  {
+   "texte": "Dessert : verser dans un moule beurré de 22 cm et cuire. Le cœur doit rester tremblant.",
+   "minuteur": 1320
+  },
+  {
+   "texte": "Dessert : laisser tiédir avant de démouler."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Plus de carottes, peu de pommes de terre."
+ },
+ "etienne": null,
+ "remarque": null,
+ "ancien": {
+  "option_marie": "Mangé par Marie ce soir-là",
+  "fois_au_menu": 1,
+  "derniere_fois": "2026-11-04"
+ },
+ "pieces_jointes": []
+}
