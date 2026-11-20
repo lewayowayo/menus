@@ -1,5 +1,5 @@
 // Hors ligne : l'appli et les recettes restent disponibles en magasin sans réseau.
-const VERSION='mwoq9y6g';
+const VERSION='mwoqf3kj';
 const CACHE='menus-'+VERSION;
 const FILES=['./','./index.html','./js/moteur.js','./js/stockage.js','./js/app.js','./config.js','./recettes.json','./manifest.json','./icon-180.png','./icon-192.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));

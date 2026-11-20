@@ -25,9 +25,9 @@
     return v;
   }
   function enregistrer(s) { S.set('semaine:' + s.debut, s); }
-  function reglages() { return S.get('reglages', {}); }
+  function reglages() { const r = S.get('reglages', {}); M.setRecence(r.recenceJours || 14); return r; }
   function recette(id) { return PAR_ID[id]; }
-  function hist() { return M.historique(RECETTES, semaines()); }
+  function hist() { reglages(); return M.historique(RECETTES, semaines()); }
   function qui() { return S.qui() || ''; }
 
   // ---------- Petits composants ----------
@@ -165,6 +165,7 @@
   }
 
   function proposer() {
+    reglages();
     const s = semaine(); const auj = aujourdhui();
     const passer = M.CRENEAUX.filter(c => M.dateCreneau(s.debut, c.cle) < auj && !M.effectif(s.creneaux[c.cle])).map(c => c.cle);
     s.graine = (s.graine || 0) + 1;
@@ -265,10 +266,11 @@
     };
   }
   function feuilleAlternatives(cle) {
+    reglages();
     const s = semaine(); const date = M.dateCreneau(s.debut, cle); const reel = date <= aujourdhui();
     const alts = M.alternatives(RECETTES, semaines(), s, cle, { assouplir: s.assouplir });
     const ok = alts.filter(a => !a.exclusions.length), hors = alts.filter(a => a.exclusions.length);
-    const RAISON_EXCL = { statut: 'pas encore validée', recence: 'servie il y a moins de 3 semaines', saison: 'hors saison', duree: 'trop longue pour ce créneau', 'hors roulement': 'hors roulement' };
+    const RAISON_EXCL = { statut: 'pas encore validée', recence: 'servie récemment', saison: 'hors saison', duree: 'trop longue pour ce créneau', 'hors roulement': 'hors roulement' };
     const ligne = a => { const r = recette(a.recette); return `<button class="alt" data-r="${r.id}"><b>${esc(r.nom)}</b><small>${esc(a.raison || '')}${a.dejaCetteSemaine ? ' · déjà dans la semaine' : ''}${a.exclusions.length ? ' · ' + a.exclusions.map(x => RAISON_EXCL[x] || x).join(', ') : ''}</small></button>`; };
     const f = feuille(`<h2>Remplacer</h2><input id="cherche" class="cherche" placeholder="Chercher une recette">
       <div id="alts">${ok.slice(0, 12).map(ligne).join('') || '<p class="vide">Aucune recette ne respecte toutes les règles.</p>'}
@@ -418,7 +420,7 @@
       ${r.etapes && r.etapes.length ? `<ol class="etapes">${r.etapes.map(e => `<li>${esc(e.texte || e)}${e.minuteur ? ` <button class="minuteur-btn" data-t="${e.minuteur}" data-l="${esc((e.texte || '').slice(0, 40))}">⏱ ${Math.round(e.minuteur / 60)} min</button>` : ''}</li>`).join('')}</ol>` : '<p class="manque">Étapes manquantes.</p>'}
       ${r.remarque ? `<p class="petit">Remarque : ${esc(r.remarque)}</p>` : ''}
       <h3>Historique</h3>
-      <p class="petit">${x.fois ? `Servie ${x.fois} fois depuis mars 2026, dernière fois le ${dateFr(x.derniere)}.` : 'Jamais servie.'}</p>
+      <p class="petit">${x.fois ? `Servie ${x.fois} fois depuis le début de l'appli, dernière fois le ${dateFr(x.derniere)}.` : 'Pas encore servie depuis le début de l\'appli (20 novembre 2026).'}</p>
       <h3>Note de la famille</h3>
       <div class="etoiles" data-x="etoiles">${[1, 2, 3, 4, 5].map(n => `<button data-n="${n}" class="${(note.note || 0) >= n ? 'on' : ''}">★</button>`).join('')}</div>
       <textarea id="note-texte" rows="2" placeholder="Un commentaire ? (trop salé, Billie adore…)">${esc(note.texte || '')}</textarea>
@@ -532,6 +534,7 @@
         const nom = e.type === 'recette' ? (recette(e.recette) || {}).nom : e.type === 'libre' ? e.texte : 'annulé';
         const prev = cr.reel && cr.prevu && cr.prevu.recette ? ` <small>(prévu : ${esc((recette(cr.prevu.recette) || {}).nom)})</small>` : '';
         return `<li><b>${c.court}</b> ${esc(nom)}${prev}</li>`; }).join('')}</ul></details>`).join('') : '<p class="vide">Rien encore. Il se remplit tout seul au fil des semaines.</p>'}</section>
+      <section class="carte"><h3>Règles du menu</h3><div class="reg"><span>Ne pas reproposer une recette avant</span><select id="recence">${[7, 14, 21, 28].map(j => `<option value="${j}" ${(reg.recenceJours || 14) === j ? 'selected' : ''}>${j / 7} semaine${j > 7 ? 's' : ''}</option>`).join('')}</select></div></section>
       <section class="carte"><h3>Magasin par rayon</h3><p class="petit">Où va chaque rayon par défaut. Une fiche peut forcer un magasin pour un ingrédient précis.</p>
         ${Object.entries(M.RAYONS).map(([k, t]) => `<div class="reg"><span>${esc(t)}</span><select data-ry="${k}"><option value="supercoop" ${pol[k] === 'supercoop' ? 'selected' : ''}>Supercoop</option><option value="auchan" ${pol[k] === 'auchan' ? 'selected' : ''}>Auchan</option></select></div>`).join('')}</section>
       <section class="carte"><h3>Sauvegarde</h3><p class="petit">Exporte tout ce qui vit dans l'appli (semaines, cases, notes, avis) dans un fichier.</p>
@@ -548,6 +551,7 @@
     };
     $('#main').onchange = e => {
       const s = e.target.closest('[data-ry]'); if (s) { const reg2 = reglages(); S.set('reglages', { ...reg2, magasinParRayon: { ...(reg2.magasinParRayon || {}), [s.dataset.ry]: s.value } }); toast('Enregistré'); }
+      if (e.target.id === 'recence') { S.set('reglages', { ...reglages(), recenceJours: +e.target.value }); toast('Enregistré'); }
       if (e.target.id === 'import') {
         const fi = e.target.files[0]; if (!fi) return; fi.text().then(t => { if (confirm('Remplacer les données de l\'appli par celles du fichier ?')) { S.importer(JSON.parse(t)); toast('Importé'); rendre(); } });
       }

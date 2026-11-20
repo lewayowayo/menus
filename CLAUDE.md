@@ -44,6 +44,10 @@ Quand tu rédiges une fiche à partir d'une source, tu transcris ce qui s'y trou
 - **Panier de la semaine** : il se saisit dans l'appli (onglet Semaine > Panier), pas ici. Si Etienne envoie une photo du panier ici, lui dire ce que tu y vois pour qu'il le coche, ou le saisir toi-même seulement si l'accès Supabase est configuré dans la conversation.
 - **Changer une règle du menu** : `js/moteur.js` (`exclusions` pour les règles dures, `noter` pour les préférences). Ajouter le cas dans `test/run.mjs`.
 
+## Historique et délai entre deux passages
+
+L'historique commence avec l'appli (20/11/2026) : il se construit à partir des semaines enregistrées (le réel prime sur le prévu). Le champ `ancien` des fiches (passages de l'ancienne tâche planifiée) est archivé et n'est plus utilisé. Délai minimum avant de reproposer une recette : 2 semaines par défaut, réglable dans Plus > Règles du menu (`reglages.recenceJours`).
+
 ## Partage entre téléphones (Supabase)
 
 Projet Supabase d'Etienne, table `kv` (une ligne par donnée), accessible seulement par les fonctions `kv_lire`, `kv_ecrire`, `kv_verifier` qui vérifient le mot de passe famille (empreinte sha256 dans la table `secret`). Changer le mot de passe : relancer la requête `insert into public.secret …` de `supabase/schema.sql` avec le nouveau. `config.js` vide = mode local (chaque téléphone garde ses données ; elles sont envoyées automatiquement au premier branchement).

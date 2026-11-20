@@ -85,10 +85,8 @@
   /** Historique : toutes les assiettes réellement servies (ou prévues) par recette, à partir des semaines et de l'ancien historique. */
   function historique(recettes, semaines) {
     const h = {};
-    for (const r of recettes) {
-      const a = r.ancien;
-      h[r.id] = { dates: [], fois: a && a.fois_au_menu ? a.fois_au_menu : 0, derniere: a && /^\d{4}-/.test(a.derniere_fois || '') ? a.derniere_fois : null, ancienne: a && /^\d{4}-/.test(a.derniere_fois || '') ? a.derniere_fois : null };
-    }
+    // L'historique commence avec l'appli (20/11/2026) : celui de l'ancienne tâche planifiée (champ `ancien`) est archivé, pas utilisé.
+    for (const r of recettes) h[r.id] = { dates: [], fois: 0, derniere: null, ancienne: null };
     for (const s of semaines) {
       for (const c of CRENEAUX) {
         const e = effectif(s.creneaux[c.cle]);
@@ -115,7 +113,7 @@
   // ---------- Proposition de menu ----------
   const REGLES_DURES = {
     statut: 'Seulement les recettes validées',
-    recence: 'Pas servie dans les 3 dernières semaines',
+    recence: 'Pas servie récemment',
     saison: 'De saison',
     duree: 'Durée adaptée au créneau (25 min le mercredi soir, plats de plus de 2 h le dimanche midi seulement)'
   };
@@ -129,7 +127,7 @@
     if (!estMangeable(r) || r.statut === 'petite_folie') out.push('hors roulement');
     if (r.statut !== 'validee' && !ctx.assouplir.statut) out.push('statut');
     const der = derniereAvant(ctx.hist, r.id, date, ctx.semaine.debut);
-    if (der && ecartJours(der, date) < 21 && !ctx.assouplir.recence) out.push('recence');
+    if (der && ecartJours(der, date) < ctx.recence && !ctx.assouplir.recence) out.push('recence');
     if (!deSaison(r, date) && !ctx.assouplir.saison) out.push('saison');
     if (cre.besoin === 'rapide' && (r.duree_min == null || r.duree_min > 25) && !ctx.assouplir.duree) out.push('duree');
     else if (((r.duree_min || 0) > 120 || r.veille) && cre.besoin !== 'genereux' && !ctx.assouplir.duree) out.push('duree');
@@ -209,7 +207,7 @@
     // Ancienneté
     const date = dateCreneau(ctx.semaine.debut, cre.cle);
     const der = derniereAvant(ctx.hist, r.id, date, ctx.semaine.debut);
-    if (!der) { score += 3; raisons.push('jamais servie'); }
+    if (!der) { score += 3; raisons.push('pas encore servie dans l\'appli'); }
     else {
       const sem = Math.floor(ecartJours(der, date) / 7);
       score += Math.min(sem, 12) * 0.35;
@@ -229,10 +227,14 @@
     return { score, raison: raisons.slice(0, 3).join(', ') };
   }
 
+  // Délai minimum avant de reproposer une recette (réglable dans l'appli : reglages.recenceJours).
+  let RECENCE_JOURS = 14;
+  function setRecence(j) { if (j > 0) RECENCE_JOURS = j; }
+
   function contexte(recettes, semaines, semaine, assouplir) {
     const parId = {}; for (const r of recettes) parId[r.id] = r;
     const autres = semaines.filter(s => s.debut !== semaine.debut);
-    return { recettes, parId, hist: historique(recettes, autres), semaine, assouplir: assouplir || {} };
+    return { recettes, parId, hist: historique(recettes, autres), semaine, assouplir: assouplir || {}, recence: RECENCE_JOURS };
   }
 
   /** Créneaux qu'on ne touche pas en relançant : verrouillés, déjà corrigés, ou passés. */
@@ -483,7 +485,7 @@
 
   globalThis.Moteur = {
     CRENEAUX, REGLES_DURES, RAYONS, MAGASINS, MAGASIN_PAR_RAYON, ORDRE_RAYONS, JOURS,
-    ymd, parse, ajouterJours, completer, semaineParDefaut, ecartJours, debutSemaine, dateCreneau, dateCourte, semaineVide, saisonDe, deSaison,
+    setRecence, ymd, parse, ajouterJours, completer, semaineParDefaut, ecartJours, debutSemaine, dateCreneau, dateCourte, semaineVide, saisonDe, deSaison,
     norm, effectif, historique, FAMILLES, legumesUtilises, exclusions, proposer, alternatives, bilan, fusion,
     ingredientsDuPlat, additionner, texteQuantite, courses, texteListe, aIngredients
   };
