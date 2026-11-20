@@ -1,0 +1,106 @@
+{
+ "id": "r042",
+ "nom": "Tofu râpé grillé",
+ "statut": "a_tester",
+ "redaction": "source",
+ "choisie_par": "Marie",
+ "origine": "Capture Instagram envoyée par Marie, 20/11/2026",
+ "portions": 5,
+ "etienne": null,
+ "ancien": null,
+ "a_completer": [
+  "quantités de la source (250 g de tofu) : à confirmer pour 5, sans doute à doubler",
+  "c'est un accompagnement protéiné : avec quoi le servir (riz, légumes…) ?",
+  "lien Instagram à ajouter"
+ ],
+ "categorie": "Plat complet rapide",
+ "source": {
+  "nom": "Instagram @eva_lespetitsplats",
+  "lien": null
+ },
+ "duree_min": 15,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Sauce soja sans gluten (tamari) pour toute la famille"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "rapide"
+ ],
+ "legumes_amap": [],
+ "legumes_libres": [],
+ "tres_frais": [],
+ "ingredients": [
+  {
+   "nom": "tofu nature",
+   "qte": 250,
+   "unite": "g",
+   "rayon": "alternatives",
+   "placard": false
+  },
+  {
+   "nom": "sauce soja sans gluten",
+   "qte": 3,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true,
+   "note": "2 à 3 c. à s."
+  },
+  {
+   "nom": "paprika",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "ail",
+   "qte": 1,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "sirop d'agave",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "huile neutre",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Râper le tofu nature (250 g)."
+  },
+  {
+   "texte": "Mélanger avec 2 à 3 c. à s. de sauce soja, 1 c. à s. de paprika, 1 gousse d'ail pressée et 2 c. à s. de sirop d'agave."
+  },
+  {
+   "texte": "Faire griller 10 minutes avec de l'huile.",
+   "minuteur": 600
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter avec une sauce soja sans gluten (tamari).",
+  "ajouter": [],
+  "retirer": [],
+  "soir": null
+ },
+ "remarque": "Transcrite depuis la légende. La source dit « sauce soja » : remplacée par de la sauce soja sans gluten pour Marie. Pas de quantité d'huile ni de type de cuisson (poêle, four) dans la source.",
+ "pieces_jointes": [
+  {
+   "fichier": "capture-instagram.jpg",
+   "legende": "Capture Instagram, la recette en légende"
+  }
+ ]
+}

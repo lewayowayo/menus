@@ -1,0 +1,207 @@
+{
+ "id": "r043",
+ "nom": "Salade de quinoa, carottes rôties, tofu et sauce tahini",
+ "statut": "a_tester",
+ "redaction": "source",
+ "choisie_par": "Marie",
+ "origine": "Capture Instagram envoyée par Marie, 20/11/2026",
+ "portions": 5,
+ "etienne": null,
+ "ancien": null,
+ "a_completer": [
+  "début de la légende coupé sur la capture (titre, nombre de personnes) : quantités de la source, à confirmer pour 5",
+  "recette des pickles d'oignon rouge : sur le compte de la créatrice, à récupérer",
+  "sauce barbecue : vérifier qu'elle est sans gluten",
+  "lien Instagram à ajouter"
+ ],
+ "categorie": "Soupe / léger",
+ "source": {
+  "nom": "Instagram @les_tips_de_cam",
+  "lien": null
+ },
+ "duree_min": 45,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Quinoa naturellement sans gluten ; sauce soja et sauce barbecue à choisir sans gluten"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "leger"
+ ],
+ "legumes_amap": [
+  "carotte"
+ ],
+ "legumes_libres": [
+  "racines"
+ ],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "ingredients": [
+  {
+   "nom": "quinoa",
+   "qte": 150,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false
+  },
+  {
+   "nom": "carotte",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 5,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "vinaigre",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "miel",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "ail",
+   "qte": 1,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "tofu nature",
+   "qte": 1,
+   "unite": "paquet",
+   "rayon": "alternatives",
+   "placard": false,
+   "note": "ou une autre protéine"
+  },
+  {
+   "nom": "sauce barbecue",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "sauce soja sans gluten",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "tahini",
+   "qte": 75,
+   "unite": "g",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "yaourt grec",
+   "qte": 75,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "citron",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "note": "un filet de jus"
+  },
+  {
+   "nom": "persil",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "feta",
+   "qte": null,
+   "unite": null,
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "oignon rouge",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "note": "en pickles, recette sur le compte de la créatrice"
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Faire cuire le quinoa selon les instructions du paquet puis l'égoutter. L'étaler en couche assez fine sur une plaque de cuisson, assaisonner d'huile d'olive, sel et poivre, et enfourner environ 20 minutes à 200 °C.",
+   "minuteur": 1200
+  },
+  {
+   "texte": "Couper les carottes en petits tronçons, les mélanger avec leur assaisonnement (3 c. à s. d'huile d'olive, 1 c. à s. de vinaigre, 1 c. à s. de miel, 1 gousse d'ail). Étaler sur une plaque et enfourner 25 minutes à 200 °C.",
+   "minuteur": 1500
+  },
+  {
+   "texte": "Mélanger la sauce du tofu (2 c. à s. de sauce barbecue, 1 c. à s. de sauce soja, 1 c. à s. d'huile d'olive). Émietter grossièrement le tofu dans un plat allant au four, verser la sauce, mélanger et enfourner 25 minutes à 200 °C.",
+   "minuteur": 1500
+  },
+  {
+   "texte": "Sauce tahini : mélanger 75 g de tahini et 60 g d'eau jusqu'à ce que ce soit homogène, puis ajouter 75 g de yaourt grec, un filet de jus de citron, sel et poivre."
+  },
+  {
+   "texte": "Hacher finement le persil."
+  },
+  {
+   "texte": "Dans un saladier, mélanger le quinoa, les carottes, le tofu, le persil, la feta émiettée et les pickles d'oignon rouge. Assaisonner de citron, d'huile d'olive, de sel et de poivre, puis mélanger."
+  },
+  {
+   "texte": "Dresser avec la sauce tahini dans le fond et la salade par-dessus."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter si la sauce soja et la sauce barbecue sont sans gluten.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Plus de légumes et de tofu, moins de quinoa."
+ },
+ "remarque": "Transcrite depuis la légende (dernière phrase coupée sur la capture, complétée par « par-dessus »). Les carottes peuvent être remplacées par d'autres racines du panier.",
+ "pieces_jointes": [
+  {
+   "fichier": "capture-instagram.jpg",
+   "legende": "Capture Instagram, ingrédients et préparation en légende"
+  }
+ ]
+}
