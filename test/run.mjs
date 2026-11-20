@@ -36,6 +36,11 @@ t('chaque proposition a une raison', Object.values(p.creneaux).every(x => x.rais
 const b = M.bilan(R, s);
 t('légumes du panier utilisés', !b.some(x => x.startsWith('pas utilisé')), b.join(' / '));
 
+const parId = Object.fromEntries(R.map(r => [r.id, r]));
+t('mercredi midi : pas un plat de plus de 40 min', (parId[p.creneaux.mer_midi.recette].duree_min || 0) <= 40, nom(p.creneaux.mer_midi.recette));
+const types = Object.values(p.creneaux).map(x => M.norm(nom(x.recette)).split(' ')[0]).filter(x => x.length > 3);
+t('pas deux plats du même type', new Set(types).size === types.length, types.join(', '));
+
 // --- Courses avant correction, et cases cochées
 let L = M.courses(R, s, {});
 const lignes = mag => L[mag].rayons.flatMap(r => r.lignes);

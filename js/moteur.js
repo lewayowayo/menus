@@ -184,6 +184,18 @@
     else if (cre.besoin === 'leger' && cr.includes('genereux')) score -= 3;
     else if (cre.besoin === 'genereux' && cr.includes('leger')) score -= 2;
     else if (!cre.besoin && cr.includes('midi_simple') && !cr.includes('rapide')) score -= 1.5;
+    // Durée : un midi simple ou un soir de semaine ne doivent pas demander des heures
+    const d = r.duree_min;
+    if (d != null) {
+      if (cre.besoin === 'midi_simple' && d > 40) score -= d > 90 ? 6 : 3;
+      else if (cre.besoin !== 'genereux' && d > 75) score -= 3;
+    }
+    // Même type de plat dans la semaine (deux quiches, deux lasagnes…)
+    const type = x => norm(x.nom).split(' ')[0];
+    for (const [k, id] of Object.entries(choisis)) {
+      if (k === cre.cle) continue; const x = ctx.parId[id];
+      if (x && x.id !== r.id && type(x) === type(r) && type(r).length > 3) score -= 4;
+    }
     // Variété des catégories avec les créneaux voisins
     for (const v of [CRENEAUX[idx - 1], CRENEAUX[idx + 1]]) {
       if (!v) continue; const x = ctx.parId[choisis[v.cle]];
