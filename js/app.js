@@ -109,7 +109,7 @@
         <p class="petit">Supercoop : <b>${esc(M.dateCourte(s.supercoop))}</b>${s.supercoop2 ? ` puis <b>${esc(M.dateCourte(s.supercoop2))}</b>` : ''}</p>
       </section>
       <div class="actions-menu">
-        <button class="btn plein" data-a="proposer">${vide ? 'Proposer le menu' : 'Relancer les créneaux libres'}</button>
+        <button class="btn plein" data-a="proposer">${vide ? 'Proposer le menu' : 'Relancer le menu (sauf 🔒)'}</button>
       </div>
       ${s.manques && s.manques.length ? blocManques(s) : ''}
       ${Object.keys(s.assouplir || {}).length ? `<p class="petit">Assoupli cette semaine : ${Object.keys(s.assouplir).map(k => esc(M.REGLES_DURES[k].toLowerCase())).join(', ')}. <a data-a="durcir">Rétablir</a></p>` : ''}
