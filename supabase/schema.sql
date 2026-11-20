@@ -53,3 +53,10 @@ revoke all on function public.kv_ecrire(text, jsonb, text) from public;
 grant execute on function public.kv_verifier(text) to anon;
 grant execute on function public.kv_lire(text, timestamptz) to anon;
 grant execute on function public.kv_ecrire(text, jsonb, text) to anon;
+
+-- Accès direct de Claude (scripts/donnees.mjs, clé secrète) : l'heure de mise à jour est posée par le serveur
+-- pour que les téléphones voient aussi ces changements.
+create or replace function public.kv_horodater() returns trigger language plpgsql as $$
+begin new.maj := clock_timestamp(); return new; end $$;
+drop trigger if exists kv_horodater on public.kv;
+create trigger kv_horodater before insert or update on public.kv for each row execute function public.kv_horodater();

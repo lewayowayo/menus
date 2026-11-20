@@ -50,6 +50,13 @@ Projet Supabase d'Etienne, table `kv` (une ligne par donnée), accessible seulem
 
 Clés : `semaine:<mercredi>` (panier, créneaux `prevu` / `reel` / `verrou`, jour Supercoop), `coche:<mercredi>:<magasin>:<ingrédient>`, `extras:<mercredi>`, `note:<id>`, `avis:<id>`, `legumes`, `photo:<id>`, `reglages`.
 
+## Agir directement sur les données de l'appli
+
+`scripts/donnees.mjs` lit et écrit dans Supabase avec la clé secrète de `.env.local` (fichier ignoré par git, jamais publié). Pas besoin de MCP ni de mot de passe famille.
+- Panier depuis des photos : lire les photos (HEIC → `sips` en JPEG dans le scratchpad), lister à Etienne ce que tu vois, puis `node scripts/donnees.mjs panier <mercredi> --legumes "chou frisé; blettes" --autres "tartinade courgette" --restes "rutabaga"`. Le mercredi = celui qui ouvre la semaine concernée (le panier du mardi va dans la semaine du lendemain).
+- Avis et notes de la famille : `node scripts/donnees.mjs avis`, puis appliquer aux fiches.
+- Le reste : `cles`, `lire`, `ecrire` (voir l'en-tête du script).
+
 ## Tester en local
 
 `python3 -m http.server 8766` puis http://localhost:8766 (config `.claude/launch.json`, nom `menus`).
