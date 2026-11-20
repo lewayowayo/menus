@@ -154,6 +154,7 @@
         corps = `<div class="plat" data-a="voir" data-r="${r.id}">${esc(r.nom)}</div>
           <div class="raison">${e.corrige ? 'Corrigé' + (cr.prevu && cr.prevu.recette && cr.prevu.recette !== r.id ? ' (prévu : ' + esc((recette(cr.prevu.recette) || {}).nom || '?') + ')' : '') : esc(cr.prevu && cr.prevu.raison || '')}</div>
           ${mSG}${marie}${et}
+          ${r.veille ? '<div class="warn">À lancer la veille (' + dureeTxt(r.duree_min) + ' de cuisson)</div>' : ''}
           ${!M.aIngredients(r) ? '<div class="warn">Pas d\'ingrédients : absent des listes de courses</div>' : ''}
           ${r.statut !== 'validee' ? `<div class="tags">${badgeStatut(r)}</div>` : ''}`;
       }
@@ -267,7 +268,7 @@
     const s = semaine(); const date = M.dateCreneau(s.debut, cle); const reel = date <= aujourdhui();
     const alts = M.alternatives(RECETTES, semaines(), s, cle, { assouplir: s.assouplir });
     const ok = alts.filter(a => !a.exclusions.length), hors = alts.filter(a => a.exclusions.length);
-    const RAISON_EXCL = { statut: 'pas encore validée', recence: 'servie il y a moins de 3 semaines', saison: 'hors saison', duree: 'trop longue pour ce soir', 'hors roulement': 'hors roulement' };
+    const RAISON_EXCL = { statut: 'pas encore validée', recence: 'servie il y a moins de 3 semaines', saison: 'hors saison', duree: 'trop longue pour ce créneau', 'hors roulement': 'hors roulement' };
     const ligne = a => { const r = recette(a.recette); return `<button class="alt" data-r="${r.id}"><b>${esc(r.nom)}</b><small>${esc(a.raison || '')}${a.dejaCetteSemaine ? ' · déjà dans la semaine' : ''}${a.exclusions.length ? ' · ' + a.exclusions.map(x => RAISON_EXCL[x] || x).join(', ') : ''}</small></button>`; };
     const f = feuille(`<h2>Remplacer</h2><input id="cherche" class="cherche" placeholder="Chercher une recette">
       <div id="alts">${ok.slice(0, 12).map(ligne).join('') || '<p class="vide">Aucune recette ne respecte toutes les règles.</p>'}
@@ -399,7 +400,7 @@
     const f = feuille(`<div class="fiche">
       <div class="fiche-tete"><button class="ib" data-x="fermer">‹ Retour</button>${r.etapes && r.etapes.length ? '<button class="btn plein" data-x="cuisine">Mode cuisine</button>' : ''}</div>
       <h2>${esc(r.nom)}</h2>
-      <div class="tags">${badgeStatut(r)}${sg(r)}${r.vegetarien ? '<span class="badge veg">Végétarien</span>' : ''}</div>
+      <div class="tags">${badgeStatut(r)}${sg(r)}${r.vegetarien ? '<span class="badge veg">Végétarien</span>' : ''}${r.veille ? '<span class="badge av">À faire la veille</span>' : ''}</div>
       <p class="petit">${esc(r.categorie || '')} · ${dureeTxt(r.duree_min)} · ${esc((r.saisons || []).join(', ').replace('toute', 'toute l\'année').replace('ete', 'été'))} · pour ${r.portions || 5}<br>
       Source : ${r.source && r.source.lien ? `<a href="${esc(r.source.lien)}" target="_blank" rel="noopener">${esc(r.source.nom)}</a>` : esc(r.source && r.source.nom || '?')}${r.choisie_par ? ' · choisie par ' + esc(r.choisie_par) : ''}</p>
       ${r.redaction === 'claude' ? '<div class="info">Fiche rédigée par Claude (version standard), pas encore relue par la famille. Les quantités sont à vérifier.</div>' : ''}

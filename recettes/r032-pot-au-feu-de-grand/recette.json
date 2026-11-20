@@ -4,7 +4,8 @@
  "statut": "a_valider",
  "redaction": "claude",
  "a_completer": [
-  "fiche rédigée par Claude (version standard), à valider"
+  "fiche rédigée par Claude (version standard), à valider",
+  "temps de cuisson 4 à 5 h indiqué par Etienne : étapes à ajuster selon la recette de La petite cuisine de Nat"
  ],
  "choisie_par": "Emma",
  "origine": "Hors base, apportée par la famille",
@@ -13,7 +14,7 @@
   "nom": "La petite cuisine de Nat",
   "lien": null
  },
- "duree_min": 150,
+ "duree_min": 300,
  "saisons": [
   "automne",
   "hiver"
@@ -163,12 +164,15 @@
  ],
  "etapes": [
   {
+   "texte": "À lancer la veille de préférence (4 à 5 h de cuisson au total) : la viande est meilleure réchauffée doucement dans son bouillon, et on dégraisse facilement une fois refroidi."
+  },
+  {
    "texte": "Mettre les viandes dans une grande cocotte, couvrir d'eau froide, porter à ébullition et écumer.",
    "minuteur": 900
   },
   {
-   "texte": "Ajouter les oignons piqués des clous de girofle, le laurier, le thym, sel et poivre. Laisser frémir à couvert.",
-   "minuteur": 5400
+   "texte": "Ajouter les oignons piqués des clous de girofle, le laurier, le thym, sel et poivre. Laisser frémir à couvert, à tout petit feu, environ 3 h 30.",
+   "minuteur": 12600
   },
   {
    "texte": "Pendant ce temps, éplucher carottes, navets, céleri, pommes de terre ; nettoyer les poireaux et les ficeler ; couper le chou en quartiers."
@@ -201,5 +205,6 @@
   "fois_au_menu": 1,
   "derniere_fois": "2026-11-04"
  },
- "pieces_jointes": []
+ "pieces_jointes": [],
+ "veille": true
 }

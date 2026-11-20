@@ -41,6 +41,8 @@ t('mercredi midi : pas un plat de plus de 40 min', (parId[p.creneaux.mer_midi.re
 const types = Object.values(p.creneaux).map(x => M.norm(nom(x.recette)).split(' ')[0]).filter(x => x.length > 3);
 t('pas deux plats du même type', new Set(types).size === types.length, types.join(', '));
 
+for (const c of M.CRENEAUX) if (c.cle !== 'dim_midi') t('pot-au-feu seulement le dimanche midi (' + c.cle + ')', p.creneaux[c.cle].recette !== 'r032');
+
 // --- Courses avant correction, et cases cochées
 let L = M.courses(R, s, {});
 const lignes = mag => L[mag].rayons.flatMap(r => r.lignes);

@@ -117,7 +117,7 @@
     statut: 'Seulement les recettes validées',
     recence: 'Pas servie dans les 3 dernières semaines',
     saison: 'De saison',
-    duree: 'Mercredi soir en 25 min maximum'
+    duree: 'Durée adaptée au créneau (25 min le mercredi soir, plats de plus de 2 h le dimanche midi seulement)'
   };
 
   function hash(s) { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return (h >>> 0) / 4294967295; }
@@ -132,6 +132,7 @@
     if (der && ecartJours(der, date) < 21 && !ctx.assouplir.recence) out.push('recence');
     if (!deSaison(r, date) && !ctx.assouplir.saison) out.push('saison');
     if (cre.besoin === 'rapide' && (r.duree_min == null || r.duree_min > 25) && !ctx.assouplir.duree) out.push('duree');
+    else if (((r.duree_min || 0) > 120 || r.veille) && cre.besoin !== 'genereux' && !ctx.assouplir.duree) out.push('duree');
     return out;
   }
 

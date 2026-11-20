@@ -21,6 +21,7 @@ L'`id` (`r001`, `r002`…) est définitif : on ne le change jamais, même si la 
 | `creneaux` | parmi `rapide` (≤ 25 min), `leger`, `genereux`, `midi_simple`. Liste vide = n'importe quel soir |
 | `legumes_amap` | légumes du panier AMAP que la recette utilise, noms du vocabulaire ci-dessous (ex. `["épinards", "potimarron"]`) |
 | `tres_frais` | produits à consommer vite : `avocat`, `poisson`, `poisson fumé`, `herbes fraîches`, `salade`… |
+| `veille` | `true` pour un plat à lancer la veille (pot-au-feu…) : proposé seulement le dimanche midi, signalé dans le menu |
 | `portions` | toujours 5 |
 | `ingredients` | voir ci-dessous, quantités pour 5 |
 | `etapes` | liste d'objets `{ "texte": "...", "minuteur": 600 }` (`minuteur` en secondes, seulement quand l'étape a une durée à surveiller) |
