@@ -10,15 +10,15 @@
   const LEGUMES_BASE = ['carotte', 'pomme de terre', 'oignon', 'poireau', 'courgette', 'tomate', 'salade', 'mâche', 'épinards', 'blettes', 'chou frisé', 'chou blanc', 'chou rouge', 'chou chinois', 'chou-fleur', 'brocoli', 'potimarron', 'butternut', 'courge', 'panais', 'navet', 'patates douces', 'betterave', 'céleri-rave', 'radis', 'radis noir', 'topinambour', 'fenouil', 'endive', 'champignons', 'poivron', 'concombre', 'haricots verts', 'petits pois', 'ail', 'échalote', 'persil', 'coriandre', 'pommes', 'poires', 'kiwis'];
 
   let RECETTES = [], PAR_ID = {};
-  const ui = { ecran: 'semaine', semaine: M.debutSemaine(M.ymd(new Date())), magasin: 'auchan', filtre: 'tous', recherche: '' };
+  const ui = { ecran: 'semaine', semaine: M.semaineParDefaut(M.ymd(new Date())), magasin: 'auchan', filtre: 'tous', recherche: '' };
   const aujourdhui = () => M.ymd(new Date());
 
   // ---------- Données ----------
-  function semaines() { return S.cles('semaine:').map(k => S.get(k)).filter(Boolean); }
+  function semaines() { return S.cles('semaine:').map(k => S.get(k)).filter(Boolean).map(M.completer); }
   function semaine(debut) {
     debut = debut || ui.semaine;
     const s = S.get('semaine:' + debut);
-    if (s) return s;
+    if (s) return M.completer(s);
     const v = M.semaineVide(debut);
     const auj = aujourdhui();
     if (auj > debut && auj <= M.ajouterJours(debut, 7)) { v.coursesDepuis = auj; v.supercoop = auj; }
@@ -106,7 +106,7 @@
         <div class="ligne-titre"><h3>Panier AMAP et frigo</h3><span class="lien">Modifier</span></div>
         ${s.panier.length ? `<div class="puces petites">${s.panier.map(p => `<span class="puce on">${p.photo ? '📷 ' : ''}${esc(p.nom)}</span>`).join('')}</div>` : '<p class="vide">Rien de saisi. Touche pour cocher les légumes du panier.</p>'}
         ${s.restes ? `<p class="restes">Restes : ${esc(s.restes)}</p>` : ''}
-        <p class="petit">Passage à Supercoop : <b>${esc(M.dateCourte(s.supercoop))}</b></p>
+        <p class="petit">Supercoop : <b>${esc(M.dateCourte(s.supercoop))}</b>${s.supercoop2 ? ` puis <b>${esc(M.dateCourte(s.supercoop2))}</b>` : ''}</p>
       </section>
       <div class="actions-menu">
         <button class="btn plein" data-a="proposer">${vide ? 'Proposer le menu' : 'Relancer les créneaux libres'}</button>
@@ -189,6 +189,8 @@
       <label class="champ">Restes du frigo<textarea id="restes" rows="2" placeholder="Ex. un fond de riz, 3 carottes">${esc(s.restes || '')}</textarea></label>
       <label class="champ">Passage à Supercoop<select id="supercoop">${jours.map(j => `<option value="${j}" ${j === s.supercoop ? 'selected' : ''}>${M.dateCourte(j)}</option>`).join('')}</select></label>
       <p class="petit">Les repas avant ce jour prennent leurs produits frais sur la liste Auchan.</p>
+      <label class="champ">Second passage à Supercoop (facultatif)<select id="supercoop2"><option value="">Pas de second passage</option>${jours.slice(1).map(j => `<option value="${j}" ${j === s.supercoop2 ? 'selected' : ''}>${M.dateCourte(j)}</option>`).join('')}</select></label>
+      <p class="petit">Les produits frais (légumes, crèmerie, viande, poisson) des repas à partir de ce jour sont mis de côté pour ce second passage, pour une meilleure fraîcheur.</p>
       <button class="btn plein" id="ok" style="width:100%;margin-top:10px">Enregistrer</button>`, { grande: true });
     const sel = new Map(s.panier.map(p => [M.norm(p.nom), p]));
     f.querySelector('#leg').onclick = e => {
@@ -216,7 +218,7 @@
       if (estLegume(nom)) S.set('legumes', [...new Set([...S.get('legumes', []), nom])]);
     };
     f.querySelector('#ok').onclick = () => {
-      const s2 = semaine(); s2.panier = [...sel.values()]; s2.restes = f.querySelector('#restes').value.trim(); s2.supercoop = f.querySelector('#supercoop').value;
+      const s2 = semaine(); s2.panier = [...sel.values()]; s2.restes = f.querySelector('#restes').value.trim(); s2.supercoop = f.querySelector('#supercoop').value; s2.supercoop2 = f.querySelector('#supercoop2').value || null;
       enregistrer(s2); fermerFeuille(); rendre();
     };
   }
@@ -304,7 +306,7 @@
     const L = M.courses(RECETTES, sCourses, reglages());
     const extras = S.get('extras:' + s.debut, []);
     const mag = ui.magasin; const liste = L[mag];
-    const toutes = [...liste.rayons.flatMap(r => r.lignes), ...liste.verifier];
+    const toutes = [...liste.rayons.flatMap(r => r.lignes), ...(liste.plusTard || []).flatMap(r => r.lignes), ...liste.verifier];
     const cles = new Set(toutes.map(l => l.cle));
     const orphelines = S.cles('coche:' + s.debut + ':' + mag + ':').filter(k => !cles.has(k.split(':').slice(2).join(':')) && !k.includes(':x:') && (S.get(k) || {}).ok);
     const reste = toutes.filter(l => !l.placard && !(S.get(cocheCle(s, l.cle)) || {}).ok).length + extras.filter(x => x.mag === mag && !(S.get(cocheCle(s, mag + ':x:' + x.id)) || {}).ok).length;
@@ -323,6 +325,7 @@
       ${L.sansIngredients.length ? `<div class="alerte"><b>Liste incomplète :</b> ${L.sansIngredients.map(x => `<a data-r="${x.recette.id}">${esc(x.recette.nom)}</a>`).join(', ')} n'${L.sansIngredients.length > 1 ? 'ont' : 'a'} pas encore d'ingrédients.</div>` : ''}
       ${!L.plats ? '<p class="vide">Pas encore de menu cette semaine.</p>' : ''}
       ${liste.rayons.map(r => `<h3 class="rayon">${esc(r.titre)}</h3><div class="carte serre">${r.lignes.map(ligne).join('')}</div>`).join('')}
+      ${(liste.plusTard || []).length ? `<h2 class="second">Second passage · ${esc(M.dateCourte(liste.dateSecond))}</h2>${liste.plusTard.map(r => `<h3 class="rayon">${esc(r.titre)}</h3><div class="carte serre">${r.lignes.map(ligne).join('')}</div>`).join('')}` : ''}
       ${extras.filter(x => x.mag === mag).length ? `<h3 class="rayon">Ajouts</h3><div class="carte serre">${extras.filter(x => x.mag === mag).map(x => { const c = S.get(cocheCle(s, mag + ':x:' + x.id)) || {}; return `<label class="art ${c.ok ? 'fait' : ''}"><input type="checkbox" data-k="${mag}:x:${x.id}" ${c.ok ? 'checked' : ''}><span class="art-n">${esc(x.nom)}</span><button class="suppr" data-sup="${x.id}" aria-label="Supprimer">✕</button></label>`; }).join('')}</div>` : ''}
       <div class="ajout"><input id="extra" placeholder="Ajouter un article à cette liste"><button class="btn" id="plusextra">Ajouter</button></div>
       ${liste.verifier.length ? `<h3 class="rayon">À vérifier dans le placard</h3><div class="carte serre verif">${liste.verifier.map(ligne).join('')}</div>` : ''}

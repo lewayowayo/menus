@@ -18,8 +18,9 @@ PWA statique (même pile que Houle et Révisions : HTML + JS sans framework ni b
 Famille de 5 à Bordeaux : Etienne (sportif, ne mange pas de frites), Marie, Emma (15 ans), Diego (12 ans), Billie (8 ans). Quantités toujours pour 5.
 - Marie évite le gluten, de façon souple (un peu de temps en temps n'est pas grave). Elle n'est **pas** végétarienne. Le soir, elle mange peu de féculents. Son option = substitution sans gluten de sa part (`marie.ajouter` / `marie.retirer`) + une phrase pour le soir (`marie.soir`).
 - Jamais de saumon (gros poisson plein de polluants) : toujours de la truite. Pas de thon, pas d'aubergine. `build.mjs` refuse ces ingrédients.
-- Courses : Supercoop (coopérative, bio) en priorité ; Auchan Drive pour les viandes simples (poulet…), le sec, les féculents, le sans gluten. La répartition par rayon est réglable dans l'appli (Plus > Magasin par rayon). Les repas avant le passage à Supercoop prennent leurs produits Supercoop sur la liste Auchan.
-- Le panier AMAP arrive le mardi soir ; une semaine = 9 repas, du mercredi soir au mercredi midi suivant.
+- Courses : Supercoop (coopérative, bio) en priorité ; Auchan Drive pour les viandes simples (poulet…), le sec, les féculents, le sans gluten. La répartition par rayon est réglable dans l'appli (Plus > Magasin par rayon). Si le passage à Supercoop est réglé après certains repas, ces repas prennent leurs produits Supercoop sur la liste Auchan.
+- Le panier AMAP arrive le mardi soir ; le menu se fait le mardi soir ou le mercredi matin (le mardi, l'appli ouvre d'office la semaine qui commence le lendemain). Une semaine = 10 repas : tous les soirs du mercredi au mardi, plus samedi midi, dimanche midi et le mercredi midi suivant.
+- Courses le mercredi après-midi, drive et Supercoop le même jour (Supercoop est juste à côté de la maison). Un second passage à Supercoop est possible dans la semaine : les produits frais des repas à partir de ce jour-là y sont mis de côté (meilleures DLC).
 
 ## Ne jamais inventer de contenu culinaire
 

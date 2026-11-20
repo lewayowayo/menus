@@ -8,6 +8,7 @@
     { cle: 'mer_soir', jour: 0, label: 'Mercredi soir', court: 'Mer soir', soir: true, besoin: 'rapide', note: 'Rapide (25 min max), retour des courses' },
     { cle: 'jeu_soir', jour: 1, label: 'Jeudi soir', court: 'Jeu soir', soir: true },
     { cle: 'ven_soir', jour: 2, label: 'Vendredi soir', court: 'Ven soir', soir: true },
+    { cle: 'sam_midi', jour: 3, label: 'Samedi midi', court: 'Sam midi', soir: false, besoin: 'midi_simple', note: 'Simple' },
     { cle: 'sam_soir', jour: 3, label: 'Samedi soir', court: 'Sam soir', soir: true },
     { cle: 'dim_midi', jour: 4, label: 'Dimanche midi', court: 'Dim midi', soir: false, besoin: 'genereux', note: 'Plat généreux, parfois des invités' },
     { cle: 'dim_soir', jour: 4, label: 'Dimanche soir', court: 'Dim soir', soir: true, besoin: 'leger', note: 'Léger' },
@@ -34,7 +35,17 @@
   function semaineVide(debut) {
     const creneaux = {};
     for (const c of CRENEAUX) creneaux[c.cle] = { prevu: null, reel: null, verrou: false };
-    return { debut, supercoop: ajouterJours(debut, 1), panier: [], restes: '', creneaux, graine: 0 };
+    return { debut, supercoop: debut, supercoop2: null, panier: [], restes: '', creneaux, graine: 0 };
+  }
+  /** Ajoute les créneaux manquants (semaines enregistrées avant l'ajout d'un créneau). */
+  function completer(semaine) {
+    for (const c of CRENEAUX) if (!semaine.creneaux[c.cle]) semaine.creneaux[c.cle] = { prevu: null, reel: null, verrou: false };
+    return semaine;
+  }
+  /** Semaine à ouvrir par défaut : le mardi soir, on prépare déjà celle qui commence le lendemain. */
+  function semaineParDefaut(aujourdhui) {
+    const d = parse(aujourdhui).getDay();
+    return d === 2 ? ajouterJours(aujourdhui, 1) : debutSemaine(aujourdhui);
   }
 
   // ---------- Texte ----------
@@ -214,6 +225,7 @@
   /** Créneaux qu'on ne touche pas en relançant : verrouillés, déjà corrigés, ou passés. */
   function fige(semaine, cle, aujourdhui) {
     const cr = semaine.creneaux[cle];
+    if (!cr) return false;
     if (cr.verrou || cr.reel) return true;
     if (aujourdhui && dateCreneau(semaine.debut, cle) < aujourdhui && cr.prevu) return true;
     return false;
@@ -250,7 +262,7 @@
   function fusion(semaine, res) {
     const out = {};
     for (const c of CRENEAUX) {
-      out[c.cle] = { ...semaine.creneaux[c.cle] };
+      out[c.cle] = { prevu: null, reel: null, verrou: false, ...semaine.creneaux[c.cle] };
       if (c.cle in res) out[c.cle].prevu = res[c.cle];
     }
     return out;
@@ -305,6 +317,8 @@
     epicerie: 'supercoop', feculents: 'auchan', boulangerie: 'auchan', surgeles: 'auchan', sans_gluten: 'auchan'
   };
   const MAGASINS = { auchan: 'Auchan Drive', supercoop: 'Supercoop' };
+  // Produits qu'on préfère acheter au plus près du repas (second passage à Supercoop).
+  const RAYONS_FRAIS = ['fruits_legumes', 'cremerie', 'boucherie', 'poissonnerie', 'alternatives'];
 
   const UNITES = {
     g: ['masse', 1], kg: ['masse', 1000], ml: ['volume', 1], cl: ['volume', 10], l: ['volume', 1000]
@@ -384,7 +398,8 @@
     const parId = {}; for (const r of recettes) parId[r.id] = r;
     const politique = { ...MAGASIN_PAR_RAYON, ...(reglages.magasinParRayon || {}) };
     const panier = new Set((semaine.panier || []).map(p => norm(p.nom)));
-    const supercoopDate = semaine.supercoop || ajouterJours(semaine.debut, 1);
+    const supercoopDate = semaine.supercoop || semaine.debut;
+    const second = semaine.supercoop2 && semaine.supercoop2 > supercoopDate ? semaine.supercoop2 : null;
     const groupes = {}; const maison = {}; const sansIngredients = []; let plats = 0;
     for (const c of CRENEAUX) {
       const e = effectif(semaine.creneaux[c.cle]);
@@ -399,25 +414,34 @@
         let mag = i.magasin || politique[i.rayon] || 'auchan';
         let avance = false;
         if (mag === 'supercoop' && date < supercoopDate && !i.placard) { mag = 'auchan'; avance = true; }
-        const cle = mag + ':' + n + (i.placard ? ':p' : '');
-        const g = groupes[cle] = groupes[cle] || { cle, nom: i.nom, rayon: i.rayon || 'epicerie', magasin: mag, placard: !!i.placard, qs: [], pour: new Set(), avance: false, marie: false, estime: false };
+        const tard = mag === 'supercoop' && second && date >= second && !i.placard && RAYONS_FRAIS.includes(i.rayon);
+        const cle = mag + ':' + n + (i.placard ? ':p' : '') + (tard ? ':2' : '');
+        const g = groupes[cle] = groupes[cle] || { cle, nom: i.nom, rayon: i.rayon || 'epicerie', magasin: mag, placard: !!i.placard, tard, qs: [], pour: new Set(), avance: false, marie: false, estime: false };
         g.qs.push(i); g.pour.add(r.nom); if (avance) g.avance = true; if (i._pour === 'Marie') g.marie = true; if (i.estime) g.estime = true;
       }
     }
     const out = { sansIngredients, plats, maison: Object.values(maison).map(m => ({ nom: m.nom, pour: [...m.pour] })) };
     for (const mag of ['auchan', 'supercoop']) {
       const lignes = Object.values(groupes).filter(g => g.magasin === mag).map(g => ({
-        cle: g.cle, nom: g.nom, rayon: g.rayon, magasin: mag, placard: g.placard, quantite: texteQuantite(additionner(g.qs)),
+        cle: g.cle, nom: g.nom, rayon: g.rayon, magasin: mag, placard: g.placard, tard: g.tard, quantite: texteQuantite(additionner(g.qs)),
         pour: [...g.pour], avance: g.avance, marie: g.marie, estime: g.estime
       })).sort((a, b) => a.nom.localeCompare(b.nom, 'fr'));
-      const rayons = [];
-      for (const ry of ORDRE_RAYONS[mag]) {
-        const l = lignes.filter(x => !x.placard && x.rayon === ry);
-        if (l.length) rayons.push({ rayon: ry, titre: RAYONS[ry], lignes: l });
-      }
-      const autres = lignes.filter(x => !x.placard && !ORDRE_RAYONS[mag].includes(x.rayon));
-      if (autres.length) rayons.push({ rayon: 'autre', titre: 'Autres', lignes: autres });
-      out[mag] = { rayons, verifier: lignes.filter(x => x.placard) };
+      const parRayon = liste => {
+        const rayons = [];
+        for (const ry of ORDRE_RAYONS[mag]) {
+          const l = liste.filter(x => x.rayon === ry);
+          if (l.length) rayons.push({ rayon: ry, titre: RAYONS[ry], lignes: l });
+        }
+        const autres = liste.filter(x => !ORDRE_RAYONS[mag].includes(x.rayon));
+        if (autres.length) rayons.push({ rayon: 'autre', titre: 'Autres', lignes: autres });
+        return rayons;
+      };
+      out[mag] = {
+        rayons: parRayon(lignes.filter(x => !x.placard && !x.tard)),
+        plusTard: parRayon(lignes.filter(x => x.tard)),
+        dateSecond: mag === 'supercoop' ? second : null,
+        verifier: lignes.filter(x => x.placard)
+      };
     }
     return out;
   }
@@ -431,6 +455,11 @@
       for (const x of ry.lignes) lignes.push('- ' + x.nom + (x.quantite ? ' : ' + x.quantite : ''));
       lignes.push('');
     }
+    if (l.plusTard && l.plusTard.length) {
+      lignes.push('SECOND PASSAGE (' + dateCourte(l.dateSecond).toUpperCase() + ')');
+      for (const ry of l.plusTard) for (const x of ry.lignes) lignes.push('- ' + x.nom + (x.quantite ? ' : ' + x.quantite : ''));
+      lignes.push('');
+    }
     for (const x of extras || []) lignes.push('- ' + x);
     if (l.verifier.length) {
       lignes.push('À VÉRIFIER DANS LE PLACARD');
@@ -441,7 +470,7 @@
 
   globalThis.Moteur = {
     CRENEAUX, REGLES_DURES, RAYONS, MAGASINS, MAGASIN_PAR_RAYON, ORDRE_RAYONS, JOURS,
-    ymd, parse, ajouterJours, ecartJours, debutSemaine, dateCreneau, dateCourte, semaineVide, saisonDe, deSaison,
+    ymd, parse, ajouterJours, completer, semaineParDefaut, ecartJours, debutSemaine, dateCreneau, dateCourte, semaineVide, saisonDe, deSaison,
     norm, effectif, historique, FAMILLES, legumesUtilises, exclusions, proposer, alternatives, bilan, fusion,
     ingredientsDuPlat, additionner, texteQuantite, courses, texteListe, aIngredients
   };

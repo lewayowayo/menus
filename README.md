@@ -1,6 +1,6 @@
 # Menus de la semaine
 
-Appli de la famille pour planifier les 9 repas de la semaine (mercredi soir → mercredi midi), à partir de nos recettes validées et du panier AMAP, et produire les deux listes de courses (Supercoop et Auchan Drive).
+Appli de la famille pour planifier les 10 repas de la semaine (mercredi soir → mercredi midi, avec samedi et dimanche midi), à partir de nos recettes validées et du panier AMAP, et produire les deux listes de courses (Supercoop et Auchan Drive).
 
 - **Semaine** : panier AMAP et restes, menu proposé par règles (avec la raison de chaque choix), remplacer / verrouiller / déplacer / annuler / « on a mangé autre chose » d'un geste.
 - **Courses** : deux listes rayon par rayon, cases à cocher partagées et gardées hors ligne, copie en texte pour le drive.

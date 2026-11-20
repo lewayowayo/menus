@@ -21,7 +21,7 @@ const s = M.semaineVide('2026-11-18');
 s.panier = ['chou frisé', 'blettes', 'patates douces', 'panais', 'navet'].map(n => ({ nom: n }));
 s.supercoop = '2026-11-19';
 const p = M.proposer(R, [], s, { assouplir: ASSOUPLIR });
-t('9 créneaux remplis', Object.values(p.creneaux).filter(Boolean).length === 9, JSON.stringify(p.manques));
+t('10 créneaux remplis', Object.values(p.creneaux).filter(Boolean).length === 10, JSON.stringify(p.manques));
 s.creneaux = M.fusion(s, p.creneaux);
 const ids = Object.values(p.creneaux).map(x => x.recette);
 t('pas de doublon dans la semaine', new Set(ids).size === ids.length);
@@ -80,7 +80,24 @@ L = M.courses(R, s, {});
 const apres = new Set([...lignes('auchan'), ...lignes('supercoop')].map(l => l.cle));
 const gardees = Object.keys(coches).filter(k => apres.has(k));
 t('les lignes cochées encore utiles sont toujours là', gardees.length > 0);
-t('le plat libre ne génère pas de courses', L.plats === 8);
+t('le plat libre ne génère pas de courses', L.plats === 9);
+
+// --- Second passage à Supercoop : les produits frais des repas à partir de samedi y sont mis de côté
+const sP = JSON.parse(JSON.stringify(s)); sP.supercoop = '2026-11-18'; sP.supercoop2 = '2026-11-21';
+const LP = M.courses(R, sP, {});
+const tard = LP.supercoop.plusTard.flatMap(r => r.lignes);
+t('second passage non vide', tard.length > 0);
+t('second passage : seulement des produits frais', tard.every(l => ['fruits_legumes', 'cremerie', 'boucherie', 'poissonnerie', 'alternatives'].includes(l.rayon)));
+t('Supercoop le mercredi : pas d\'exception fraîcheur', !LP.auchan.rayons.flatMap(r => r.lignes).some(l => l.avance));
+
+// --- Mardi soir : on ouvre la semaine qui commence le lendemain
+t('mardi → semaine du lendemain', M.semaineParDefaut('2026-11-24') === '2026-11-25');
+t('mercredi → semaine du jour', M.semaineParDefaut('2026-11-25') === '2026-11-25');
+t('vendredi → semaine en cours', M.semaineParDefaut('2026-11-20') === '2026-11-18');
+
+// --- Ancienne semaine enregistrée sans samedi midi
+const vieille = M.semaineVide('2026-11-18'); delete vieille.creneaux.sam_midi;
+t('semaine sans samedi midi complétée', !!M.completer(vieille).creneaux.sam_midi);
 
 // --- Addition des quantités
 const a = M.additionner([{ qte: 2, unite: 'piece' }, { qte: 300, unite: 'g' }, { qte: 1, unite: 'piece' }, { qte: 0.2, unite: 'kg' }]);
