@@ -1,0 +1,217 @@
+{
+ "id": "r046",
+ "nom": "Lasagnes crémeuses au poulet, champignons et courgette",
+ "statut": "a_tester",
+ "redaction": "source",
+ "a_completer": [
+  "nombre de parts non indiqué : le plat est coupé en 6 dans la vidéo, quantités de la légende gardées telles quelles",
+  "200 g de poulet dans la légende alors que la vidéo semble en montrer plus : à vérifier",
+  "quantité de champignons et nombre de feuilles non donnés (estimés d'après la vidéo)",
+  "lien Instagram à ajouter"
+ ],
+ "choisie_par": "Marie",
+ "origine": "Vidéo Instagram envoyée par Marie, 22/11/2026",
+ "categorie": "Classique familial",
+ "source": {
+  "nom": "Instagram @louloukitchen_",
+  "lien": null
+ },
+ "duree_min": 75,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Plaques sans gluten et maïzena à la place de la farine si on veut le plat entier sans gluten"
+ },
+ "vegetarien": false,
+ "creneaux": [
+  "genereux"
+ ],
+ "legumes_amap": [
+  "courgette",
+  "champignon de Paris",
+  "oignon"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "plaques de lasagne",
+   "qte": 6,
+   "unite": "piece",
+   "rayon": "feculents",
+   "placard": false,
+   "estime": true,
+   "note": "2 couches de 3 dans un plat d'environ 30 × 20 cm"
+  },
+  {
+   "nom": "courgette",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "champignon de Paris",
+   "qte": 300,
+   "unite": "g",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "bouillon de volaille",
+   "qte": 125,
+   "unite": "ml",
+   "rayon": "epicerie",
+   "placard": true,
+   "note": "ou de légumes"
+  },
+  {
+   "nom": "oignon",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "blanc de poulet",
+   "qte": 200,
+   "unite": "g",
+   "rayon": "boucherie",
+   "placard": false,
+   "note": "aiguillettes"
+  },
+  {
+   "nom": "sel",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "coriandre moulue",
+   "qte": 1,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "ail",
+   "qte": 2,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false
+  },
+  {
+   "nom": "pâte miso",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "crème liquide",
+   "qte": 250,
+   "unite": "ml",
+   "rayon": "cremerie",
+   "placard": false,
+   "note": "entière"
+  },
+  {
+   "nom": "huile neutre",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "beurre",
+   "qte": 50,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "farine",
+   "qte": 50,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": true
+  },
+  {
+   "nom": "lait",
+   "qte": 300,
+   "unite": "ml",
+   "rayon": "cremerie",
+   "placard": false
+  },
+  {
+   "nom": "parmesan",
+   "qte": null,
+   "unite": null,
+   "rayon": "cremerie",
+   "placard": false,
+   "note": "un peu"
+  },
+  {
+   "nom": "mozzarella râpée",
+   "qte": null,
+   "unite": null,
+   "rayon": "cremerie",
+   "placard": false,
+   "note": "une assiette pour le dessus"
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Couper l'oignon en petits dés."
+  },
+  {
+   "texte": "Assaisonner les aiguillettes de poulet de coriandre moulue, sel et poivre, puis les cuire entières dans une poêle avec un fond d'huile jusqu'à ce qu'elles soient dorées. Les retirer."
+  },
+  {
+   "texte": "Tailler la courgette en longs rubans fins à l'éplucheur (elle reste crue)."
+  },
+  {
+   "texte": "Dans la même poêle, faire revenir l'oignon, puis les champignons émincés. Ajouter l'ail écrasé et la pâte miso, mélanger."
+  },
+  {
+   "texte": "Hacher le poulet cuit au mini-hachoir, l'ajouter aux champignons, verser le bouillon et la crème, laisser mijoter jusqu'à une sauce crémeuse."
+  },
+  {
+   "texte": "Béchamel : fondre le beurre, ajouter la farine et fouetter, verser le lait en fouettant jusqu'à épaississement, puis ajouter le parmesan râpé et assaisonner."
+  },
+  {
+   "texte": "Monter dans le plat : 3 feuilles de lasagnes sèches (sans précuisson), béchamel, rubans de courgette, sauce au poulet ; recommencer avec 3 feuilles et finir par la béchamel et la mozzarella râpée sur tout le dessus."
+  },
+  {
+   "texte": "Cuire 40 minutes à 160 °C (chaleur tournante dans la vidéo), jusqu'à ce que ce soit bien gratiné.",
+   "minuteur": 2400
+  }
+ ],
+ "marie": {
+  "texte": "Plat entier avec plaques sans gluten et maïzena à la place de la farine, ou petite part à part.",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Petite part, avec une salade verte."
+ },
+ "etienne": null,
+ "remarque": "Légende transcrite (ingrédients, 40 min à 160 °C), étapes relevées image par image dans la vidéo (sans son). La vidéo montre de l'ail écrasé en flacon (2 gousses dans la légende) et un fromage râpé qui peut être de la mozzarella ou de l'emmental. Le nombre exact de couches n'est pas sûr (coupe au montage).",
+ "ancien": null,
+ "pieces_jointes": [
+  {
+   "fichier": "plat.jpg",
+   "legende": "Le plat fini (image de la vidéo)"
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+{
+ "id": "r048",
+ "nom": "Tofu, oignons et poireau, sauce cacahuète",
+ "statut": "a_tester",
+ "redaction": "source",
+ "a_completer": [
+  "recette pour 2 : quantités multipliées par 2,5 pour 5",
+  "durées de cuisson non données (vidéo sans son)",
+  "lien Instagram à ajouter"
+ ],
+ "choisie_par": "Marie",
+ "origine": "Capture et vidéo Instagram envoyées par Marie, 22/11/2026",
+ "categorie": "Recette du monde",
+ "source": {
+  "nom": "Instagram @eatwithflower (Mes dîners d'automne, épisode 4)",
+  "lien": null
+ },
+ "duree_min": 35,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Sauce soja sans gluten (tamari) ; fécule ou maïzena naturellement sans gluten"
+ },
+ "vegetarien": true,
+ "creneaux": [],
+ "legumes_amap": [
+  "poireau",
+  "oignon"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "oignon",
+   "qte": 5,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "poireau",
+   "qte": 2.5,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true,
+   "note": "ou 5 verts de poireaux"
+  },
+  {
+   "nom": "tofu nature",
+   "qte": 500,
+   "unite": "g",
+   "rayon": "alternatives",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "sauce soja sans gluten",
+   "qte": 15,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": false,
+   "estime": true,
+   "note": "un peu pour mariner + 15 c. à s. pour la sauce"
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "maïzena",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true,
+   "estime": true,
+   "note": "vue sur le tofu dans la vidéo, absente de la légende"
+  },
+  {
+   "nom": "riz basmati",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "purée de cacahuète",
+   "qte": 4,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": false,
+   "estime": true,
+   "note": "2,5 à 5 c. à s."
+  },
+  {
+   "nom": "sirop d'agave",
+   "qte": 5,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "cacahuète",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": false
+  },
+  {
+   "nom": "coriandre",
+   "qte": null,
+   "unite": null,
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "note": "dans la légende, pas vue dans la vidéo"
+  },
+  {
+   "nom": "basilic",
+   "qte": null,
+   "unite": null,
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "note": "dans la légende, pas vu dans la vidéo"
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Presser le tofu dans un torchon, le couper en cubes d'environ 2 cm et le faire mariner dans un saladier avec un peu de sauce soja et d'huile d'olive."
+  },
+  {
+   "texte": "Fendre les verts de poireaux en lanières, les couper en tronçons de 1 à 2 cm et les rincer. Émincer les oignons en demi-lunes."
+  },
+  {
+   "texte": "Dans une poêle avec un filet d'huile d'olive, faire revenir les oignons puis les poireaux jusqu'à ce qu'ils dorent légèrement. Ajouter un peu d'eau et couvrir pour les rendre fondants."
+  },
+  {
+   "texte": "Enrober le tofu de fécule (vu dans la vidéo) et le faire dorer dans une autre poêle avec un peu d'huile."
+  },
+  {
+   "texte": "Sauce : dans le saladier de la marinade, ajouter la sauce soja, la purée de cacahuète et le sirop d'agave, et mélanger."
+  },
+  {
+   "texte": "Verser la sauce sur les oignons et poireaux, ajouter le tofu doré, mélanger et couvrir quelques instants jusqu'à ce que tout soit nappé et caramélisé."
+  },
+  {
+   "texte": "Servir sur du riz avec des cacahuètes grillées (et coriandre ou basilic selon la légende). Option : sriracha, gingembre, épices."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter avec une sauce soja sans gluten (tamari).",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Peu de riz, plus de légumes et de tofu."
+ },
+ "etienne": null,
+ "remarque": "Légende transcrite (pour 2), étapes relevées image par image dans la vidéo (sans son). Attention : la créatrice prévient que certaines sauces soja sont très salées, en prendre une réduite en sel ou la diluer.",
+ "ancien": null,
+ "pieces_jointes": [
+  {
+   "fichier": "capture-instagram.jpg",
+   "legende": "Capture Instagram, ingrédients en légende"
+  },
+  {
+   "fichier": "plat.jpg",
+   "legende": "Le plat fini (image de la vidéo)"
+  }
+ ]
+}
