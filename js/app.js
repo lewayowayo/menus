@@ -313,6 +313,18 @@
     };
   }
 
+  // ---------- Habituels (goûters, petit-déj) : ajoutés à chaque semaine, retirables semaine par semaine ----------
+  const HABITUELS_DEFAUT = [
+    { id: 'brioche', nom: 'brioche', mag: 'supercoop' },
+    { id: 'yaourts', nom: 'gros pots de yaourt nature', mag: 'supercoop' },
+    { id: 'fromage-blanc', nom: 'fromage blanc au lait de montagne', mag: 'supercoop' }
+  ];
+  function habituels() { return S.get('habituels', HABITUELS_DEFAUT); }
+  function habituelsSemaine(s, mag) {
+    const retires = S.get('habituels-retires:' + s.debut, []);
+    return habituels().filter(h => h.mag === mag && !retires.includes(h.id));
+  }
+
   // ---------- Écran Courses ----------
   function cocheCle(s, cle) { return 'coche:' + s.debut + ':' + cle; }
   function ecranCourses() {
@@ -324,8 +336,9 @@
     const mag = ui.magasin; const liste = L[mag];
     const toutes = [...liste.rayons.flatMap(r => r.lignes), ...(liste.plusTard || []).flatMap(r => r.lignes), ...liste.verifier];
     const cles = new Set(toutes.map(l => l.cle));
-    const orphelines = S.cles('coche:' + s.debut + ':' + mag + ':').filter(k => !cles.has(k.split(':').slice(2).join(':')) && !k.includes(':x:') && (S.get(k) || {}).ok);
-    const reste = toutes.filter(l => !l.placard && !(S.get(cocheCle(s, l.cle)) || {}).ok).length + extras.filter(x => x.mag === mag && !(S.get(cocheCle(s, mag + ':x:' + x.id)) || {}).ok).length;
+    const orphelines = S.cles('coche:' + s.debut + ':' + mag + ':').filter(k => !cles.has(k.split(':').slice(2).join(':')) && !k.includes(':x:') && !k.includes(':h:') && (S.get(k) || {}).ok);
+    const hab = habituelsSemaine(s, mag);
+    const reste = toutes.filter(l => !l.placard && !(S.get(cocheCle(s, l.cle)) || {}).ok).length + extras.filter(x => x.mag === mag && !(S.get(cocheCle(s, mag + ':x:' + x.id)) || {}).ok).length + hab.filter(h => !(S.get(cocheCle(s, mag + ':h:' + h.id)) || {}).ok).length;
     const ligne = l => {
       const c = S.get(cocheCle(s, l.cle)) || {};
       const change = c.ok && c.qte && c.qte !== l.quantite;
@@ -342,6 +355,7 @@
       ${!L.plats ? '<p class="vide">Pas encore de menu cette semaine.</p>' : ''}
       ${liste.rayons.map(r => `<h3 class="rayon">${esc(r.titre)}</h3><div class="carte serre">${r.lignes.map(ligne).join('')}</div>`).join('')}
       ${(liste.plusTard || []).length ? `<h2 class="second">Second passage · ${esc(M.dateCourte(liste.dateSecond))}</h2>${liste.plusTard.map(r => `<h3 class="rayon">${esc(r.titre)}</h3><div class="carte serre">${r.lignes.map(ligne).join('')}</div>`).join('')}` : ''}
+      ${hab.length ? `<h3 class="rayon">Habituels · goûters et petit-déj</h3><div class="carte serre">${hab.map(h => { const c = S.get(cocheCle(s, mag + ':h:' + h.id)) || {}; return `<label class="art ${c.ok ? 'fait' : ''}"><input type="checkbox" data-k="${mag}:h:${esc(h.id)}" ${c.ok ? 'checked' : ''}><span class="art-n">${esc(h.nom)}<small>chaque semaine · ✕ pour l'enlever cette semaine</small></span><button class="suppr" data-hab="${esc(h.id)}" aria-label="Pas cette semaine">✕</button></label>`; }).join('')}</div>` : ''}
       ${extras.filter(x => x.mag === mag).length ? `<h3 class="rayon">Ajouts</h3><div class="carte serre">${extras.filter(x => x.mag === mag).map(x => { const c = S.get(cocheCle(s, mag + ':x:' + x.id)) || {}; return `<label class="art ${c.ok ? 'fait' : ''}"><input type="checkbox" data-k="${mag}:x:${x.id}" ${c.ok ? 'checked' : ''}><span class="art-n">${esc(x.nom)}</span><button class="suppr" data-sup="${x.id}" aria-label="Supprimer">✕</button></label>`; }).join('')}</div>` : ''}
       <div class="ajout"><input id="extra" placeholder="Ajouter un article à cette liste"><button class="btn" id="plusextra">Ajouter</button></div>
       ${liste.verifier.length ? `<h3 class="rayon">À vérifier dans le placard</h3><div class="carte serre verif">${liste.verifier.map(ligne).join('')}</div>` : ''}
@@ -356,6 +370,7 @@
     main.onclick = e => {
       const m = e.target.closest('[data-m]'); if (m) { ui.magasin = m.dataset.m; return rendre(); }
       const r = e.target.closest('a[data-r]'); if (r) return ouvrirRecette(r.dataset.r);
+      const hb = e.target.closest('[data-hab]'); if (hb) { e.preventDefault(); S.set('habituels-retires:' + s.debut, [...S.get('habituels-retires:' + s.debut, []), hb.dataset.hab]); toast('Enlevé pour cette semaine'); return rendre(); }
       const sup = e.target.closest('[data-sup]'); if (sup) { e.preventDefault(); S.set('extras:' + s.debut, S.get('extras:' + s.debut, []).filter(x => x.id !== sup.dataset.sup)); return rendre(); }
       const o = e.target.closest('[data-orph]'); if (o) { S.set(o.dataset.orph, null); return rendre(); }
     };
@@ -367,7 +382,7 @@
     const ajoutExtra = () => { const v = $('#extra').value.trim(); if (!v) return; S.set('extras:' + s.debut, [...S.get('extras:' + s.debut, []), { id: Date.now().toString(36), mag, nom: v }]); rendre(); };
     $('#plusextra').onclick = ajoutExtra; $('#extra').onkeydown = e => { if (e.key === 'Enter') ajoutExtra(); };
     $('#copier').onclick = () => {
-      const ext = extras.filter(x => x.mag === mag).map(x => x.nom);
+      const ext = [...hab.map(h => h.nom), ...extras.filter(x => x.mag === mag).map(x => x.nom)];
       copier(M.texteListe(L, mag, s, ext));
     };
     function majCompte() { const n = main.querySelectorAll('.carte:not(.verif) .art input[type=checkbox]:not(:checked)').length; $('.compte').textContent = n + ' à prendre'; }
@@ -539,6 +554,9 @@
     $('#main').innerHTML = `
       <div class="hdr"><div><div class="kick">Menus</div><h1>Plus</h1></div><span id="synchro" class="synchro"></span></div>
       <section class="carte"><h3>Qui utilise ce téléphone ?</h3><div class="puces" id="qui">${FAMILLE.map(p => `<button class="puce ${qui() === p ? 'on' : ''}" data-p="${p}">${p}</button>`).join('')}</div></section>
+      <section class="carte"><h3>Habituels des courses</h3><p class="petit">Ajoutés automatiquement chaque semaine (goûters, petit-déj). Sur la liste, ✕ les enlève pour une semaine seulement.</p>
+        ${habituels().map(h => `<div class="reg"><span>${esc(h.nom)} <small class="petit">· ${M.MAGASINS[h.mag]}</small></span><button class="suppr" data-habsup="${esc(h.id)}" aria-label="Supprimer">✕</button></div>`).join('')}
+        <div class="ajout"><input id="hab-nom" placeholder="Ex. compote, lait, céréales"><select id="hab-mag" style="width:auto"><option value="supercoop">Supercoop</option><option value="auchan">Auchan</option></select><button class="btn" id="hab-plus">Ajouter</button></div></section>
       <section class="carte"><h3>Avis et notes à transmettre à Claude</h3>
         <p class="petit">${avis.length} avis sur des fiches, ${notes.length} notes. Copie et colle-les dans la conversation Claude « Menus » : il met les fiches à jour.</p>
         <button class="btn" id="copier-avis" ${avis.length + notes.length ? '' : 'disabled'}>Copier pour Claude</button></section>
@@ -556,6 +574,8 @@
       <p class="petit centre">Recettes mises à jour le ${dateFr(M.ymd(new Date(window.__genere || Date.now())))}</p>`;
     majStatut();
     $('#qui').onclick = e => { const b = e.target.closest('.puce'); if (!b) return; S.setQui(b.dataset.p); rendre(); };
+    $('#main').onclick = e => { const b = e.target.closest('[data-habsup]'); if (!b) return; S.set('habituels', habituels().filter(h => h.id !== b.dataset.habsup)); rendre(); };
+    $('#hab-plus').onclick = () => { const n = $('#hab-nom').value.trim(); if (!n) return; S.set('habituels', [...habituels(), { id: Date.now().toString(36), nom: n, mag: $('#hab-mag').value }]); rendre(); };
     $('#copier-avis').onclick = () => {
       const l = ['Avis de la famille sur les fiches recettes (appli Menus) :', ''];
       for (const a of avis) l.push(`- ${a.id} « ${recette(a.id).nom} » : ${{ ok: 'validée telle quelle', corriger: 'à corriger', ecarter: 'à écarter' }[a.verdict]}${a.texte ? ' — ' + a.texte : ''} (${a.par || '?'})`);

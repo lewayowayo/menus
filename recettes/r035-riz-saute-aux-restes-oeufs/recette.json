@@ -1,6 +1,6 @@
 {
  "id": "r035",
- "nom": "Riz sauté aux restes + œufs au plat",
+ "nom": "Riz chauffé (riz sauté aux restes) + œufs au plat",
  "statut": "a_valider",
  "redaction": "claude",
  "a_completer": [
@@ -127,7 +127,7 @@
   "soir": null
  },
  "etienne": null,
- "remarque": null,
+ "remarque": "Le « riz chauffé » réunionnais : Etienne aime bien, à garder pour finir les restes du mercredi midi.",
  "ancien": {
   "option_marie": "(servi le midi)",
   "fois_au_menu": 1,
