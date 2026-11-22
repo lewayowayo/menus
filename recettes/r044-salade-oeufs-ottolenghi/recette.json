@@ -1,0 +1,174 @@
+{
+ "id": "r044",
+ "nom": "Salade d'œufs d'Ottolenghi sur pain grillé (green shatta en option)",
+ "statut": "a_tester",
+ "redaction": "source",
+ "a_completer": [
+  "quantités réservées aux abonnés Mob Premium (livre « Simple Too ») : toutes les quantités sont estimées pour 5 par Claude, à corriger",
+  "recette d'origine pour 6 personnes"
+ ],
+ "choisie_par": "Marie",
+ "origine": "Capture Instagram envoyée par Marie, 20/11/2026 (@mob et @ottolenghi)",
+ "categorie": "Soupe / léger",
+ "source": {
+  "nom": "Yotam Ottolenghi, « Simple Too », via Mob",
+  "lien": "https://www.mob.co.uk/recipes/egg-salad-with-green-shatta"
+ },
+ "duree_min": 25,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Pain sans gluten pour Marie"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "rapide",
+  "leger",
+  "midi_simple"
+ ],
+ "legumes_amap": [
+  "céleri branche"
+ ],
+ "legumes_libres": [],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "œuf",
+   "qte": 10,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "oignon nouveau",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "céleri branche",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true,
+   "note": "branches"
+  },
+  {
+   "nom": "aneth",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": 2,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true,
+   "estime": true
+  },
+  {
+   "nom": "mayonnaise",
+   "qte": 4,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "yaourt grec",
+   "qte": 4,
+   "unite": "cas",
+   "rayon": "cremerie",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "moutarde",
+   "qte": 1,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true,
+   "estime": true,
+   "note": "de Dijon"
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true,
+   "estime": false
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true,
+   "estime": false
+  },
+  {
+   "nom": "pain au levain",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "boulangerie",
+   "placard": false,
+   "estime": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Facultatif, green shatta (se garde au frigo, il en restera) : préchauffer le four à 200 °C. Trancher finement un citron sans les pépins, l'étaler sur une petite plaque avec du papier cuisson, 10 ml d'huile d'olive et une pincée de sel. Rôtir 12 à 15 min, jusqu'à ce qu'il commence à caraméliser, laisser refroidir et hacher.",
+   "minuteur": 840
+  },
+  {
+   "texte": "Facultatif, suite du shatta : mixer finement le citron avec des jalapeños frais hachés, mettre en bocal avec du vinaigre de vin blanc, du jus de citron, du sel et 60 ml d'huile d'olive, puis couvrir de 15 ml d'huile. Réfrigérer."
+  },
+  {
+   "texte": "Porter une casserole d'eau à ébullition, y plonger délicatement les œufs et cuire 8 minutes.",
+   "minuteur": 480
+  },
+  {
+   "texte": "Pendant ce temps, émincer finement les oignons nouveaux et le céleri, ciseler finement l'aneth."
+  },
+  {
+   "texte": "Égoutter les œufs, les refroidir sous l'eau froide, les écaler puis les hacher grossièrement (ou les râper côté gros trous)."
+  },
+  {
+   "texte": "Dans un saladier, mélanger les œufs avec l'huile d'olive, la mayonnaise, le yaourt grec, la moutarde, les oignons nouveaux, le céleri et l'aneth. Saler et poivrer généreusement. Garder au frais jusqu'au service."
+  },
+  {
+   "texte": "Griller le pain, garnir de salade d'œufs, avec un filet de green shatta à côté si on en a fait."
+  }
+ ],
+ "marie": {
+  "texte": "Pain sans gluten pour sa part.",
+  "ajouter": [
+   {
+    "nom": "pain de mie sans gluten",
+    "qte": 2,
+    "unite": "tranche",
+    "rayon": "sans_gluten",
+    "placard": false
+   }
+  ],
+  "retirer": [],
+  "soir": "Une seule tartine, avec une salade verte à côté."
+ },
+ "etienne": null,
+ "remarque": "Étapes résumées de la page Mob (la page publique ne montre pas les quantités). Le green shatta est laissé hors de la liste de courses : ajoute citron et jalapeños à la main si tu veux le faire.",
+ "ancien": null,
+ "pieces_jointes": []
+}
