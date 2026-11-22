@@ -15,7 +15,7 @@
   function ecrireLS(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* stockage plein ou privé */ } }
 
   function configure() { return !!(CFG.supabaseUrl && CFG.supabaseKey); }
-  function mdp() { return lireLS(K_MDP, null); }
+  function mdp() { return CFG.acces || lireLS(K_MDP, null); }
 
   async function rpc(nom, corps) {
     const r = await fetch(CFG.supabaseUrl.replace(/\/$/, '') + '/rest/v1/rpc/' + nom, {

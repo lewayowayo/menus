@@ -65,6 +65,7 @@
     document.querySelectorAll('.nav button').forEach(b => b.classList.toggle('active', b.dataset.e === ui.ecran));
     const main = $('#main');
     if (S.configure() && S.statut() === 'mot de passe') { main.innerHTML = ecranConnexion(); return lierConnexion(); }
+    if (!qui()) { main.innerHTML = ecranQui(); return lierQui(); }
     ({ semaine: ecranSemaine, courses: ecranCourses, recettes: ecranRecettes, plus: ecranPlus })[ui.ecran]();
     majStatut();
   }
@@ -73,6 +74,16 @@
     const st = S.statut(), n = S.enAttente();
     el.className = 'synchro s-' + st.replace(' ', '-');
     el.textContent = st === 'ok' ? (n ? n + ' en attente' : 'à jour') : st === 'local' ? 'sur ce téléphone' : st === 'hors ligne' ? 'hors ligne' + (n ? ', ' + n + ' en attente' : '') : 'mot de passe';
+  }
+
+  // ---------- Qui es-tu ? ----------
+  function ecranQui() {
+    return `<div class="connexion"><h1>Menus</h1><p class="sub">Les repas de la famille</p>
+      <div class="kick" style="margin:24px 0 10px">Qui es-tu ?</div>
+      <div class="puces" id="qui">${FAMILLE.map(p => `<button class="puce" data-p="${p}">${p}</button>`).join('')}</div></div>`;
+  }
+  function lierQui() {
+    $('#qui').onclick = e => { const b = e.target.closest('.puce'); if (!b) return; S.setQui(b.dataset.p); S.synchroniser(); rendre(); };
   }
 
   // ---------- Connexion ----------
@@ -539,7 +550,7 @@
         ${Object.entries(M.RAYONS).map(([k, t]) => `<div class="reg"><span>${esc(t)}</span><select data-ry="${k}"><option value="supercoop" ${pol[k] === 'supercoop' ? 'selected' : ''}>Supercoop</option><option value="auchan" ${pol[k] === 'auchan' ? 'selected' : ''}>Auchan</option></select></div>`).join('')}</section>
       <section class="carte"><h3>Sauvegarde</h3><p class="petit">Exporte tout ce qui vit dans l'appli (semaines, cases, notes, avis) dans un fichier.</p>
         <div class="rangee"><button class="btn" id="export">Exporter</button><label class="btn">Importer<input type="file" id="import" accept="application/json" hidden></label></div></section>
-      ${S.configure() ? `<section class="carte"><button class="btn" id="sync">Synchroniser maintenant</button> <button class="btn" id="deco">Changer de mot de passe</button></section>` : '<section class="carte"><p class="petit">Mode local : les données restent sur ce téléphone tant que le partage (Supabase) n\'est pas branché.</p></section>'}
+      ${S.configure() ? `<section class="carte"><button class="btn" id="sync">Synchroniser maintenant</button></section>` : '<section class="carte"><p class="petit">Mode local : les données restent sur ce téléphone tant que le partage (Supabase) n\'est pas branché.</p></section>'}
       <p class="petit centre">Recettes mises à jour le ${dateFr(M.ymd(new Date(window.__genere || Date.now())))}</p>`;
     majStatut();
     $('#qui').onclick = e => { const b = e.target.closest('.puce'); if (!b) return; S.setQui(b.dataset.p); rendre(); };

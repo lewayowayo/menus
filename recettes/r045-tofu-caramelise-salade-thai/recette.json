@@ -1,0 +1,230 @@
+{
+ "id": "r045",
+ "nom": "Tofu caramélisé et « salade thaï » (nouilles de riz, sauce cacahuète)",
+ "statut": "a_tester",
+ "redaction": "source",
+ "a_completer": [
+  "nombre de portions non indiqué : quantités de la légende (1 bloc de 200 g) multipliées par 2,5 en supposant 2 portions, à vérifier",
+  "durées de cuisson et quantités de nouilles, carotte, chou, concombre non données (vidéo sans son)",
+  "lien Instagram à ajouter"
+ ],
+ "choisie_par": "Marie",
+ "origine": "Vidéo Instagram envoyée par Marie, 22/11/2026",
+ "categorie": "Recette du monde",
+ "source": {
+  "nom": "Instagram @vert_curry (VEGGIE PROT' Ep 3)",
+  "lien": null
+ },
+ "duree_min": 30,
+ "saisons": [
+  "toute"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Nouilles de riz et maïzena sans gluten ; sauce soja sans gluten (tamari)"
+ },
+ "vegetarien": true,
+ "creneaux": [
+  "rapide"
+ ],
+ "legumes_amap": [
+  "carotte",
+  "chou rouge",
+  "concombre"
+ ],
+ "legumes_libres": [
+  "choux"
+ ],
+ "tres_frais": [
+  "herbes fraîches"
+ ],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "tofu nature",
+   "qte": 500,
+   "unite": "g",
+   "rayon": "alternatives",
+   "placard": false,
+   "estime": true,
+   "note": "ferme, 2 à 3 blocs"
+  },
+  {
+   "nom": "maïzena",
+   "qte": 2.5,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": true,
+   "estime": true
+  },
+  {
+   "nom": "sauce soja sans gluten",
+   "qte": 15,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": false,
+   "estime": true,
+   "note": "10 c. à s. pour le tofu, 5 pour la sauce"
+  },
+  {
+   "nom": "sirop d'agave",
+   "qte": 5,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": false,
+   "estime": true,
+   "note": "ou sirop d'érable"
+  },
+  {
+   "nom": "sriracha",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true,
+   "note": "ou piment, selon le goût"
+  },
+  {
+   "nom": "graines de sésame",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "huile neutre",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "vermicelles de riz",
+   "qte": 400,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "carotte",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "chou rouge",
+   "qte": 0.25,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true,
+   "note": "un quart"
+  },
+  {
+   "nom": "concombre",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "purée de cacahuète",
+   "qte": 7,
+   "unite": "cas",
+   "rayon": "epicerie",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "gingembre",
+   "qte": 1,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true,
+   "note": "un petit morceau"
+  },
+  {
+   "nom": "ail",
+   "qte": 2,
+   "unite": "gousse",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "citron",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true,
+   "note": "pour 5 c. à s. de jus"
+  },
+  {
+   "nom": "lait de coco",
+   "qte": 250,
+   "unite": "ml",
+   "rayon": "epicerie",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "noix de cajou",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": false,
+   "note": "vu dans la vidéo, absent de la légende"
+  },
+  {
+   "nom": "coriandre",
+   "qte": 1,
+   "unite": "botte",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Presser le tofu dans de l'essuie-tout pour l'égoutter, puis le couper en cubes d'environ 2 cm."
+  },
+  {
+   "texte": "Mettre les cubes dans un saladier, saupoudrer de maïzena et mélanger pour bien les enrober."
+  },
+  {
+   "texte": "Chauffer un filet d'huile dans une poêle et y faire dorer les cubes de tofu sur plusieurs faces, en remuant."
+  },
+  {
+   "texte": "Dans un bol, mélanger la sauce soja, le sirop d'érable ou d'agave et la sriracha. Verser sur le tofu doré et laisser réduire en mélangeant jusqu'à ce que la sauce nappe et caramélise les cubes."
+  },
+  {
+   "texte": "Sauce cacahuète : dans un pot, râper le gingembre et l'ail, ajouter la purée de cacahuète, le jus de citron, la sauce soja et le lait de coco. Mélanger jusqu'à une sauce lisse."
+  },
+  {
+   "texte": "Cuire les nouilles de riz selon le paquet (non montré dans la vidéo). Tailler la carotte en tagliatelles, émincer finement le chou rouge, couper le concombre en fines rondelles."
+  },
+  {
+   "texte": "Dresser : nouilles, un peu de sauce cacahuète, carotte, chou rouge, concombre, tofu caramélisé avec sa sauce, le reste de sauce cacahuète, puis sésame, noix de cajou et coriandre."
+  }
+ ],
+ "marie": {
+  "texte": "Rien à adapter avec une sauce soja sans gluten (tamari).",
+  "ajouter": [],
+  "retirer": [],
+  "soir": "Moitié moins de nouilles, plus de crudités et de tofu."
+ },
+ "etienne": null,
+ "remarque": "Légende transcrite, étapes relevées image par image dans la vidéo (sans son). Vu à l'image mais absent de la légende : huile de cuisson, noix de cajou, coriandre, sésame noir. La vidéo montre 2 cuillerées de purée de cacahuète pour 3 dans la légende.",
+ "ancien": null,
+ "pieces_jointes": [
+  {
+   "fichier": "plat.jpg",
+   "legende": "Le plat fini (image de la vidéo)"
+  }
+ ]
+}

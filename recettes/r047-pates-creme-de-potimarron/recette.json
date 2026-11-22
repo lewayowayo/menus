@@ -1,0 +1,180 @@
+{
+ "id": "r047",
+ "nom": "Pâtes à la crème de potimarron rôti et burrata",
+ "statut": "a_tester",
+ "redaction": "source",
+ "a_completer": [
+  "nombre de portions non indiqué (sans doute 2) : quantités de la légende multipliées par 2,5, à vérifier",
+  "type et quantité de pâtes non donnés : pâtes courtes en tubes vues dans la vidéo, 500 g estimés pour 5",
+  "lien Instagram à ajouter"
+ ],
+ "choisie_par": "Marie",
+ "origine": "Vidéo Instagram envoyée par Marie, 22/11/2026",
+ "categorie": "Comfort food",
+ "source": {
+  "nom": "Instagram @eatwithflower (Mes dîners d'automne, épisode 1/5)",
+  "lien": null
+ },
+ "duree_min": 50,
+ "saisons": [
+  "automne",
+  "hiver"
+ ],
+ "sans_gluten": {
+  "statut": "adaptable",
+  "note": "Pâtes sans gluten pour Marie"
+ },
+ "vegetarien": true,
+ "creneaux": [],
+ "legumes_amap": [
+  "potimarron"
+ ],
+ "legumes_libres": [
+  "courges"
+ ],
+ "tres_frais": [],
+ "portions": 5,
+ "ingredients": [
+  {
+   "nom": "potimarron",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "oignon rouge",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "ail",
+   "qte": 2,
+   "unite": "piece",
+   "rayon": "fruits_legumes",
+   "placard": false,
+   "estime": true,
+   "note": "têtes entières"
+  },
+  {
+   "nom": "huile d'olive",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "miel",
+   "qte": 2.5,
+   "unite": "cac",
+   "rayon": "epicerie",
+   "placard": true,
+   "estime": true
+  },
+  {
+   "nom": "sel",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "poivre",
+   "qte": null,
+   "unite": null,
+   "rayon": "epicerie",
+   "placard": true
+  },
+  {
+   "nom": "crème fraîche épaisse",
+   "qte": 2.5,
+   "unite": "cas",
+   "rayon": "cremerie",
+   "placard": false,
+   "estime": true,
+   "note": "entière"
+  },
+  {
+   "nom": "parmesan",
+   "qte": 75,
+   "unite": "g",
+   "rayon": "cremerie",
+   "placard": false,
+   "estime": true
+  },
+  {
+   "nom": "pâtes",
+   "qte": 500,
+   "unite": "g",
+   "rayon": "feculents",
+   "placard": false,
+   "estime": true,
+   "note": "courtes en tubes (mezze maniche)"
+  },
+  {
+   "nom": "burrata",
+   "qte": 3,
+   "unite": "piece",
+   "rayon": "cremerie",
+   "placard": false,
+   "estime": true
+  }
+ ],
+ "etapes": [
+  {
+   "texte": "Préchauffer le four à 200 °C. Couper les potimarrons en deux, retirer les graines et les couper en quartiers avec la peau."
+  },
+  {
+   "texte": "Sur une plaque : quartiers de potimarron, sel, un filet de miel, l'oignon rouge en lamelles et de l'huile d'olive. Mélanger. Ajouter les têtes d'ail coupées en deux horizontalement, face coupée vers le haut."
+  },
+  {
+   "texte": "Enfourner 40 minutes à 200 °C.",
+   "minuteur": 2400
+  },
+  {
+   "texte": "Cuire les pâtes dans l'eau bouillante salée selon le paquet."
+  },
+  {
+   "texte": "Garder 8 à 10 quartiers de potimarron de côté pour le dressage. Mixer le reste avec l'oignon, la crème, le parmesan, du poivre et la pulpe d'ail rôti pressée hors de sa peau. Ajouter un peu d'eau en mixant pour obtenir une crème fluide."
+  },
+  {
+   "texte": "Verser la crème dans une grande poêle, ajouter les pâtes égouttées et mélanger. Une pincée de fleur de sel."
+  },
+  {
+   "texte": "Servir avec des quartiers de potimarron rôtis, une burrata déchirée par-dessus, un filet d'huile d'olive et du poivre."
+  }
+ ],
+ "marie": {
+  "texte": "Pâtes sans gluten pour sa part.",
+  "ajouter": [
+   {
+    "nom": "pâtes sans gluten",
+    "qte": 80,
+    "unite": "g",
+    "rayon": "sans_gluten",
+    "placard": false
+   }
+  ],
+  "retirer": [
+   {
+    "nom": "pâtes",
+    "qte": 100,
+    "unite": "g"
+   }
+  ],
+  "soir": "Petite portion de pâtes, plus de potimarron rôti."
+ },
+ "etienne": null,
+ "remarque": "Légende transcrite (ingrédients, 40 min à 200 °C), étapes relevées image par image dans la vidéo (sans son). Le liquide doré versé avant le four est sans doute le miel de la légende.",
+ "ancien": null,
+ "pieces_jointes": [
+  {
+   "fichier": "plat.jpg",
+   "legende": "Le plat fini (image de la vidéo)"
+  }
+ ]
+}

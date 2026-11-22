@@ -50,7 +50,7 @@ L'historique commence avec l'appli (20/11/2026) : il se construit à partir des 
 
 ## Partage entre téléphones (Supabase)
 
-Projet Supabase d'Etienne, table `kv` (une ligne par donnée), accessible seulement par les fonctions `kv_lire`, `kv_ecrire`, `kv_verifier` qui vérifient le mot de passe famille (empreinte sha256 dans la table `secret`). Changer le mot de passe : relancer la requête `insert into public.secret …` de `supabase/schema.sql` avec le nouveau. `config.js` vide = mode local (chaque téléphone garde ses données ; elles sont envoyées automatiquement au premier branchement).
+Projet Supabase d'Etienne, table `kv` (une ligne par donnée), accessible par les fonctions `kv_lire`, `kv_ecrire`, `kv_verifier`. Depuis le 22/11/2026, pas de mot de passe à la demande d'Etienne : l'appli envoie le jeton public `acces` de `config.js` (son empreinte est dans la table `secret`), et demande seulement « Qui es-tu ? » au premier lancement. Pour remettre un vrai mot de passe : retirer `acces` de `config.js` et changer l'empreinte dans `secret` (avec la clé secrète ou la requête de `supabase/schema.sql`). `config.js` vide = mode local (chaque téléphone garde ses données ; elles sont envoyées automatiquement au premier branchement).
 
 Clés : `semaine:<mercredi>` (panier, créneaux `prevu` / `reel` / `verrou`, jour Supercoop), `coche:<mercredi>:<magasin>:<ingrédient>`, `extras:<mercredi>`, `note:<id>`, `avis:<id>`, `legumes`, `photo:<id>`, `reglages`.
 
