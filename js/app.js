@@ -29,6 +29,9 @@
   function recette(id) { return PAR_ID[id]; }
   function hist() { reglages(); return M.historique(RECETTES, semaines()); }
   function qui() { return S.qui() || ''; }
+  // Emma, Diego, Billie : consultent le menu et les recettes, notent, cochent les courses ; pas de menu ni de réglages.
+  const ADULTES = ['Etienne', 'Marie'];
+  function enfant() { return !!qui() && !ADULTES.includes(qui()); }
 
   // ---------- Petits composants ----------
   function toast(t) {
@@ -63,6 +66,7 @@
   function aller(ecran) { ui.ecran = ecran; rendre(); window.scrollTo(0, 0); }
   function rendre() {
     document.querySelectorAll('.nav button').forEach(b => b.classList.toggle('active', b.dataset.e === ui.ecran));
+    document.body.classList.toggle('enfant', enfant());
     const main = $('#main');
     if (S.configure() && S.statut() === 'mot de passe') { main.innerHTML = ecranConnexion(); return lierConnexion(); }
     if (!qui()) { main.innerHTML = ecranQui(); return lierQui(); }
@@ -114,15 +118,15 @@
       <div class="hdr"><div><div class="kick">Semaine du</div><h1>${esc(M.dateCourte(s.debut))}</h1></div>
         <div class="fleches"><button class="ib" data-a="prec" aria-label="Semaine précédente">‹</button><button class="ib" data-a="suiv" aria-label="Semaine suivante">›</button></div></div>
       <section class="carte panier" data-a="panier">
-        <div class="ligne-titre"><h3>Panier AMAP et frigo</h3><span class="lien">Modifier</span></div>
+        <div class="ligne-titre"><h3>Panier AMAP et frigo</h3><span class="lien adulte">Modifier</span></div>
         ${s.panier.length ? `<div class="puces petites">${s.panier.map(p => `<span class="puce on">${p.photo ? '📷 ' : ''}${esc(p.nom)}</span>`).join('')}</div>` : '<p class="vide">Rien de saisi. Touche pour cocher les légumes du panier.</p>'}
         ${s.restes ? `<p class="restes">Restes : ${esc(s.restes)}</p>` : ''}
         <p class="petit">Supercoop : <b>${esc(M.dateCourte(s.supercoop))}</b>${s.supercoop2 ? ` puis <b>${esc(M.dateCourte(s.supercoop2))}</b>` : ''}</p>
       </section>
-      <div class="actions-menu">
+      <div class="actions-menu adulte">
         <button class="btn plein" data-a="proposer">${vide ? 'Proposer le menu' : 'Relancer le menu (sauf 🔒)'}</button>
       </div>
-      ${s.manques && s.manques.length ? blocManques(s) : ''}
+      ${s.manques && s.manques.length && !enfant() ? blocManques(s) : ''}
       ${Object.keys(s.assouplir || {}).length ? `<p class="petit">Assoupli cette semaine : ${Object.keys(s.assouplir).map(k => esc(M.REGLES_DURES[k].toLowerCase())).join(', ')}. <a data-a="durcir">Rétablir</a></p>` : ''}
       ${b.length && !vide ? `<div class="bilan">${b.map(x => `<div>• ${esc(x)}</div>`).join('')}</div>` : ''}
       <div class="creneaux">${M.CRENEAUX.map(c => carteCreneau(s, c, auj, h)).join('')}</div>
@@ -130,6 +134,7 @@
     $('#main').onclick = e => {
       const a = e.target.closest('[data-a]'); if (!a) return;
       const act = a.dataset.a;
+      if (enfant() && ['panier', 'proposer', 'creneau', 'assouplir', 'durcir'].includes(act)) return;
       if (act === 'prec') { ui.semaine = M.ajouterJours(ui.semaine, -7); rendre(); }
       else if (act === 'suiv') { ui.semaine = M.ajouterJours(ui.semaine, 7); rendre(); }
       else if (act === 'panier') feuillePanier();
@@ -174,7 +179,7 @@
     const cible = e && e.type === 'recette' && recette(e.recette) ? `data-a="voir" data-r="${e.recette}"` : `data-a="creneau" data-c="${c.cle}"`;
     return `<div class="creneau ${passe ? 'passe' : ''} ${ajd ? 'ajd' : ''} ${cr.verrou ? 'verrou' : ''}" ${cible}>
       <div class="cr-tete"><span class="cr-label">${c.label}</span><span class="cr-date">${ajd ? 'aujourd\'hui' : M.parse(date).getDate() + '/' + (M.parse(date).getMonth() + 1)}</span>
-      ${cr.verrou ? '<span class="cadenas" title="Verrouillé">🔒</span>' : ''}<button class="ib petit-btn" data-a="creneau" data-c="${c.cle}" aria-label="Modifier">•••</button></div>${corps}</div>`;
+      ${cr.verrou ? '<span class="cadenas" title="Verrouillé">🔒</span>' : ''}<button class="ib petit-btn adulte" data-a="creneau" data-c="${c.cle}" aria-label="Modifier">•••</button></div>${corps}</div>`;
   }
 
   function proposer() {
@@ -361,15 +366,15 @@
       ${!L.plats ? '<p class="vide">Pas encore de menu cette semaine.</p>' : ''}
       ${liste.rayons.map(r => `<h3 class="rayon">${esc(r.titre)}</h3><div class="carte serre">${r.lignes.map(ligne).join('')}</div>`).join('')}
       ${(liste.plusTard || []).length ? `<h2 class="second">Second passage · ${esc(M.dateCourte(liste.dateSecond))}</h2>${liste.plusTard.map(r => `<h3 class="rayon">${esc(r.titre)}</h3><div class="carte serre">${r.lignes.map(ligne).join('')}</div>`).join('')}` : ''}
-      ${hab.length ? `<h3 class="rayon">Habituels · goûters et petit-déj</h3><div class="carte serre">${hab.map(h => { const c = S.get(cocheCle(s, mag + ':h:' + h.id)) || {}; return `<label class="art ${c.ok ? 'fait' : ''}"><input type="checkbox" data-k="${mag}:h:${esc(h.id)}" ${c.ok ? 'checked' : ''}><span class="art-n">${esc(h.nom)}<small>chaque semaine · ✕ pour l'enlever cette semaine</small></span><button class="suppr" data-hab="${esc(h.id)}" aria-label="Pas cette semaine">✕</button></label>`; }).join('')}</div>` : ''}
+      ${hab.length ? `<h3 class="rayon">Habituels · goûters et petit-déj</h3><div class="carte serre">${hab.map(h => { const c = S.get(cocheCle(s, mag + ':h:' + h.id)) || {}; return `<label class="art ${c.ok ? 'fait' : ''}"><input type="checkbox" data-k="${mag}:h:${esc(h.id)}" ${c.ok ? 'checked' : ''}><span class="art-n">${esc(h.nom)}<small>chaque semaine · ✕ pour l'enlever cette semaine</small></span><button class="suppr adulte" data-hab="${esc(h.id)}" aria-label="Pas cette semaine">✕</button></label>`; }).join('')}</div>` : ''}
       ${extras.filter(x => x.mag === mag).length ? `<h3 class="rayon">Ajouts</h3><div class="carte serre">${extras.filter(x => x.mag === mag).map(x => { const c = S.get(cocheCle(s, mag + ':x:' + x.id)) || {}; return `<label class="art ${c.ok ? 'fait' : ''}"><input type="checkbox" data-k="${mag}:x:${x.id}" ${c.ok ? 'checked' : ''}><span class="art-n">${esc(x.nom)}</span><button class="suppr" data-sup="${x.id}" aria-label="Supprimer">✕</button></label>`; }).join('')}</div>` : ''}
-      <div class="ajout"><input id="extra" placeholder="Ajouter un article à cette liste"><button class="btn" id="plusextra">Ajouter</button></div>
+ <div class="ajout adulte"><input id="extra" placeholder="Ajouter un article à cette liste"><button class="btn" id="plusextra">Ajouter</button></div>
       ${liste.verifier.length ? `<h3 class="rayon">À vérifier dans le placard</h3><div class="carte serre verif">${liste.verifier.map(ligne).join('')}</div>` : ''}
       ${orphelines.length ? `<h3 class="rayon">Cochés mais plus nécessaires</h3><div class="carte serre verif">${orphelines.map(k => `<div class="art fait"><span class="art-n">${esc((S.get(k) || {}).nom || k.split(':').slice(3).join(':').replace(/:p$/, ''))}${(S.get(k) || {}).qte ? ' <small style="display:inline">(' + esc(S.get(k).qte) + ')</small>' : ''}<small>le plat a changé : déjà acheté, à garder pour plus tard</small></span><button class="suppr" data-orph="${esc(k)}">✕</button></div>`).join('')}</div>` : ''}
       ${L.maison.length && mag === 'supercoop' ? `<h3 class="rayon">Déjà à la maison (panier)</h3><div class="carte serre">${L.maison.map(m => `<div class="art"><span class="art-n">${esc(m.nom)}<small>${esc(m.pour.join(' · '))}</small></span></div>`).join('')}</div>` : ''}
       <div class="pied-courses">
         <button class="btn plein" id="copier">Copier la liste ${mag === 'auchan' ? 'pour le drive' : ''}</button>
-        <label class="champ petit">Compter les repas à partir du<select id="depuis">${jours.map(j => `<option value="${j}" ${j === (s.coursesDepuis || s.debut) ? 'selected' : ''}>${M.dateCourte(j)}</option>`).join('')}</select></label>
+        <label class="champ petit adulte">Compter les repas à partir du<select id="depuis">${jours.map(j => `<option value="${j}" ${j === (s.coursesDepuis || s.debut) ? 'selected' : ''}>${M.dateCourte(j)}</option>`).join('')}</select></label>
         <p class="petit">Les cases cochées sont gardées sur le téléphone même sans réseau, et partagées dès qu'il revient.</p>
       </div>`;
     const main = $('#main');
@@ -441,7 +446,7 @@
       Source : ${r.source && r.source.lien ? `<a href="${esc(r.source.lien)}" target="_blank" rel="noopener">${esc(r.source.nom)}</a>` : esc(r.source && r.source.nom || '?')}${r.choisie_par ? ' · choisie par ' + esc(r.choisie_par) : ''}</p>
       ${r.redaction === 'claude' ? '<div class="info">Fiche rédigée par Claude (version standard), pas encore relue par la famille. Les quantités sont à vérifier.</div>' : ''}
       ${(r.a_completer || []).length ? `<div class="alerte"><b>À compléter</b>${r.a_completer.map(a => `<div>• ${esc(a)}</div>`).join('')}</div>` : ''}
-      ${(r.pieces_jointes || []).map(p => /\.pdf$/i.test(p.fichier) ? `<a class="pj" href="${esc(p.chemin)}" target="_blank">📄 ${esc(p.legende || p.fichier)}</a>` : `<a href="${esc(p.chemin)}" target="_blank"><img class="pj-img" loading="lazy" src="${esc(p.chemin)}" alt="${esc(p.legende || '')}"></a>`).join('')}
+      ${(r.pieces_jointes || []).map(p => /\.pdf$/i.test(p.fichier) ? `<a class="pj" href="${esc(p.chemin)}" target="_blank">📄 ${esc(p.legende || p.fichier)}</a>` : `<img class="pj-img" loading="lazy" data-zoom="${esc(p.chemin)}" src="${esc(p.chemin)}" alt="${esc(p.legende || '')}">`).join('')}
       <h3>Ingrédients</h3>
       ${M.aIngredients(r) ? `<ul class="ings">${r.ingredients.map(fmtIng).join('')}</ul>` : '<p class="manque">Ingrédients manquants.</p>'}
       <h3>Option Marie</h3>
@@ -466,6 +471,7 @@
       <button class="btn" data-x="avis" style="margin-top:8px">Enregistrer l'avis</button>
       <p class="petit">Fiche ${r.id}</p></div>`, { grande: true });
     f.onclick = e => {
+      const z = e.target.closest('[data-zoom]'); if (z) return zoom(z.dataset.zoom, z.alt);
       const b = e.target.closest('[data-x],[data-n],[data-v],.minuteur-btn'); if (!b) return;
       if (b.dataset.x === 'fermer') return fermerFeuille();
       if (b.dataset.x === 'cuisine') return modeCuisine(id);
@@ -481,6 +487,14 @@
       }
     };
     f.querySelector('#note-texte').onchange = e => { const n = S.get('note:' + id, {}); S.set('note:' + id, { ...n, texte: e.target.value.trim(), par: qui(), le: new Date().toISOString() }); };
+  }
+
+  // Image en plein écran dans l'appli (un lien vers l'image bloquait l'appli installée sur l'iPhone).
+  function zoom(src, alt) {
+    const el = document.createElement('div'); el.className = 'zoom';
+    el.innerHTML = `<button class="zoom-fermer">✕ Fermer</button><img src="${esc(src)}" alt="${esc(alt || '')}">`;
+    el.onclick = () => el.remove();
+    document.body.appendChild(el);
   }
 
   // ---------- Minuteurs ----------
@@ -560,10 +574,10 @@
     $('#main').innerHTML = `
       <div class="hdr"><div><div class="kick">Menus</div><h1>Plus</h1></div><span id="synchro" class="synchro"></span></div>
       <section class="carte"><h3>Qui utilise ce téléphone ?</h3><div class="puces" id="qui">${FAMILLE.map(p => `<button class="puce ${qui() === p ? 'on' : ''}" data-p="${p}">${p}</button>`).join('')}</div></section>
-      <section class="carte"><h3>Habituels des courses</h3><p class="petit">Ajoutés automatiquement chaque semaine (goûters, petit-déj). Sur la liste, ✕ les enlève pour une semaine seulement.</p>
+      <section class="carte adulte"><h3>Habituels des courses</h3><p class="petit">Ajoutés automatiquement chaque semaine (goûters, petit-déj). Sur la liste, ✕ les enlève pour une semaine seulement.</p>
         ${habituels().map(h => `<div class="reg"><span>${esc(h.nom)} <small class="petit">· ${M.MAGASINS[h.mag]}</small></span><button class="suppr" data-habsup="${esc(h.id)}" aria-label="Supprimer">✕</button></div>`).join('')}
         <div class="ajout"><input id="hab-nom" placeholder="Ex. compote, lait, céréales"><select id="hab-mag" style="width:auto"><option value="supercoop">Supercoop</option><option value="auchan">Auchan</option></select><button class="btn" id="hab-plus">Ajouter</button></div></section>
-      <section class="carte"><h3>Avis et notes à transmettre à Claude</h3>
+      <section class="carte adulte"><h3>Avis et notes à transmettre à Claude</h3>
         <p class="petit">${avis.length} avis sur des fiches, ${notes.length} notes. Copie et colle-les dans la conversation Claude « Menus » : il met les fiches à jour.</p>
         <button class="btn" id="copier-avis" ${avis.length + notes.length ? '' : 'disabled'}>Copier pour Claude</button></section>
       <section class="carte"><h3>Historique</h3>${ws.length ? ws.map(w => `<details><summary>Semaine du ${esc(M.dateCourte(w.debut))}</summary><ul class="hist">${M.CRENEAUX.map(c => {
@@ -571,12 +585,12 @@
         const nom = e.type === 'recette' ? (recette(e.recette) || {}).nom : e.type === 'libre' ? e.texte : 'annulé';
         const prev = cr.reel && cr.prevu && cr.prevu.recette ? ` <small>(prévu : ${esc((recette(cr.prevu.recette) || {}).nom)})</small>` : '';
         return `<li><b>${c.court}</b> ${esc(nom)}${prev}</li>`; }).join('')}</ul></details>`).join('') : '<p class="vide">Rien encore. Il se remplit tout seul au fil des semaines.</p>'}</section>
-      <section class="carte"><h3>Règles du menu</h3><div class="reg"><span>Ne pas reproposer une recette avant</span><select id="recence">${[7, 14, 21, 28].map(j => `<option value="${j}" ${(reg.recenceJours || 14) === j ? 'selected' : ''}>${j / 7} semaine${j > 7 ? 's' : ''}</option>`).join('')}</select></div></section>
-      <section class="carte"><h3>Magasin par rayon</h3><p class="petit">Où va chaque rayon par défaut. Une fiche peut forcer un magasin pour un ingrédient précis.</p>
+      <section class="carte adulte"><h3>Règles du menu</h3><div class="reg"><span>Ne pas reproposer une recette avant</span><select id="recence">${[7, 14, 21, 28].map(j => `<option value="${j}" ${(reg.recenceJours || 14) === j ? 'selected' : ''}>${j / 7} semaine${j > 7 ? 's' : ''}</option>`).join('')}</select></div></section>
+      <section class="carte adulte"><h3>Magasin par rayon</h3><p class="petit">Où va chaque rayon par défaut. Une fiche peut forcer un magasin pour un ingrédient précis.</p>
         ${Object.entries(M.RAYONS).map(([k, t]) => `<div class="reg"><span>${esc(t)}</span><select data-ry="${k}"><option value="supercoop" ${pol[k] === 'supercoop' ? 'selected' : ''}>Supercoop</option><option value="auchan" ${pol[k] === 'auchan' ? 'selected' : ''}>Auchan</option></select></div>`).join('')}</section>
-      <section class="carte"><h3>Sauvegarde</h3><p class="petit">Exporte tout ce qui vit dans l'appli (semaines, cases, notes, avis) dans un fichier.</p>
+      <section class="carte adulte"><h3>Sauvegarde</h3><p class="petit">Exporte tout ce qui vit dans l'appli (semaines, cases, notes, avis) dans un fichier.</p>
         <div class="rangee"><button class="btn" id="export">Exporter</button><label class="btn">Importer<input type="file" id="import" accept="application/json" hidden></label></div></section>
-      ${S.configure() ? `<section class="carte"><button class="btn" id="sync">Synchroniser maintenant</button></section>` : '<section class="carte"><p class="petit">Mode local : les données restent sur ce téléphone tant que le partage (Supabase) n\'est pas branché.</p></section>'}
+      ${S.configure() ? `<section class="carte adulte"><button class="btn" id="sync">Synchroniser maintenant</button></section>` : '<section class="carte"><p class="petit">Mode local : les données restent sur ce téléphone tant que le partage (Supabase) n\'est pas branché.</p></section>'}
       <p class="petit centre">Recettes mises à jour le ${dateFr(M.ymd(new Date(window.__genere || Date.now())))}</p>`;
     majStatut();
     $('#qui').onclick = e => { const b = e.target.closest('.puce'); if (!b) return; S.setQui(b.dataset.p); rendre(); };

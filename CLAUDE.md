@@ -52,6 +52,8 @@ L'historique commence avec l'appli (20/11/2026) : il se construit à partir des 
 
 Projet Supabase d'Etienne, table `kv` (une ligne par donnée), accessible par les fonctions `kv_lire`, `kv_ecrire`, `kv_verifier`. Depuis le 22/11/2026, pas de mot de passe à la demande d'Etienne : l'appli envoie le jeton public `acces` de `config.js` (son empreinte est dans la table `secret`), et demande seulement « Qui es-tu ? » au premier lancement. Pour remettre un vrai mot de passe : retirer `acces` de `config.js` et changer l'empreinte dans `secret` (avec la clé secrète ou la requête de `supabase/schema.sql`). `config.js` vide = mode local (chaque téléphone garde ses données ; elles sont envoyées automatiquement au premier branchement).
 
+Rôles : Etienne et Marie font tout ; Emma, Diego et Billie (comptes « enfants », `ADULTES` dans `js/app.js`) consultent le menu et les recettes, notent, donnent leur avis et cochent les courses, sans proposer ni modifier le menu, le panier ou les réglages. Ce n'est pas une sécurité : on peut changer de prénom dans Plus.
+
 Habituels des courses (goûters, petit-déj : brioche, gros yaourts, fromage blanc au lait de montagne) : clé `habituels`, ajoutés à chaque semaine ; `habituels-retires:<mercredi>` pour ceux enlevés une semaine. Réglables dans Plus.
 
 Clés : `semaine:<mercredi>` (panier, créneaux `prevu` / `reel` / `verrou`, jour Supercoop), `coche:<mercredi>:<magasin>:<ingrédient>`, `extras:<mercredi>`, `note:<id>`, `avis:<id>`, `legumes`, `photo:<id>`, `reglages`.

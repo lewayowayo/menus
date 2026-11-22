@@ -240,6 +240,11 @@ details summary{cursor:pointer;font-weight:700;padding:10px 0;color:var(--text2)
 .cu-bas button:disabled{opacity:.35}
 
 body:has(.cuisine) #minuteurs{bottom:calc(var(--safe-bottom) + 112px)}
+body.enfant .adulte{display:none!important}
+.zoom{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.92);display:flex;align-items:center;justify-content:center;padding:calc(var(--safe-top) + 56px) 8px calc(var(--safe-bottom) + 16px)}
+.zoom img{max-width:100%;max-height:100%;object-fit:contain;touch-action:pinch-zoom}
+.zoom-fermer{position:absolute;top:calc(var(--safe-top) + 10px);right:12px;background:#fff;color:#111;border:none;border-radius:99px;padding:10px 16px;font-size:16px;font-weight:800}
+.pj-img{cursor:zoom-in}
 #toast{position:fixed;left:50%;top:calc(var(--safe-top) + 12px);transform:translate(-50%,-80px);background:var(--text);color:var(--bg);padding:10px 18px;border-radius:99px;font-weight:700;font-size:14px;z-index:200;transition:transform .25s}
 #toast.on{transform:translate(-50%,0)}
 </style>
