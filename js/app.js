@@ -170,7 +170,9 @@
           ${r.statut !== 'validee' ? `<div class="tags">${badgeStatut(r)}</div>` : ''}`;
       }
     }
-    return `<div class="creneau ${passe ? 'passe' : ''} ${ajd ? 'ajd' : ''} ${cr.verrou ? 'verrou' : ''}">
+    // Toute la carte est cliquable : la fiche si c'est une recette, sinon les actions du créneau.
+    const cible = e && e.type === 'recette' && recette(e.recette) ? `data-a="voir" data-r="${e.recette}"` : `data-a="creneau" data-c="${c.cle}"`;
+    return `<div class="creneau ${passe ? 'passe' : ''} ${ajd ? 'ajd' : ''} ${cr.verrou ? 'verrou' : ''}" ${cible}>
       <div class="cr-tete"><span class="cr-label">${c.label}</span><span class="cr-date">${ajd ? 'aujourd\'hui' : M.parse(date).getDate() + '/' + (M.parse(date).getMonth() + 1)}</span>
       ${cr.verrou ? '<span class="cadenas" title="Verrouillé">🔒</span>' : ''}<button class="ib petit-btn" data-a="creneau" data-c="${c.cle}" aria-label="Modifier">•••</button></div>${corps}</div>`;
   }

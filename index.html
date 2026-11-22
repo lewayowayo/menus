@@ -108,8 +108,9 @@ a{color:var(--accent)}
 .puces.petites .puce{padding:4px 10px;font-size:13px}
 
 /* CRÉNEAUX */
-.creneau{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;margin-bottom:10px;box-shadow:var(--shadow)}
+.creneau{cursor:pointer;background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;margin-bottom:10px;box-shadow:var(--shadow)}
 .creneau.passe{opacity:.62}
+.creneau:active{transform:scale(.99)}
 .creneau.ajd{border:2px solid var(--accent)}
 .creneau.verrou{background:color-mix(in srgb,var(--surf) 85%,var(--accent-soft))}
 .cr-tete{display:flex;align-items:center;gap:8px;margin-bottom:4px}

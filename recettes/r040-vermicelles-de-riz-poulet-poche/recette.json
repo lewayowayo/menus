@@ -4,7 +4,7 @@
  "statut": "a_valider",
  "redaction": "claude",
  "a_completer": [
-  "vidéo Instagram sans quantités : quantités et étapes estimées par Claude, à valider",
+  "quantités et étapes estimées par Claude (la vidéo est floue sur les quantités) ; carottes et chou d'après la version d'Etienne du 18/11",
   "lien Instagram à ajouter"
  ],
  "choisie_par": "Etienne",
@@ -54,11 +54,11 @@
   },
   {
    "nom": "carotte",
-   "qte": 4,
+   "qte": 2,
    "unite": "piece",
    "rayon": "fruits_legumes",
    "placard": false,
-   "estime": true
+   "note": "grosses"
   },
   {
    "nom": "chou chinois",
@@ -66,7 +66,8 @@
    "unite": "piece",
    "rayon": "fruits_legumes",
    "placard": false,
-   "estime": true
+   "estime": true,
+   "note": "ou le chou du panier (Etienne l'a fait avec du chou)"
   },
   {
    "nom": "cacahuète",
@@ -180,7 +181,7 @@
   "soir": "Moitié moins de vermicelles, plus de légumes et de poulet."
  },
  "etienne": null,
- "remarque": "Très bon. Quantités et étapes à écrire",
+ "remarque": "Très bon. Etienne l'a faite le 18/11 « à l'arrache » : une ou deux grosses carottes et du chou, sans concombre (pas de saison).",
  "ancien": {
   "option_marie": null,
   "fois_au_menu": 1,
