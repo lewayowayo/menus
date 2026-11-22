@@ -4,7 +4,7 @@ Lis ce fichier en premier. Etienne ouvre une conversation ici pour ajouter une r
 
 ## L'appli en deux phrases
 
-PWA statique (même pile que Houle et Révisions : HTML + JS sans framework ni build), publiée sur GitHub Pages depuis `main` du dépôt `lewayowayo/menus`. Les recettes vivent dans le dépôt (seule source de vérité, l'appli ne les modifie jamais) ; ce qui change chaque semaine (panier, menu, cases cochées, notes, avis) vit dans Supabase, protégé par un mot de passe famille, avec copie locale sur chaque téléphone pour le hors-ligne.
+PWA statique (même pile que Houle et Révisions : HTML + JS sans framework ni build), publiée sur GitHub Pages depuis `main` du dépôt `lewayowayo/menus`. Les recettes vivent dans le dépôt (seule source de vérité, l'appli ne les modifie jamais) ; ce qui change chaque semaine (panier, menu, cases cochées, notes, avis) vit dans Supabase (accès libre, sans mot de passe depuis le 22/11/2026), avec copie locale sur chaque téléphone pour le hors-ligne.
 
 - `recettes/<id>-<slug>/recette.json` + pièces jointes : une recette par dossier. Format : `docs/format-recette.md`.
 - `recettes.json` : index généré par `node scripts/build.mjs` (ne jamais l'éditer à la main).
