@@ -286,11 +286,17 @@
     const RAISON_EXCL = { statut: 'pas encore validée', recence: 'servie récemment', saison: 'hors saison', duree: 'trop longue pour ce créneau', 'hors roulement': 'hors roulement' };
     const ligne = a => { const r = recette(a.recette); return `<button class="alt" data-r="${r.id}"><b>${esc(r.nom)}</b><small>${esc(a.raison || '')}${a.dejaCetteSemaine ? ' · déjà dans la semaine' : ''}${a.exclusions.length ? ' · ' + a.exclusions.map(x => RAISON_EXCL[x] || x).join(', ') : ''}</small></button>`; };
     const f = feuille(`<h2>Remplacer</h2><input id="cherche" class="cherche" placeholder="Chercher une recette">
-      <div id="alts">${ok.slice(0, 12).map(ligne).join('') || '<p class="vide">Aucune recette ne respecte toutes les règles.</p>'}
-      ${hors.length ? `<details><summary>Hors règles (${hors.length})</summary>${hors.map(ligne).join('')}</details>` : ''}</div>`, { grande: true });
+      <div id="alts">${liste()}</div>`, { grande: true });
+    function liste() {
+      const libres = ok.filter(a => !a.dejaCetteSemaine), deja = ok.filter(a => a.dejaCetteSemaine);
+      return (libres.slice(0, 12).map(ligne).join('') || '<p class="vide">Aucune recette ne respecte toutes les règles.</p>')
+        + (libres.length > 12 ? `<details><summary>Autres recettes possibles (${libres.length - 12})</summary>${libres.slice(12).map(ligne).join('')}</details>` : '')
+        + (deja.length ? `<details><summary>Déjà dans la semaine (${deja.length})</summary>${deja.map(ligne).join('')}</details>` : '')
+        + (hors.length ? `<details><summary>Hors règles (${hors.length})</summary>${hors.map(ligne).join('')}</details>` : '');
+    }
     f.querySelector('#cherche').oninput = e => {
       const q = M.norm(e.target.value);
-      f.querySelector('#alts').innerHTML = q ? alts.filter(a => M.norm(recette(a.recette).nom).includes(q)).map(ligne).join('') : ok.slice(0, 12).map(ligne).join('');
+      f.querySelector('#alts').innerHTML = q ? alts.filter(a => M.norm(recette(a.recette).nom).includes(q)).map(ligne).join('') : liste();
     };
     f.onclick = ev => {
       const b = ev.target.closest('.alt'); if (!b) return;
