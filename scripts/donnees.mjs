@@ -58,7 +58,7 @@ if (cmd === 'cles') {
   const R = Object.fromEntries(JSON.parse(fs.readFileSync(path.join(racine, 'recettes.json'))).recettes.map(r => [r.id, r]));
   for (const p of ['avis:', 'note:']) {
     const r = await api('kv?select=cle,valeur&cle=like.' + encodeURIComponent(p + '*'));
-    for (const x of r) if (x.valeur) console.log(p.slice(0, -1), x.cle.slice(p.length), (R[x.cle.slice(p.length)] || {}).nom, JSON.stringify(x.valeur));
+    for (const x of r) if (x.valeur) { const [id, qui] = x.cle.slice(p.length).split(':'); console.log(p.slice(0, -1), id, (R[id] || {}).nom, qui ? '(' + qui + ')' : '', JSON.stringify(x.valeur)); }
   }
 } else {
   console.log(fs.readFileSync(fileURLToPath(import.meta.url), 'utf8').split('\n').slice(0, 11).join('\n'));

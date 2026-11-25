@@ -56,7 +56,7 @@ Rôles : Etienne et Marie font tout ; Emma, Diego et Billie (comptes « enfants 
 
 Habituels des courses (goûters, petit-déj : brioche, gros yaourts, fromage blanc au lait de montagne) : clé `habituels`, ajoutés à chaque semaine ; `habituels-retires:<mercredi>` pour ceux enlevés une semaine. Réglables dans Plus.
 
-Clés : `semaine:<mercredi>` (panier, créneaux `prevu` / `reel` / `verrou`, jour Supercoop), `coche:<mercredi>:<magasin>:<ingrédient>`, `extras:<mercredi>`, `note:<id>`, `avis:<id>`, `legumes`, `photo:<id>`, `reglages`.
+Clés : `semaine:<mercredi>` (panier, créneaux `prevu` / `reel` / `verrou`, jour Supercoop), `coche:<mercredi>:<magasin>:<ingrédient>`, `extras:<mercredi>`, `note:<id>:<prénom>` (une note par personne ; l'ancienne `note:<id>` partagée est rattachée à son auteur), `avis:<id>`, `legumes`, `photo:<id>`, `reglages`.
 
 ## Agir directement sur les données de l'appli
 

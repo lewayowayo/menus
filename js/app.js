@@ -324,6 +324,21 @@
     };
   }
 
+  // ---------- Notes : une par personne (clé note:<id>:<prénom>) ----------
+  // L'ancienne clé note:<id> (une note partagée) est rattachée à la personne qui l'avait mise.
+  function notesDe(id) {
+    const out = {};
+    const ancienne = S.get('note:' + id);
+    if (ancienne && ancienne.note && ancienne.par) out[ancienne.par] = ancienne;
+    for (const p of FAMILLE) { const n = S.get('note:' + id + ':' + p); if (n && (n.note || n.texte)) out[p] = n; }
+    return out;
+  }
+  function moyenne(id) {
+    const v = Object.values(notesDe(id)).map(n => n.note).filter(Boolean);
+    return v.length ? { moy: v.reduce((a, b) => a + b, 0) / v.length, n: v.length } : null;
+  }
+  function etoilesTxt(m) { return m ? '★ ' + String(Math.round(m.moy * 10) / 10).replace('.', ',') : ''; }
+
   // ---------- Habituels (goûters, petit-déj) : ajoutés à chaque semaine, retirables semaine par semaine ----------
   const HABITUELS_DEFAUT = [
     { id: 'brioche', nom: 'brioche', mag: 'supercoop' },
@@ -419,7 +434,7 @@
         return `<button class="recette-carte" data-r="${r.id}">
           ${r.pieces_jointes && r.pieces_jointes[0] && /\.(jpe?g|webp|png)$/i.test(r.pieces_jointes[0].fichier) ? `<img loading="lazy" src="${esc(r.pieces_jointes[0].chemin)}" alt="">` : `<div class="vignette">${esc((r.categorie || '?')[0])}</div>`}
           <span class="rc-corps"><b>${esc(r.nom)}</b>
-          <small>${esc(r.categorie || '')} · ${dureeTxt(r.duree_min)}${x.fois ? ' · servie ' + x.fois + ' fois' : ''}</small>
+          <small>${esc(r.categorie || '')} · ${dureeTxt(r.duree_min)}${x.fois ? ' · servie ' + x.fois + ' fois' : ''}${moyenne(r.id) ? ' · ' + etoilesTxt(moyenne(r.id)) : ''}</small>
           <span class="tags">${badgeStatut(r)}${sg(r)}${!M.aIngredients(r) ? '<span class="badge warnb">sans ingrédients</span>' : ''}${a ? `<span class="badge avis">avis : ${a.verdict === 'ok' ? 'OK' : 'à corriger'}</span>` : ''}</span></span></button>`;
       }).join('') || '<p class="vide">Aucune recette.</p>'}</div>
       <p class="petit centre">Pour ajouter ou corriger une recette : dans la conversation Claude du projet « Menus », dépose la capture, la photo, la vidéo ou le lien.</p>`;
@@ -437,7 +452,7 @@
   function ouvrirRecette(id) {
     const r = recette(id); if (!r) return;
     const x = hist()[id] || {};
-    const note = S.get('note:' + id, {}); const avis = S.get('avis:' + id);
+    const toutes = notesDe(id); const note = toutes[qui()] || {}; const m = moyenne(id); const avis = S.get('avis:' + id);
     const f = feuille(`<div class="fiche">
       <div class="fiche-tete"><button class="ib" data-x="fermer">‹ Retour</button>${r.etapes && r.etapes.length ? '<button class="btn plein" data-x="cuisine">Mode cuisine</button>' : ''}</div>
       <h2>${esc(r.nom)}</h2>
@@ -460,10 +475,10 @@
       ${r.remarque ? `<p class="petit">Remarque : ${esc(r.remarque)}</p>` : ''}
       <h3>Historique</h3>
       <p class="petit">${x.fois ? `Servie ${x.fois} fois depuis le début de l'appli, dernière fois le ${dateFr(x.derniere)}.` : 'Pas encore servie depuis le début de l\'appli (20 novembre 2026).'}</p>
-      <h3>Note de la famille</h3>
+      <h3>Ma note${qui() ? ' (' + esc(qui()) + ')' : ''}</h3>
       <div class="etoiles" data-x="etoiles">${[1, 2, 3, 4, 5].map(n => `<button data-n="${n}" class="${(note.note || 0) >= n ? 'on' : ''}">★</button>`).join('')}</div>
       <textarea id="note-texte" rows="2" placeholder="Un commentaire ? (trop salé, Billie adore…)">${esc(note.texte || '')}</textarea>
-      ${note.par ? `<p class="petit">Dernière note par ${esc(note.par)}</p>` : ''}
+      ${m ? `<h3>La famille · ${etoilesTxt(m)} sur 5 (${m.n} note${m.n > 1 ? 's' : ''})</h3><div class="notes-famille">${Object.entries(toutes).map(([p, n]) => `<div class="reg"><span><b>${esc(p)}</b>${n.texte ? ' · ' + esc(n.texte) : ''}</span><span class="etoiles-petites">${'★'.repeat(n.note || 0)}<span class="vide">${'★'.repeat(5 - (n.note || 0))}</span></span></div>`).join('')}</div>` : ''}
       <h3>Avis sur la fiche</h3>
       <p class="petit">Pour la faire passer « validée » ou la corriger. Etienne transmet les avis à Claude (menu Plus).</p>
       <div class="puces"><button class="puce ${avis && avis.verdict === 'ok' ? 'on' : ''}" data-v="ok">Validée telle quelle</button><button class="puce ${avis && avis.verdict === 'corriger' ? 'on' : ''}" data-v="corriger">À corriger</button><button class="puce ${avis && avis.verdict === 'ecarter' ? 'on' : ''}" data-v="ecarter">À écarter</button></div>
@@ -477,7 +492,8 @@
       if (b.dataset.x === 'cuisine') return modeCuisine(id);
       if (b.classList.contains('minuteur-btn')) return Minuteurs.lancer(+b.dataset.t, b.dataset.l);
       if (b.dataset.n) {
-        const n = +b.dataset.n; S.set('note:' + id, { note: n, texte: f.querySelector('#note-texte').value.trim(), par: qui(), le: new Date().toISOString() });
+        if (!qui()) return toast('Choisis d\'abord qui tu es (Plus)');
+        const n = +b.dataset.n; S.set('note:' + id + ':' + qui(), { note: n, texte: f.querySelector('#note-texte').value.trim(), par: qui(), le: new Date().toISOString() });
         f.querySelectorAll('.etoiles button').forEach(x => x.classList.toggle('on', +x.dataset.n <= n)); toast('Note enregistrée');
       }
       if (b.dataset.v) { f.querySelectorAll('[data-v]').forEach(x => x.classList.toggle('on', x === b)); f.dataset.verdict = b.dataset.v; }
@@ -486,7 +502,7 @@
         S.set('avis:' + id, { verdict: v, texte: f.querySelector('#avis-texte').value.trim(), par: qui(), le: new Date().toISOString() }); toast('Avis enregistré'); rendre();
       }
     };
-    f.querySelector('#note-texte').onchange = e => { const n = S.get('note:' + id, {}); S.set('note:' + id, { ...n, texte: e.target.value.trim(), par: qui(), le: new Date().toISOString() }); };
+    f.querySelector('#note-texte').onchange = e => { if (!qui()) return; const n = notesDe(id)[qui()] || {}; S.set('note:' + id + ':' + qui(), { note: n.note || null, texte: e.target.value.trim(), par: qui(), le: new Date().toISOString() }); };
   }
 
   // Image en plein écran dans l'appli (un lien vers l'image bloquait l'appli installée sur l'iPhone).
@@ -569,7 +585,7 @@
   function ecranPlus() {
     const ws = semaines().sort((a, b) => b.debut.localeCompare(a.debut));
     const avis = S.cles('avis:').map(k => ({ id: k.slice(5), ...S.get(k) })).filter(a => recette(a.id));
-    const notes = S.cles('note:').map(k => ({ id: k.slice(5), ...S.get(k) })).filter(a => recette(a.id));
+    const notes = RECETTES.flatMap(r => Object.entries(notesDe(r.id)).map(([p, n]) => ({ id: r.id, ...n, par: p })));
     const reg = reglages(); const pol = { ...M.MAGASIN_PAR_RAYON, ...(reg.magasinParRayon || {}) };
     $('#main').innerHTML = `
       <div class="hdr"><div><div class="kick">Menus</div><h1>Plus</h1></div><span id="synchro" class="synchro"></span></div>
