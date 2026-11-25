@@ -1,11 +1,9 @@
 {
  "id": "r005",
  "nom": "Wraps poulet-avocat",
- "statut": "a_valider",
- "redaction": "claude",
- "a_completer": [
-  "fiche rédigée par Claude (version standard), à valider"
- ],
+ "statut": "validee",
+ "redaction": "famille",
+ "a_completer": [],
  "choisie_par": "Billie et Emma",
  "origine": "Base initiale",
  "categorie": "Comfort food",
