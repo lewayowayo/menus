@@ -1,7 +1,7 @@
 {
  "id": "r031",
- "nom": "Rôti de bœuf, pommes de terre et carottes rôties (+ fondant chocolat sans farine)",
- "statut": "ecartee",
+ "nom": "Rôti de bœuf, pommes de terre et carottes rôties",
+ "statut": "a_valider",
  "redaction": "claude",
  "a_completer": [
   "fiche rédigée par Claude (version standard), à valider"
@@ -113,41 +113,6 @@
    "unite": "pincee",
    "rayon": "epicerie",
    "placard": true
-  },
-  {
-   "nom": "chocolat noir pâtissier",
-   "qte": 200,
-   "unite": "g",
-   "rayon": "epicerie",
-   "placard": false
-  },
-  {
-   "nom": "beurre",
-   "qte": 150,
-   "unite": "g",
-   "rayon": "cremerie",
-   "placard": false
-  },
-  {
-   "nom": "sucre",
-   "qte": 120,
-   "unite": "g",
-   "rayon": "epicerie",
-   "placard": true
-  },
-  {
-   "nom": "œuf",
-   "qte": 4,
-   "unite": "piece",
-   "rayon": "cremerie",
-   "placard": false
-  },
-  {
-   "nom": "maïzena",
-   "qte": 1,
-   "unite": "cas",
-   "rayon": "epicerie",
-   "placard": true
   }
  ],
  "etapes": [
@@ -172,19 +137,6 @@
   {
    "texte": "Laisser reposer le rôti 10 min sous papier alu avant de trancher ; remettre les légumes au four pendant ce temps.",
    "minuteur": 600
-  },
-  {
-   "texte": "Dessert : préchauffer le four à 180 °C. Faire fondre le chocolat et le beurre au bain-marie."
-  },
-  {
-   "texte": "Dessert : fouetter les œufs avec le sucre jusqu'à ce que le mélange blanchisse, ajouter la maïzena puis le chocolat fondu."
-  },
-  {
-   "texte": "Dessert : verser dans un moule beurré de 22 cm et cuire. Le cœur doit rester tremblant.",
-   "minuteur": 1320
-  },
-  {
-   "texte": "Dessert : laisser tiédir avant de démouler."
   }
  ],
  "marie": {
@@ -194,7 +146,7 @@
   "soir": "Plus de carottes, peu de pommes de terre."
  },
  "etienne": null,
- "remarque": "Écartée le 27/11/2026 : repas exceptionnel (anniversaire de Marie), pas pour le roulement.",
+ "remarque": "Le fondant au chocolat de l'anniversaire de Marie (exceptionnel) a été retiré de la fiche le 27/11/2026.",
  "ancien": {
   "option_marie": "Mangé par Marie ce soir-là",
   "fois_au_menu": 1,
