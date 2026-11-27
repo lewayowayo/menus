@@ -1,7 +1,7 @@
 {
  "id": "r031",
  "nom": "Rôti de bœuf, pommes de terre et carottes rôties (+ fondant chocolat sans farine)",
- "statut": "a_valider",
+ "statut": "ecartee",
  "redaction": "claude",
  "a_completer": [
   "fiche rédigée par Claude (version standard), à valider"
@@ -194,7 +194,7 @@
   "soir": "Plus de carottes, peu de pommes de terre."
  },
  "etienne": null,
- "remarque": null,
+ "remarque": "Écartée le 27/11/2026 : repas exceptionnel (anniversaire de Marie), pas pour le roulement.",
  "ancien": {
   "option_marie": "Mangé par Marie ce soir-là",
   "fois_au_menu": 1,
